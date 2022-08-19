@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <div class="menu" onclick="poppy()">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </div>
+    <div class="menu-items">
+       <div class="item1" id="item1">
+        <center>
+            <a href="#">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </center>
+       </div> 
+        <div class="item2" id="item2">
+        <center>
+            <a href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </center>
+       </div> 
+       <div class="item3" id="item3">
+        <center>
+            <a href="#">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </center>
+       </div> 
+       <div class="item4" id="item4">
+        <center>
+            <a href="#">
+                <i class="fa fa-pinterest-p"></i>
+            </a>
+        </center>
+       </div> 
+       <div class="item5" id="item5">
+        <center>
+            <a href="#">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </center>
+       </div> 
+    </div>
+    <script>
+        var i = 0;
+        function poppy(){
+        if(i == 0){
+            document.querySelector('.item1').style.transform = 'translateX(-150px)';
+            document.querySelector('.item2').style.transform = 'translate(-100px,-100px)';
+            document.querySelector('.item3').style.transform = 'translateY(-150px)';
+            document.querySelector('.item4').style.transform = 'translate(100px,-100px)';
+            document.querySelector('.item5').style.transform = 'translateX(150px)';
+            i=1;
+        }
+        else{
+            document.querySelector('.item1').style.transform = 'translate(0)';
+            document.querySelector('.item2').style.transform = 'translate(0)';
+            document.querySelector('.item3').style.transform = 'translate(0)';
+            document.querySelector('.item4').style.transform = 'translate(0)';
+            document.querySelector('.item5').style.transform = 'translate(0)';
+            i=0;
+        }
+     }
+    </script>
+</body>
+</html>

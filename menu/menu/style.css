@@ -1,0 +1,11 @@
+body{
+    background-image:radial-gradient(circle at center),#899dc4,#495484 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom,#1b2793,#290a04);
+}

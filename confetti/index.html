@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>Confetti Video</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ipsam ad? Voluptatum, similique voluptatem! Delectus cum tenetur molestiae autem neque voluptatibus ipsam ut iusto aliquam deserunt. Impedit nihil eum pariatur officia tempore, exercitationem, fugit iure aperiam aliquid voluptas esse qui. Asperiores praesentium omnis dignissimos facere placeat et perferendis repudiandae quaerat, voluptates adipisci eaque pariatur id ad nulla illum ipsa voluptate necessitatibus culpa hic laudantium voluptatem rem. Nam aliquam vero similique corporis accusamus ea, hic eos ipsa earum veniam? Exercitationem maiores temporibus corporis, consectetur error possimus deleniti. Iste, recusandae. Modi culpa, accusamus, aliquam iste quae dicta ipsum excepturi eum numquam repellendus nisi voluptas soluta ad pariatur, non laboriosam consectetur voluptate. Quia doloremque nihil eos at delectus itaque labore molestiae neque vel explicabo cum expedita illo obcaecati sunt ullam earum ex, quisquam dolor assumenda! Ut debitis, labore ullam, necessitatibus, consectetur odit itaque voluptatem explicabo blanditiis pariatur doloribus dignissimos. Totam similique explicabo ad ipsum expedita placeat consectetur, iste velit error facilis voluptate voluptatem provident sapiente fuga iusto natus ab debitis animi accusamus soluta vel non, impedit rem. Nam eos modi voluptatum, reprehenderit adipisci aperiam sunt labore hic facere repellendus autem optio repellat inventore officia qui iure commodi ratione placeat debitis corrupti? Alias, ipsum.</p>
+        <button class="btn">Read More</button>
+        <div class="popup">
+            <h2>Your content goes here...</h2>
+            <b class="close">X</b>
+        </div>
+    </section>
+    <canvas id="my-canvas"></canvas>
+    <script src="index.min.js"></script>
+    <script>
+        let btn = document.querySelector('.btn');
+        let close = document.querySelector('.close');
+        let confettin = document.querySelector('#my-canvas');
+        let popup = document.querySelector('.popup')
+        btn.onclick = function(){
+            popup.classList.add('active')
+            confettin.classList.add('active')
+        }
+        close.onclick = function(){
+            popup.classList.remove('active')
+            confettin.classList.remove('active')
+        }
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
+</body>
+</html> 

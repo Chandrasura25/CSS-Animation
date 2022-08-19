@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	background: #f7f7f7;
+}
+.container{
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
+	text-align: center;
+}
+.container h1{
+	font-size: 48px;
+	text-transform: uppercase;
+}
+.container ul li{
+	list-style: none;
+	float: left;
+	width: calc(100% / 8);
+}
+.container ul li a{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+.container ul li a .fa{
+	font-size: 40px;
+	transition: .5s;
+}
+.container ul li a:hover .fa{
+	transform: rotateY(360deg);
+}
+.container ul li:nth-child(1) a{
+	background: #3b5999;
+}
+.container ul li:nth-child(2) a{
+	background: #55acee;
+}
+.container ul li:nth-child(3) a{
+	background: #dd4b39;
+}
+.container ul li:nth-child(4) a{
+	background: #007785;
+}
+.container ul li:nth-child(5) a{
+	background: #00aff0;
+}
+.container ul li:nth-child(6) a{
+	background: #e4405f;
+}
+.container ul li:nth-child(7) a{
+	background: #cd201f;
+}
+.container ul li:nth-child(8) a{
+	background: #bd081c;
+}
+@media (max-width: 991px){
+	.container h1{
+		font-size: 30px;
+	}
+	.container ul li{
+		width: calc(100% / 4);
+	}
+}
+@media (max-width:768px){
+	.container{
+		width: 100%;
+	}
+}
+@media (max-width: 480px){
+	.container{
+		margin: 20px auto;
+	}
+	.container ul li{
+		width: calc(100% / 2);
+	}
+}
+@media (max-width: 360px){
+	.container{
+		margin: 0 auto;
+	}
+	.container ul li{
+		width: calc(100% / 1);
+	}
+}

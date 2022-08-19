@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup" id="popup-1">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">X</div>
+            <h1>Sign in</h1>
+            <div class="input-field">
+                <input type="email" name="" placeholder="Email" class="validate" id="">
+            </div>
+            <div class="input-field">
+                <input type="password" name="" placeholder="Password" class="validate" id="">
+            </div>
+            <button class="second-btn">Sign in</button>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+    <button onclick="togglePopup()" class="first-btn">Sign In</button>
+    <script>
+        function togglePopup() {
+            document.getElementById('popup-1').classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

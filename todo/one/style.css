@@ -1,0 +1,245 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(220,236,250);
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.phone-body{
+    position: relative;
+    width: 300px;
+    height: 85vh;
+    background-color: rgb(255,255,255);
+    overflow: auto;
+    border-radius: 24px;
+    box-shadow: 3px 5px 10px 0px rgb(121,121,121);
+}
+.phone-body::-webkit-scrollbar{
+    width: 0px;
+}
+.HomePage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.pic{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.HomePage h2{
+    color: rgb(52,138,196);
+    position: relative;
+    margin-top: 10px;
+}
+.HomePage .Content{
+    position: relative;
+    width: 80%;
+    height: 170px;
+    background-color: rgb(31,126,189);
+    left: 10%;
+    border-radius: 19px;
+    margin-top: 14px;
+    color: white;
+}
+.Content h1{
+    position: relative;
+    font-size: 22px;
+    top: 20px;
+}
+.Content p{
+    font-size: 14px;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+.nextBtn{
+    position: relative;
+    padding: 2% 3%;
+    border-radius: 100%;
+    border: 6px solid white;
+    top: 40px;
+    background-color: rgb(31,126,189);
+    color: white;
+}
+.nextBtn::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(31,126,189);
+    left: -24px;
+    top: 0px;
+    border-bottom-right-radius:19px;
+    box-shadow: 2px 8px 2px 0px white;
+}
+.nextBtn::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(31,126,189);
+    left: 32px;
+    top: 0px;
+    border-bottom-left-radius:19px;
+    box-shadow: -2px 8px 2px 0px white;
+}
+.nextBtn:active{
+    background-color: rgb(31,126,189);
+}
+.nextBtn:hover{
+    background-color: rgb(31,126,189);
+}
+/* homepage */
+.homePage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243,243,243);
+    top: 0;
+    overflow: auto;
+    left: 100%;
+    visibility: hidden;
+    transition: 1s;
+}
+.homePage::-webkit-scrollbar{
+    width: 0px;
+}
+.homePage .header{
+    position: fixed;
+    background-color: rgb(243,243,243);
+    z-index: 211;
+    text-align: left;
+    padding: 2%;
+    width: 245px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.menuBar{
+    padding: 2%;
+    top: 10px;
+    left: 0px;
+    position: relative;
+}
+.searchBox{
+    position: relative;
+    margin-top: -6px;
+    left: 40px;
+}
+.header a{
+    color: rgb(31,126,189);
+}
+.search{
+    position: relative;
+    border: 0px;
+    background: rgb(243,243,243);
+    border-bottom: 1px solid grey;
+    height: 20px;
+    font-size: 16px;
+    text-indent: 10px;
+}
+.searchBtn{
+    position: relative;
+    top: 3px;
+}
+.Homecontent{
+    position: relative;
+    width: 83%;
+    height: 100%;
+    left: 10%;
+    margin-top: 84px;
+    text-align: start;
+    overflow: hidden;
+}
+
+.Homecontent h2{
+    font-size: 20px;
+    color: rgb(31,126,189);
+}
+.lists{
+    position: relative;
+    height: auto;
+    display: block;
+}
+.list{
+    position: relative;
+    width: 100%;
+    height: 65px;
+    background: #fff;
+    border-radius: 14px;
+    margin-top: 12px;
+    box-shadow: 2px 0px 6px 0px rgb(129, 128, 128);
+}
+.list .time_date{
+    position: relative;
+    padding: 2%;
+}
+.time, .date{
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 5px;
+    left: 8px;
+}
+.time{
+    font-size: 12px;
+}
+.fa-clock{
+    font-size: 14px;
+    color: rgb(99,99,99);
+    margin-left: 20px;
+}
+.text{
+    position: relative;
+    padding: 0%;
+    font-size: 14px;
+    margin-top: 3px;
+    width: 80%;
+    left: 10%;
+}
+.text strong{
+   font-size: 15px;
+   font-style: normal;
+   padding-right: 1.5%;
+}
+.plusBtn{
+    position: fixed;
+    padding: 1% ;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    background: rgb(31,126,189);
+    color: #fff;
+    box-shadow: 0px 0px 6px 0px grey;
+    z-index: 111;
+    bottom: 80px;
+    left: 55%;
+}
+.plusBtn:hover{
+   background: rgb(43,152,224); 
+}
+.plusBtn:active{
+    background: rgb(43,152,224); 
+ }
+.fa-ellipsis-v{
+    float: right;
+    position: relative;
+    top: 8px;
+    right: 10px;
+    color: rgb(114,114,114);
+    font-size: 15px;
+} 

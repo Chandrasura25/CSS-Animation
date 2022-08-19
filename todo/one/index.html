@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+   <div class="container">
+    <div class="phone-body">
+        <div class="HomePage">
+            <img src="to-do-list.png" alt="" class="pic">
+            <h2>Todo App</h2>
+            <div class="Content">
+                <h1>What you do Tomorrow</h1>
+                <p>Welcome to Todo App. This app will help you always</p>
+                <a href="#" onclick="nextClick()" class="nextBtn"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="homePage">
+            <div class="header">
+                <a href="#" class="menuBar"><i class="fa-solid fa-bars"></i></a>
+                <div class="searchBox">
+                    <input type="text" name="" class="search" id=""placeholder="Search here" >
+                    <a href="#" class="searchBtn"><i class="fa-solid fa-search"></i></a>
+                </div>
+            </div>
+
+           <div class="Homecontent">
+            <h2>Today</h2>
+            <div class="lists">
+                <a href="#" class="plusBtn"><i class="fa-solid fa-plus"></i></a>
+                <div class="list">
+                 <span class="time_date">
+                    <i class="fa-regular fa-clock"></i>
+                    <i class="date" ><span id="dat"></span></i>
+                    <i class="time">12:59pm</i>
+                    <i class="fa-solid fa-ellipsis-v" aria-hidden="true"></i>
+                 </span> 
+                 <p class="text"><strong>some text Here</strong>some Other Here</p>  
+                </div>
+            </div>
+    
+           </div> 
+        </div>
+
+    </div>
+   </div> 
+   <script>
+    var ret = new Date().getUTCDate()
+    var rety = new Date().getHours()
+    console.log(ret);
+    document.querySelector('#dat').innerText= ret
+    document.querySelector('.time').innerText= rety +" O' clock"
+
+    nextClick=()=>{
+        document.querySelector('.homePage').style.left='0%';
+        document.querySelector('.homePage').style.visibility='visible'
+
+    }
+   </script>
+</body>
+</html>

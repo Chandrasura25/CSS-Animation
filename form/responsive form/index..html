@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <img src="wave.png" alt="" class="wave">
+    <div class="container">
+        <div class="img">
+            <img src="bg.svg" alt="">
+        </div>
+        <div class="login-container">
+            <form action="">
+                <img src="avatar.svg" class="avatar" alt="">
+                <h2>Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Username</h5>
+                        <input type="text" name="" class="input" id="">
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h5>Password</h5>
+                        <input type="password" class="input" name="" id="">
+                    </div>
+                </div>
+                <a href="#">Forgot Password?</a>
+                <input type="submit" value="Login" class="btn">
+            </form>
+        </div>
+    </div>
+    <script>
+      const inputs = document.querySelector('.input');
+    //   console.log(this.parentNode.parentNode)
+      focusFunc =()=>{
+        let parent = this.parentNode.parentNode;
+        parent.classList.add('focus')
+      }
+      inputs.forEach(input =>{
+        input.addEventListener('focus',focusFunc)
+      })
+    </script>
+</body>
+</html>

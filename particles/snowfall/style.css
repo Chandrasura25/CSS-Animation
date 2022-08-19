@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+  background: #000;
+  font-family: sans-serif;
+}
+section{
+    overflow: hidden;
+	width: 100%;
+	height: 100vh;
+}
+.content{
+	padding: 100px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	background: #262626;
+	color: #fff;
+}
+.toggle{
+	width: 150px;
+	padding: 20px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	white-space: nowrap;
+	border: 2px solid #000;
+	overflow: hidden;
+}
+.toggle span{
+	font-size: 20px;
+	transition: .5s;
+	background: #fff;
+	color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content h1{
+	padding: 0 0 20px;
+	font-size: 3em;
+}
+.content p{
+	font-size:20px;
+    line-height: 30px;
+}
+#particles-js{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	pointer-events: none;
+	z-index: 1000;
+	transition: 1s;
+	opacity: 0;
+}
+#particles-js.active{
+	opacity: 1;
+}
+.toggle span:nth-child(2){
+	transform: translateY(100%);
+	background: #000;
+	color: #fff;
+}
+.toggle.active span:nth-child(2){
+	transform: translateY(0);
+}
+.toggle.active span:nth-child(1){
+	transform: translateY(-100%);
+}

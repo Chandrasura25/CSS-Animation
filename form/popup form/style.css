@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background: #262626;
+    font-family: raleway;
+    margin: 0;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%) scale(0);
+    width: 300px;
+    height: 450px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
+    background: #262626;
+    box-shadow: 38px 38px 56px #1e1e1e, -25px -25px 38px #1e1e1e;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 2px 5px 7px 5px;
+    background: #292929;
+    box-shadow: 5px 5px 15px #1e1e1e,-5px -5px 15px #1e1e1e;
+}
+.popup.active .content{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 20px;    
+}
+a{
+    font-weight: 600;
+    color: #fff;
+}
+.validate{
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+    color: #bfc0c0;
+    background: #262626;
+    box-shadow: inset 5px 5px 5px #232323,inset -5px -5px 5px #292929;
+}
+.first-btn{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 50px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #262626;
+    box-shadow: 8px 8px 15px #202020, -8px -8px 15px #2c2c2c;
+    transition: box-shadow 0.35s ease !important;
+    cursor: pointer;
+}
+.first-btn:active{
+    background: linear-gradient(145deg,#222222,#292929);
+    box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+    border: none;
+    outline: none;
+}
+.second-btn{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: #262626;
+    box-shadow: 8px 8px 15px #202020, -8px -8px 15px #2c2c2c;
+    transition: box-shadow 0.35s ease !important;
+    cursor: pointer;
+}
+.second-btn:active{
+    background: linear-gradient(145deg,#222222,#292929);
+    box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+    border: none;
+    outline: none;
+}
+p{
+    color: #bfc0c0;
+    padding: 20px;
+}

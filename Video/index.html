@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <video id="slider" autoplay muted loop>
+           <source src="./Jai_Jai_Shivshankar_Song___WAR___Hrithik_Roshan,_Tiger_Shroff___Vishal_&_Shekhar,_Benny___Holi_Song(360p).mp4" type="video/mp4"> 
+        </video>
+        <ul class="navigation">
+            <li onclick="videoUrl('Jai_Jai_Shivshankar_Song___WAR___Hrithik_Roshan,_Tiger_Shroff___Vishal_&_Shekhar,_Benny___Holi_Song(360p).mp4')"><img src="2.png" alt=""></li>
+            <li onclick="videoUrl('Ee_Raathale_Lyrical_Video_Song___Radhe_Shyam___Prabhas,Pooja_Hegde___Justin_Prabhakaran___Krishna_K(360p).mp4')"><img src="1.png" alt=""></li>
+            <li onclick="videoUrl('Jazba_-_Full_Song__Ladies_vs_Ricky_Bahl__Anushka_Sharma__Shilpa_Rao(480p).mp4')"><img src="3.png" alt=""></li>
+            <li onclick="videoUrl('Lyrical__Chammak_Challo___Ra_One___ShahRukh_Khan___Kareena_Kapoor(360p).mp4')"><img src="4.png" alt=""></li>
+        </ul>
+    </section>
+    <script>
+        function videoUrl(url){
+            document.getElementById('slider').src=url
+        }
+    </script>
+</body>
+</html>

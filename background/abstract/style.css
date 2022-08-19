@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #131313;
+    overflow: hidden;
+}
+.layer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 270vh;
+    background: #fff;
+    box-shadow: inset -10px 0 40px rgba(0,0,0,1),inset 10px 0 40px rgba(0,0,0,1),inset -10px 0 10px rgba(255,255,255,.25),inset 10px 0 10px rgba(255,255,255,.25), 0 0 50px rgba(0,0,0,1);
+}
+@keyframes jump {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 35px -35px;
+    }
+}
+@keyframes jump2 {
+    0%{
+        background-position: 35px -35px;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.layer.layer1{
+    background: #222 radial-gradient(#6DFF73 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%,-50%) rotate(45deg);
+    z-index: 11;
+    animation: jump 2s linear infinite;
+}
+.layer.layer2{
+    background: #222 radial-gradient(#db0aff 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%,-36%) rotate(45deg);
+    z-index: 3;
+    animation: jump2 2s linear infinite;
+}
+.layer.layer3{
+    background: #222 radial-gradient(#03a9f4 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%,-64%) rotate(45deg);
+    z-index: 3;
+    animation: jump2 2s linear infinite;
+}
+.layer.layer4{
+    background: #222 radial-gradient(#FFc107 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    z-index: 12;
+    animation: jump2 2s linear infinite;
+}
+.layer.layer5{
+    background: #222 radial-gradient(#e91e63 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%,-36%) rotate(-45deg);
+    z-index: 10;
+    animation: jump 2s linear infinite;
+}
+.layer.layer6{
+    background: #222 radial-gradient(#0f0 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%,-64%) rotate(-45deg);
+    z-index: 10;
+    animation: jump 2s linear infinite;
+}

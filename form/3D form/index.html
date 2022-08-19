@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="path"></div>
+            <div class="form" id="form">
+                <h1>Login</h1><br><br>
+                <label for="">Username</label><br>
+                <input type="text" name="" id=""><br><br>
+                <label for="">Password</label><br><br>
+                <input type="password" name="" id=""><br><br>
+                <button id="button">Sign in</button>
+            </div>
+            <img src="3.jpg" alt="" id="man">
+            <img src="8.png" id="youtube" alt="">
+            <h2 id="head">Chandrasura</h2>
+        </div>
+    </div>
+    <script>
+        const box = document.querySelector('.box');
+        const container = document.querySelector('.container');
+        const head=document.querySelector("#head");
+        const form = document.querySelector("#form")
+        const man = document.querySelector('#man')
+        const youtube = document.querySelector('#youtube')
+        container.addEventListener('mousemove',(e)=>{
+            console.log(e.pageX);
+            let horizontal = (window.innerWidth / 2 -  e.pageX) / 10;
+            let vertical = (window.innerHeight / 2 -  e.pageY) / 10;
+            box.style.transform = `rotateX(${vertical}deg) rotateY(${horizontal}deg)`;
+        })
+        container.addEventListener('mouseenter',(e)=>{
+          box.style.transition=".1s"
+          head.style.transform="translateZ(120px)"
+          form.style.transform="translateZ(100px)"
+          youtube.style.transform="translateZ(130px)"
+          man.style.transform="translateZ(150px)"
+        })
+        container.addEventListener('mouseleave',(e)=>{
+          box.style.transition=".1s"
+          box.style.transform="rotateX(0deg) rotateY(0deg)"
+          head.style.transform="translateZ(0px)"
+          form.style.transform="translateZ(0px)"
+          youtube.style.transform="translateZ(0px)"
+          man.style.transform="translateZ(0px)"
+        })
+    </script>
+</body>
+</html>

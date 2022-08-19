@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="" class="form login-form">
+            <h1>Login</h1>
+            <label for="">Email :</label>
+            <input type="email" name="" autocomplete="off" id="">
+            <label for="">Password :</label>
+            <input type="password" name="" autocomplete="off" id="">
+            <button type="submit" class="submit-btn">Login</button>
+            <a href="#" class="links go-to-register">Register Yourself</a>
+        </form>
+        <form action="" class="form register-form">
+            <h1>Register</h1>
+            <label for="">Username :</label>
+            <input type="text" name="" id="">
+            <label for="">Email :</label>
+            <input type="email" name="" autocomplete="off" id="">
+            <label for="">Password :</label>
+            <input type="password" name="" autocomplete="off" id="">
+            <button type="submit" class="submit-btn">Register</button>
+            <a href="#" class="links go-to-login">Already have an account, Login Here</a>
+        </form>
+    </div>
+    <script>
+         const registerLink = document.querySelector('.go-to-register')
+         const loginLink = document.querySelector('.go-to-login')
+         const form = document.querySelector('.form-container')
+         registerLink.addEventListener('click',()=>{
+            form.classList.add('rotate')
+         })
+         loginLink.addEventListener('click',()=>{
+            form.classList.remove('rotate')
+         })
+    </script>
+</body>
+</html>
