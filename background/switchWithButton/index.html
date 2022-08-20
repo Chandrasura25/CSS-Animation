@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <div>
+        <i class="fa fa-gear" aria-hidden="true"></i>
+    </div>
+    <script>
+        var color = ['#222f3e','#ff368e0','#ee5253','#0abde3','#10ac84','#33d12d','#5f27cd'];
+        var i = 0;
+        document.querySelector('.fa-gear').addEventListener('click',function(){
+            i = i <color.length ? ++i :0;
+            document.querySelector('body').style.background = color[i]
+        })
+    </script>
+</body>
+</html>

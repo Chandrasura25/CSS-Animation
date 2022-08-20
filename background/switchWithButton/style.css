@@ -1,0 +1,15 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #222f3e;
+}
+div{
+	position: absolute;
+	top: 40%;
+	left: 95%;
+	font-size: 5em;
+    color: #fff;
+	cursor: pointer;
+}
