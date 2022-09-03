@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#" class="btn" onclick="popupToggle()">Subscribe Us</a>
+    <div id="popup">
+        <div class="content">
+            <img src="email.png" alt="">
+            <h2>Join Our Newsletter</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, veniam? Placeat accusantium minus voluptatum sit, atque hic corrupti!</p>
+            <div class="inputBox">
+                <input type="email" placeholder="Enter Email Address">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Sign Up" class="btn">
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle()"><img src="cancel.png" alt=""></a>
+    </div>
+    <script type="text/javascript">
+        function popupToggle(){
+            const popup = document.getElementById('popup')
+            popup.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.ripple{
+	position: relative;
+}
+.ripple span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%,-50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	animation: animate 5s linear infinite;
+}
+.ripple span:nth-child(1){
+	animation-delay: 0s;
+}
+.ripple span:nth-child(2){
+	animation-delay: 0.5s;
+}
+.ripple span:nth-child(3){
+	animation-delay: 1s;
+}
+.ripple span:nth-child(4){
+	animation-delay: 1.5s;
+}
+.ripple span:nth-child(5){
+	animation-delay: 2s;
+}
+.ripple span:nth-child(6){
+	animation-delay: 2.5s;
+}
+.ripple span:nth-child(7){
+	animation-delay: 3s;
+}
+.ripple span:nth-child(8){
+	animation-delay: 3.5s;
+}
+.ripple span:nth-child(9){
+	animation-delay: 4s;
+}
+.ripple span:nth-child(10){
+	animation-delay: 4.5s;
+}
+@keyframes animate{
+	0%{
+		width: 0;
+		height: 0;
+		box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(0, 0, 0, 0.3);
+	}
+	50%{
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(0, 0, 0, 0.3);	
+	}
+	90%{
+		width: 480px;
+		height: 480px;
+		opacity: 1;
+	}
+	100%{
+		width: 600px;
+		height: 600px;
+		opacity: 0;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), inset 0 0 5px rgba(0, 0, 0, 0.3);	
+	}
+}

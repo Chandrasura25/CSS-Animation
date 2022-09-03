@@ -31,7 +31,11 @@ label::before{
 }
 label input{
     position: absolute;
-    /* appearance: none; */
+    width: 120px;
+    height: 60px;
+    z-index: 100;
+    appearance: none;
+    cursor: pointer;
 }
 .icon{
     position: absolute;
