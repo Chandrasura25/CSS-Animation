@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <ul>
+            <li class="list active" data-filter="All">All</li>
+            <li class="list" data-filter="mobile">Mobile</li>
+            <li class="list" data-filter="camera">Camera</li>
+            <li class="list" data-filter="watch">Watch</li>
+            <li class="list" data-filter="shoe">Shoe</li>
+            <li class="list" data-filter="headphone">Headphone</li>
+        </ul>
+        <div class="product">
+            <div class="itemBox mobile"><img src="img/76.jfif" alt=""></div>
+            <div class="itemBox camera"><img src="img/img3.jpg" alt=""></div>
+            <div class="itemBox watch"><img src="img/22.jpg" alt=""></div>
+            <div class="itemBox shoe"><img src="img/113.jpg" alt=""></div>
+            <div class="itemBox headphone"><img src="img/82.jfif" alt=""></div>
+            <div class="itemBox mobile"><img src="img/100.jfif" alt=""></div>
+            <div class="itemBox watch"><img src="img/25.jpg" alt=""></div>
+            <div class="itemBox headphone"><img src="img/109.jfif" alt=""></div>
+            <div class="itemBox mobile"><img src="img/31.png" alt=""></div>
+            <div class="itemBox watch"><img src="img/49.png" alt=""></div>
+            <div class="itemBox mobile"><img src="img/77.jfif" alt=""></div>
+            <div class="itemBox headphone"><img src="img/83.jfif" alt=""></div>
+            <div class="itemBox watch"><img src="img/103.jfif" alt=""></div>
+            <div class="itemBox shoe"><img src="img/33.jpg" alt=""></div>
+            <div class="itemBox watch"><img src="img/107.jfif" alt=""></div>
+            <div class="itemBox headphone"><img src="img/110.jfif" alt=""></div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'All'){
+                    $('.itemBox').show('1000')
+                }
+                else{
+                    $('.itemBox').not('.'+value).hide('1000')
+                    $('.itemBox').filter('.'+value).show('1000')
+                }
+            })
+            $('.list').click(function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="computer.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum vero rem earum ad necessitatibus odio iste cupiditate quos atque, nostrum asperiores architecto impedit sit nobis unde deserunt quod sequi laboriosam vitae, alias dicta voluptates. Quibusdam ipsum illum odit magnam dolore maiores quod vitae minus at ex vel a atque molestiae impedit cum voluptatem, id accusamus perferendis rerum assumenda consectetur?</p>
+            </div>
+            <a href="#" class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="support.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Customer Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ex tempora explicabo est repellat, beatae minus eligendi earum consequatur laborum ratione odit sunt odio. Expedita tenetur a aperiam quo quisquam, neque veniam nisi dolores nemo sunt commodi animi in temporibus eligendi ex deleniti magni sed!</p>
+            </div>
+            <a href="#" class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="affiliate-marketing.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Marketing & Communication</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum vero rem earum ad necessitatibus odio iste cupiditate quos atque, nostrum asperiores architecto impedit sit nobis unde deserunt quod sequi laboriosam vitae, alias dicta voluptates. Quibusdam ipsum illum odit magnam dolore maiores quod vitae minus at ex vel a atque molestiae impedit cum voluptatem, id accusamus perferendis rerum assumenda consectetur?Lorem ipsum dolor sit amet.</p>
+            </div>
+            <a href="#" class="more"></a>
+        </div>
+    </div>
+    <script>
+        let more = document.querySelectorAll('.more')
+        more.forEach((item)=>{
+            item.addEventListener('click',function(){
+                item.parentNode.classList.toggle('active')
+
+            })
+        })
+    </script>
+</body>
+</html>

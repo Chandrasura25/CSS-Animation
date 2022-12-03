@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../package/swiper-bundle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <div class="swiper">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+       <img src="images/img1.jpg" alt="">
+    </div>
+    <div class="swiper-slide">
+       <img src="images/img2.jpg" alt="">
+   </div>
+   <div class="swiper-slide">
+      <img src="images/img3.jpg" alt="">
+   </div>
+   <div class="swiper-slide">
+      <img src="images/img4.jpg" alt="">
+   </div>
+   <div class="swiper-slide">
+      <img src="images/img5.jpg" alt="">
+   </div>
+   <div class="swiper-slide">
+      <img src="images/img6.jpg" alt="">
+   </div>
+   <div class="swiper-slide">
+      <img src="images/img7.jpg" alt="">
+   </div>
+   <div class="swiper-slide">
+      <img src="images/img8.jpg" alt="">
+   </div>
+   <div class="swiper-slide">
+       <img src="images/img9.jpg" alt="">
+ </div>
+ </div>
+</div>
+  <script src="../package/swiper-bundle.js"></script>
+  <script src="../package/swiper-bundle.min.js" type="module"></script>
+
+ <script>
+  var swiper = new Swiper('.swiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+    rotate: 20,
+    stretch:0,
+    depth: 200,
+    modifier:1,
+    slideShadows: true,
+    },
+    loop:true,
+    autoplay:{
+      delay:500,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+</body>
+</html>

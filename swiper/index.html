@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="package/swiper-bundle.css">
 </head>
 <body>
-      <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
+   <div class="swiper">
+      <div class="swiper-wrapper">
       <div class="swiper-slide">
          <div class="imgBx">
-            <img src="./img/pexels-adam-kontor-325117.jpg" height="300" width="300" alt="">
+            <img src="./img/pexels-adam-kontor-325117.jpg" alt="">
          </div>
          <div class="content">
             <h2>John Doe <br><span>Web Designer</span></h2>
@@ -21,7 +21,7 @@
       </div>
       <div class="swiper-slide">
         <div class="imgBx">
-           <img src="./img/pexels-adam-kontor-325117.jpg" height="300" width="300" alt="">
+           <img src="./img/pexels-arnie-chou-1229042.jpg" alt="">
         </div>
         <div class="content">
            <h2>John Doe <br><span>Web Designer</span></h2>
@@ -29,7 +29,7 @@
      </div>
      <div class="swiper-slide">
         <div class="imgBx">
-           <img src="./img/pexels-adam-kontor-325117.jpg" height="300" width="300" alt="">
+           <img src="./img/pexels-brett-sayles-912364.jpg" alt="">
         </div>
         <div class="content">
            <h2>John Doe <br><span>Web Designer</span></h2>
@@ -37,32 +37,29 @@
      </div>
      <div class="swiper-slide">
         <div class="imgBx">
-           <img src="./img/pexels-adam-kontor-325117.jpg" height="300" width="300" alt="">
+           <img src="./img/pexels-ithalu-dominguez-907485.jpg" alt="">
         </div>
         <div class="content">
            <h2>John Doe <br><span>Web Designer</span></h2>
         </div>
      </div>
-    </div>
-  </div>
+   </div>
+</div>
+  <script src="package/swiper-bundle.js"></script>
+  <script src="package/swiper-bundle.min.js" type="module"></script>
 
-
-
-  <!-- Initialize Swiper -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script>
-    import 'swiper/swiper-bundle.css';
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'cube',
-      grabCursor: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-
-    });
-  </script>
+ <script>
+  var swiper = new Swiper('.swiper', {
+    effect: 'cube',
+    grabCursor: true,
+    cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset:20,
+    shadowScale:0.94
+    },
+    loop:true,
+  });
+</script>
 </body>
 </html>

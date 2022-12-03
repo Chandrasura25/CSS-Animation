@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+  <section></section>
+  <section>
+    <h1>Animated Scroll with Jquery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illum cumque consequuntur? Tempore ab laudantium deleniti libero sit, quas labore debitis consequatur numquam velit ullam laboriosam nulla placeat pariatur eveniet? Mollitia, eum? Iusto hic nihil explicabo architecto molestiae eos incidunt aliquid assumenda neque repellat at atque harum dignissimos dolorum perferendis unde accusantium tempore asperiores veritatis eum, quam dicta praesentium? Vitae reiciendis blanditiis itaque dolorum tenetur aperiam adipisci necessitatibus in repellendus ad iure incidunt quas non ipsa dolor, <br> ab amet quisquam officia debitis quae. Tempore fuga accusantium qui praesentium, quibusdam iusto facere aliquid sit laudantium voluptates officia dolorem vel facilis accusamus maxime deleniti debitis ex molestias quam amet rem eveniet dolore. <br><br> Nam inventore unde iusto ex, earum nemo, porro ad blanditiis dignissimos velit, reprehenderit sit assumenda? Exercitationem numquam dolorum recusandae ab? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi saepe minima adipisci ex sunt accusantium exercitationem optio beatae nostrum odit?</p>
+  </section>
+  <section></section>
+  <a href="#" class="scrollToTop">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 200 ){
+                    $('.scrollToTop').fadeIn()
+                }
+                else{
+                    $('.scrollToTop').fadeOut()
+                }
+            });
+            $('.scrollToTop').click(function(){
+                $('html,body').animate({scrollTop:0},1000)
+            })
+        })
+    </script>  
+</body>
+</html>

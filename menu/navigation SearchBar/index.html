@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <div class="group">
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search">
+          <span class="icon">
+            <i class="fa fa-search searchBtn" aria-hidden="true"></i>
+            <i class="fa fa-close closeBtn" aria-hidden="true"></i>
+          </span>
+        </div>
+        <i class="fa fa-bars menuToggle" aria-hidden="true"></i>
+      </div>
+      <div class="searchBox">
+        <input type="text" name="" placeholder="Search Here..." id="" />
+      </div>
+    </header>
+    <script>
+      let searchBtn = document.querySelector(".searchBtn");
+      let searchBox = document.querySelector(".searchBox");
+      let closeBtn = document.querySelector(".closeBtn");
+      let header = document.querySelector('header')
+      let menuToggle = document.querySelector('.menuToggle')
+      let navigation = document.querySelector('.navigation')
+      searchBtn.onclick = function () {
+        searchBox.classList.add("active");
+        searchBtn.classList.add("active");
+       closeBtn.classList.add("active");
+       menuToggle.classList.add("hide"); 
+       header.classList.remove('open')
+      };
+      closeBtn.onclick = function () {
+        searchBox.classList.remove("active");
+        searchBtn.classList.remove("active");
+        closeBtn.classList.remove("active");
+       menuToggle.classList.remove("hide");
+      };
+      menuToggle.onclick = function(){
+        header.classList.toggle('open')
+        searchBox.classList.remove("active");
+        searchBtn.classList.remove("active");
+        closeBtn.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

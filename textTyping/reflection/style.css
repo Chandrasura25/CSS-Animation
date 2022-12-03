@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: radial-gradient(#0319f4, #004b6d);
+  height: 100vh;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #ffff;
+  font-size: 6em;
+}
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  line-height: 0.865em;
+  transform: rotateX(180deg);
+  background: linear-gradient(0deg, #fff 0, transparent 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: .5;
+}

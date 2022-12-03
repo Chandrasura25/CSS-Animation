@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="imgBx"></div>
+        <div class="countdownBx">
+            <h2>Countdown to New Year<br><span>20<i>23</i></span></h2>
+            <div class="countdown">
+                <div id="day"></div>
+                <div id="hour"></div>
+                <div id="minute"></div>
+                <div id="second"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const countDate = new Date('jan 1, 2023 00:00:00').getTime();
+        const newYear = ()=>{
+            const now = new Date().getTime();
+            gap = countDate - now;
+            const second = 1000;
+            const minute = second *60;
+            const hour = minute * 60;
+            const day = hour * 24;
+            const d = Math.floor(gap / (day));
+            const h = Math.floor((gap % (day)) / (hour));
+            const m = Math.floor((gap % (hour)) / (minute));
+            const s = Math.floor((gap % (minute)) / (second));
+            document.querySelector('#day').innerText = d;
+            document.querySelector('#hour').innerText = h;
+            document.querySelector('#minute').innerText = m;
+            document.querySelector('#second').innerText = s;
+        }
+        setInterval(() => {
+            newYear()
+        },1000);
+    </script>
+</body>
+</html>

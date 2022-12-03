@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div class="mobile">
+            <div class="screen"></div>
+            <div class="home"></div>
+            <div class="inner"></div>
+            <ul class="volume">
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="silent">
+                <li></li>
+            </ul>
+            <ul class="sleep">
+            <li></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.home').click(function(){
+                $('.screen').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>

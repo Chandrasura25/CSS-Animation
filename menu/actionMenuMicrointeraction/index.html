@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="list">
+        <div class="user">
+            <div class="imgBx">
+                <img src="Vivivian.png" alt="">
+            </div>
+            <div class="details">
+                <h3>Vivian Vivivian</h3>
+                <p>Aerospace Engineer</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <span><i class="fa-regular fa-pen-to-square" aria-hidden="true"></i></span>
+            <span><i class="fa-regular fa-heart" aria-hidden="true"></i></span>
+            <span><i class="fa-regular fa-trash-can" aria-hidden="true"></i></span>
+        </div>
+    </div>
+    <script>
+        let navigation = document.querySelector('.navigation');
+        navigation.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

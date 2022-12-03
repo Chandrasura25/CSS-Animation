@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="items">
+          <span class="item active" data-name="all">All</span>
+          <span class="item" data-name="mobile">Mobile</span>
+          <span class="item" data-name="shoe">Shoe</span>
+          <span class="item" data-name="watch">Watch</span>
+          <span class="item" data-name="camera">Camera</span>
+          <span class="item" data-name="headphone">Headphone</span>
+        </div>
+      </nav>
+      <div class="gallery">
+        <div data-name="mobile" class="image mobile"><span><img src="img/76.jfif" alt="" /></span></div>
+        <div data-name="camera" class="image camera"><span><img src="img/img3.jpg" alt="" /></span></div>
+        <div data-name="shoe" class="image shoe"><span><img src="img/113.jpg" alt="" /></span></div> 
+        <div data-name="watch" class="image watch"><span><img src="img/22.jpg" alt="" /></span></div>
+        <div data-name="headphone" class="image headphone"><span><img src="img/82.jfif" alt="" /></span></div>
+        <div data-name="watch" class="image watch"><span><img src="img/25.jpg" alt="" /></span></div>
+        <div data-name="mobile" class="image mobile"><span><img src="img/100.jfif" alt="" /></span></div>
+        <div data-name="headphone" class="image headphone"><span><img src="img/109.jfif" alt="" /></span></div>
+        <div data-name="mobile" class="image mobile"><span><img src="img/31.png" alt="" /></span></div>
+        <div data-name="watch" class="image watch"><span><img src="img/49.png" alt="" /></span></div>
+        <div data-name="mobile" class="image mobile"><span><img src="img/77.jfif" alt="" /></span></div>
+        <div data-name="headphone" class="image headphone"><span><img src="img/83.jfif" alt="" /></span></div>
+        <div data-name="watch" class="image watch"><span><img src="img/103.jfif" alt="" /></span></div>
+        <div data-name="shoe" class="image shoe"><span><img src="img/33.jpg" alt="" /></span></div>
+        <div data-name="watch" class="image watch"><span><img src="img/107.jfif" alt="" /></span></div>
+        <div data-name="headphone" class="image headphone"><span><img src="img/110.jfif" alt="" /></span></div>
+      </div>
+    </div>
+    <div class="preview-box">
+        <div class="details">
+            <span class="title">Image Category: <p>Not defined</p></span>
+            <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="shadow"></div>
+    <script>
+        const filterItem = document.querySelector(".items")
+        const filterImg = document.querySelectorAll(".image")
+        window.onload = ()=>{
+            filterItem.onclick =(selectedItem)=>{
+                if(selectedItem.target.classList.contains("item")){
+                    filterItem.querySelector(".active").classList.remove("active")
+                    selectedItem.target.classList.add("active")
+                    let filterName = selectedItem.target.getAttribute("data-name")
+                    filterImg.forEach((image)=>{
+                        let filterImages = image.getAttribute("data-name")
+                        if((filterImages == filterName ) || filterName == "all"){
+                            image.classList.add("show")
+                            image.classList.remove("hide")
+                        }
+                        else{
+                            image.classList.add("hide")
+                            image.classList.remove("show")
+                        }
+                    })
+                }
+            }
+            for (let i = 0; i < filterImg.length; i++) {
+                filterImg[i].setAttribute("onclick","preview(this)")                  
+            }
+        }
+        const previewBox = document.querySelector(".preview-box"), 
+        categoryName = previewBox.querySelector(".title p"),
+        previewImg = previewBox.querySelector("img"),
+        closeIcon = previewBox.querySelector(".icon");
+        shadow = document.querySelector(".shadow");
+        function preview(element){
+          document.querySelector("body").style.overflow = "hidden"
+          let selectedPrevImg = element.querySelector("img").src
+          let selectedPrevCat = element.getAttribute("data-name");
+          categoryName.textContent = selectedPrevCat
+          previewImg.src = selectedPrevImg;
+            previewBox.classList.add("show") 
+            shadow.classList.add("show") 
+            closeIcon.onclick = ()=>{
+            previewBox.classList.remove("show") 
+            shadow.classList.remove("show")
+          document.querySelector("body").style.overflow = "scroll"
+            }
+        }
+    </script>
+  </body>
+</html>

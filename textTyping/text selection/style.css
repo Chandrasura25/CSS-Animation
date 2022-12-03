@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+}
+.container{
+	width: 70%;
+	margin: 0 auto;
+}
+h1::selection{
+	background: #ff0;
+	color: #fff;
+}
+p::selection{
+	background: #262626;
+	color: #fff;
+}

@@ -1,0 +1,85 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+a span{
+	padding: 15px;
+	position: relative;
+	transition: .5s;
+}
+a span:nth-child(1){
+	background: #262626;
+	color: #fff;
+}
+a span:nth-child(2){
+	background: #ff3636;
+	color: #fff;
+}
+a span:nth-child(1)::before{
+	content: attr(data-attr);
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ff3636;
+	transform-origin: top;
+	transform: rotateX(90deg) translateY(-50%);
+	transition: .5s;
+}
+a:hover span:nth-child(1)::before{
+	transform: rotateX(0deg) translateY(0%);
+}
+a span:nth-child(2)::before{
+	content: attr(data-attr);
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #262626;
+	transform-origin: bottom;
+	transform: rotateX(90deg) translateY(50%);
+	transition: .5s;
+}
+a:hover span:nth-child(2)::before{
+	transform: rotateX(0deg) translateY(0%);
+}
+a span:nth-child(1)::after{
+	content: attr(data-attr);
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #262626;
+	transform-origin: bottom;
+	transform: rotateX(0deg) translateY(0%);
+	transition: .5s;
+}
+a:hover span:nth-child(1)::after{
+	transform: rotateX(90deg) translateY(50%);
+}
+a span:nth-child(2)::after{
+	content: attr(data-attr);
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ff3636;
+	transform-origin: top;
+	transform: rotateX(0deg) translateY(0%);
+	transition: .5s;
+}
+a:hover span:nth-child(2)::after{
+	transform: rotateX(90deg) translateY(-50%);
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'poppins';
+}
+body{
+    overflow: hidden;
+     background: #18191A; 
+}
+nav{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+nav .drop-btn{
+    width: 400px;
+    background: #242526;
+    color: #b0b3b8;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav .drop-btn span{
+    float: right;
+    line-height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+}
+nav .wrapper{
+    position: absolute;
+    top: 65px;
+    display: flex;
+    width: 400px;
+    background: #242526;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    transition: all 0.3s ease;
+}
+nav .wrapper.show{
+    display: block;
+    display: flex;
+}
+nav .wrapper ul{
+    list-style: none;
+    width: 400px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+nav .wrapper ul li{
+    line-height: 55px;
+}
+nav .wrapper ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #b0b3b8;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    border-radius: 8px;
+    align-items: center;
+}
+nav .wrapper .setting-drop,
+nav .wrapper .help-drop{
+    display: none;
+}
+nav .wrapper ul li:hover a{
+    background: #3a3b3c;
+}
+nav .wrapper ul li a .icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
+    background: #ffffff1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+nav .wrapper ul li a i{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    pointer-events: none;
+}
+nav ul .arrow{
+    padding-left: 10px;
+    font-size: 20px;
+    color: #b0b3b8;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul .arrow span{
+    margin-right: 15px;
+}

@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	overflow: hidden;
+}
+.fold{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) skewY(0deg) rotateY(0deg);
+	width: 320px;
+	height: 400px;
+	background: url(Vivivian.png);
+	background-size: cover;
+	background-position: center;
+	border-top: 10px solid #ff6d3f ;
+	border-bottom: 10px solid #ff6d3f ;
+	transition: 1s;
+}
+.fold:hover{
+	transform: translate(-50%,-50%) skewY(15deg) rotateY(3deg);
+}
+.fold::before{
+	content: '';
+	position: absolute;
+	width: 80%;
+	height: calc(100% + 20px);
+	background: url(Vivivian.png);
+	background-size: cover;
+	background-position: 245px 0;
+	position: absolute;
+	top: -10px;
+	left: -80%;
+	border-top: 10px solid #ff8a65;
+	border-left: 10px solid #ff8a65;
+	border-bottom: 10px solid #ff8a65;
+	box-sizing: border-box;
+	transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+	transform-origin: right;
+	transition: 1s;
+	box-shadow: inset -15px 0 15px rgba(0, 0, 0, 0.1);
+}
+.fold:hover::before, .fold:hover::after{
+	transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+.fold::after{
+	content: '';
+	position: absolute;
+	width: 80%;
+	height: calc(100% + 20px);
+	background: url(Vivivian.png);
+	background-size: cover;
+	background-position: 80px 0;
+	position: absolute;
+	top: -10px;
+	right: -80%;
+	border-top: 10px solid #ff8a65;
+	border-right: 10px solid #ff8a65;
+	border-bottom: 10px solid #ff8a65;
+	box-sizing: border-box;
+	transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+	transform-origin: left;
+	transition: 1s;
+	box-shadow: inset 15px 0 15px rgba(0, 0, 0, 0.1);
+}

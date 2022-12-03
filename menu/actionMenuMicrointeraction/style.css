@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222327;
+}
+.list{
+    display: flex;
+    gap: 6px;
+}
+.list .user{
+    position: relative;
+    background: #fff;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+.list .user .imgBx{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.list .user .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.list .user .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list .user .details h3{
+    font-weight: 600;
+    line-height: 1.1em;
+}
+.list .user .details p{
+    font-weight: 500;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.8);
+}
+.navigation{
+    position: relative;
+    width: 40px;
+    height: 70px;
+    border-radius: 10px;
+    background: #fff;
+    transition: .5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation.active{
+    width: 200px;
+}
+.navigation span{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #222327;
+    border-radius: 50%;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #222327;
+}
+.navigation span:nth-child(1){
+    transform: translateY(-12px);
+}
+.navigation span:nth-child(3){
+    transform: translateY(12px);
+}
+.navigation.active span{
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+}
+.navigation.active span:nth-child(1),
+.navigation.active span:nth-child(3)
+{
+    transform: translateY(0);
+}
+.navigation.active span:nth-child(1){
+    transform: translateX(-60px);
+}
+.navigation.active span:nth-child(3){
+    transform: translateX(60px);
+}
+.navigation span i{
+    transition: .5s;
+    font-size: 0em;
+}
+.navigation.active span i{
+    color: #fff;
+    font-size: 1.25em;
+}
+.navigation.active span:hover{
+    background: #29fd53;
+}
+.navigation.active span:hover i{
+    color: #222327;
+}

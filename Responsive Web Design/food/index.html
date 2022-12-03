@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Good<span>Foods</span></a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <span class="menuIcon" onclick="menuToggle()"></span>
+        </header>
+        <div class="content">
+            <div class="bannerText" id="slideShowText">
+                <div class="active">
+                    <h2>EAT Healthy<br>Stay Healthy</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis consectetur sunt molestiae mollitia voluptate sed, error, acceaque mollitia quae alias sequi eveniet laboriosam!</p>
+                    <a href="#">Read More </a>
+                </div>
+                <div>
+                    <h2>EAT Your<br>Veggies</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vero nobis praesentium aliquam dignissimos illum.</p>
+                    <a href="#">Read More </a>
+                </div>
+                <div>
+                    <h2>Good Food<br>Good Mood</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa corporis architecto ad quae, tempore quos magni distinctio ullam illum esse. Quae facilis et tenetur itaque!</p>
+                    <a href="#">Read More </a>
+                </div>
+            </div>
+            <div class="bannerImg" id="slideshow">
+                <img class="active" src="img1.jpg" alt="">
+                <img src="img2.jpg" alt="">
+                <img src="img3.jpg" alt="">
+            </div>
+        </div>
+        <div class="icons">
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            </ul>
+            <ul class="controls">
+                <li><a href="#"><img src="back.png" onclick="prevSlide();prevSlideText();" alt=""></a></li>
+                <li><a href="#"><img src="next.png" onclick="nextSlide();nextSlideText();" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const imgBx = document.querySelector('#slideshow');
+        const slides = imgBx.getElementsByTagName('img');
+        var i = 0;
+        function nextSlide(){
+            slides[i].classList.remove('active');
+            i = (i + 1) % slides.length;
+            slides[i].classList.add('active');
+        }
+        function prevSlide(){
+            slides[i].classList.remove('active');
+            i = (i - 1 + slides.length) % slides.length;
+            slides[i].classList.add('active');
+        }
+
+        const contentBx = document.querySelector('#slideShowText');
+        const slidesText = contentBx.getElementsByTagName('div');
+        var j = 0;
+        function nextSlideText(){
+            slidesText[j].classList.remove('active');
+            j = (j + 1) % slidesText.length;
+            slidesText[j].classList.add('active');
+        }
+        function prevSlideText(){
+            slidesText[j].classList.remove('active');
+            j = (j - 1 + slidesText.length) % slidesText.length;
+            slidesText[j].classList.add('active');
+        }
+        function menuToggle(){
+         var nav = document.querySelector('header')
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

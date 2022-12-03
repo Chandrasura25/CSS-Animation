@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+    flex-direction: column;
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #262c37;
+    letter-spacing: 2px;
+    color: #2894ff;
+    font-size: 16px;
+    margin: 10px;
+}
+a:hover{
+    transition: .5s;
+    background: #2894ff;
+    transition-delay: 1s;
+    color: #1f242d;
+}
+a span{
+    display: block;
+    position: absolute;
+    background: #2894ff;
+}
+a span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.25s;
+}
+a:hover span:nth-child(1){
+    transform: scaleY(1.0);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+}
+a span:nth-child(2){
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s;
+}
+a:hover span:nth-child(2){
+    transform: scaleX(1.0);
+    transform-origin: left;
+    transition: transform 0.25s;
+}
+a span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transition-delay: 0.25s;
+    transform-origin: bottom;
+}
+a:hover span:nth-child(3){
+    transform-origin: top;
+    transform: scaleY(1.0);
+    transition: transform 0.25s;
+}
+a span:nth-child(4){
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+    transform-origin: left;
+}
+a:hover span:nth-child(4){
+    transform-origin: right;
+    transform: scaleX(1.0);
+    transition: transform 0.25s;
+}
