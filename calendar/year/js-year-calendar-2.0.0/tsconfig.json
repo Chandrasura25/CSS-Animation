@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "lib": ["ES6", "DOM"],
+        "moduleResolution": "node"
+    },
+    "typedocOptions": {
+        "mode": "file",
+        "out": "docs",
+        "excludePrivate": true,
+        "excludeProtected": true,
+        "excludeNotExported": true,
+        "target": "ES6"
+      }
+}
