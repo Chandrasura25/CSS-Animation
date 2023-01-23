@@ -60,9 +60,9 @@ label input:checked ~ label span ion-icon{
 	left: 50%;
 	transform: translateX(-50%);
 	pointer-events: none;
-	background: url(bulboff.gif) no-repeat;
+	background: url(bulboff.png) no-repeat;
 	transition: 0.5s;
 }
 label input:checked ~ .bulb{
-	background: url(bulbon.gif) no-repeat;
+	background: url(bulbon.png) no-repeat;
 }
