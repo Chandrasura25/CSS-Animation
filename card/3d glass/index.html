@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="elements bg"></div>
+        <div class="elements imgBx">
+            <img src="Images/img2.jpg" alt="">
+        </div>
+        <div class="elements name">
+            <h2>Someone Famous</h2>
+        </div>
+        <div class="elements content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis debitis dicta, at nam obcaecati sint molestias. Nobis numquam asperiores cum?</p>
+        </div>
+        <div class="card"></div>
+    </div>
+    <script src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".box"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
+</body>
+</html>

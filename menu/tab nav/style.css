@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'poppins';
+}
+:root{
+    --clr:#222327;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background:var(--clr);
+}
+.navigation{
+    width: 450px;
+    height: 80px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    background: #2f2f2f;
+    border-radius: 10px;
+}
+.navigation ul{
+    display: flex;
+    width: 400px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+}
+.navigation ul li a{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height:85px; 
+    font-size: 1.5em;
+    transition:0.5s;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+}
+.navigation ul li a:hover .icon{
+    color: rgba(255,255,255,1);
+}
+.navigation ul li.active a .icon{
+    transform: translateY(-8px);
+    color: #29f653;
+}
+.navigation ul li a .text{
+    position: absolute;
+    font-weight: 600;
+    font-size: 0.6em;
+    color: #222327;
+    text-transform: uppercase;
+    transform: translateY(0px);
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 5;
+}
+.navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(16px);
+}
+.indicator{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    width: 80%;
+    height: 16px;
+    background: #29fd53;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(80px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(80px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(80px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(80px * 4));
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="square">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <div class="contentBx active" id="content1">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="img1.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Someone Famous<br><b>Product Designer</b></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentBx" id="content2">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img2.jpg" alt="">
+                </div>
+                <div class="textBx">
+                    <h2>Someone Famous<br><b>Product Designer</b></h2>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentBx" id="content3">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img3.jpg" alt="">
+                </div>
+                <div class="textBx">
+                    <h2>Someone Famous<br><b>Product Designer</b></h2>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentBx" id="content4">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img4.jpg" alt="">
+                </div>
+                <div class="textBx">
+                    <h2>Someone Famous<br><b>Product Designer</b></h2>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="icon">
+            <div class="imgBx active" data-id="content1">
+                <img src="img1.jpg" alt="">
+            </div>
+            <div class="imgBx" data-id="content2">
+                <img src="img2.jpg" alt="">
+            </div>
+            <div class="imgBx" data-id="content3">
+                <img src="img3.jpg" alt="">
+            </div>
+            <div class="imgBx" data-id="content4">
+                <img src="img4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let imgBx = document.querySelectorAll('.imgBx');
+        let contentBx = document.querySelectorAll('.contentBx');
+        for(let i=0; i<imgBx.length; i++){
+            imgBx[i].addEventListener('mouseover', function(){
+                for(var i=0; i<contentBx.length; i++){
+                    contentBx[i].className= 'contentBx';
+                }
+                document.getElementById(this.dataset.id).className = 'contentBx active';
+                for(var i=0; i<imgBx.length; i++){
+                    imgBx[i].className = 'imgBx';
+                }
+                this.className = 'imgBx active';
+            })
+        }
+    </script>
+</body>
+</html>

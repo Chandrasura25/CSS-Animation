@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --clr:#14161e;
+}
+body{
+    background: var(--clr);
+    min-height: 100vh;
+}
+.sidebar{
+    position: absolute;
+    width: 80px;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.sidebar.active{
+    width: 300px;
+}
+.sidebar ul{
+    position: relative;
+    height: 100%;
+}
+.sidebar ul li{
+    position: relative;
+    list-style: none;
+}
+.sidebar ul li.active{
+    background: var(--clr);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.sidebar ul li.active::before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0 5px var(--clr);
+}
+.sidebar ul li.active::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 5px -5px 0 5px var(--clr);
+}
+.sidebar ul li.logo{
+    margin-bottom: 50px;
+}
+.sidebar ul li.logo .icon{
+    font-size: 2em;
+    color:var(--clr);
+}
+.sidebar ul li.active a .icon{
+    color: #fff;
+}
+.sidebar ul li.active a .text{
+    color: var(--bg);
+}
+.sidebar ul li.active a .icon::before{
+    position: absolute;
+    content: '';
+    inset: 5px;
+    width: 60px;
+    background: var(--bg);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.sidebar ul li:hover.active a .icon::before{
+    background: #fff;
+}
+.sidebar ul li.logo .text{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--clr);
+}
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.sidebar ul li a .icon{
+    font-size: 1.5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 70px;
+    transition: 0.5s;
+    color: #333;
+    padding-left: 10px;
+}
+.sidebar ul li a .text{
+    font-size: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    padding-left: 15px;
+    color: #333;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.sidebar ul li:hover a .icon, .sidebar ul li:hover a .text{
+    color: var(--bg);
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.imgBx{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menuToggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #31a4ff;
+    z-index: 9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuToggle:before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transform: translateY(-9px);
+    transition: 0.5s;
+    box-shadow: 0 9px 0 #fff;
+}
+.menuToggle:after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transform: translateY(9px);
+    transition: 0.5s;
+}
+.menuToggle.active:before{
+    transform: translateY(0) rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+}
+.menuToggle.active:after{
+    transform: translateY(0) rotate(-45deg);
+}

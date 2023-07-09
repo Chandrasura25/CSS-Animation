@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1d2b3a;
+}
+.inputBox {
+  position: relative;
+  width: 300px;
+}
+.inputBox input {
+  padding: 15px 20px;
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 15px 20px;
+  pointer-events: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 1em;
+  transition: 0.5s;
+  letter-spacing: 0.1em;
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+  transform: translateX(20px) translateY(-7px);
+  font-size: 0.75em;
+  background: #00dfc4;
+  color: #1d2b3a;
+  padding: 0 5px;
+  border-radius: 2px;
+}
+#toggle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+    color: #00dfc4; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toggle::before{
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+#toggle.hide::before{
+    content: '\f070';
+}

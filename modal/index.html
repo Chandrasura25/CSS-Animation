@@ -21,7 +21,12 @@
         <a href="#" onclick="toggle()">Read More</a>
     </div>
     <script>
-        c
+        let popup = document.getElementById('popup')
+        let blur = document.getElementById('blur')
+        function toggle(){
+           popup.classList.toggle('active')
+           blur.classList.toggle('active')
+        }
     </script>
 </body>
 </html>

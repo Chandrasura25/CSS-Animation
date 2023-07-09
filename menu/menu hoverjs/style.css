@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+.list{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.list li{
+    list-style: none;
+}
+.list li a{
+    position: relative;
+    display: flex;
+    font-size: 4em;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.list li a span{
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.list li a span .out{
+    display: inline-flex;
+}
+.list li a:hover span .out{
+    transform: translateY(-100px);
+}
+.list li a span .in{
+    position: absolute;
+    left: 0;
+    color: #2aa1ff;
+    transform: translateY(100%);
+}
+.list li a:hover span .in{
+    transform: translateY(0);
+}

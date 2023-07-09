@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#" class="brand">
+            <span><ion-icon name="logo-apple"></ion-icon></span>
+            <span>Apple</span>
+        </a>
+        <ul>
+            <li style="--i:0;">
+                <a href="#">
+                    <span>Home</span>
+                    <span><ion-icon name="home-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li style="--i:1;">
+                <a href="#">
+                    <span>Videos</span>
+                    <span><ion-icon name="videocam-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li style="--i:2;">
+                <a href="#">
+                    <span>Photo</span>
+                    <span><ion-icon name="image-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li style="--i:3;">
+                <a href="#">
+                    <span>Team</span>
+                    <span><ion-icon name="people-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li style="--i:4;">
+                <a href="#">
+                    <span>Contact</span>
+                    <span><ion-icon name="mail-outline"></ion-icon></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script>
+    let lastScrollTop =0;
+    navbar = document.getElementById('navbar');
+    window.addEventListener("scroll",()=>{
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrollTop > lastScrollTop){
+            navbar.classList.add('icon');
+        } else{
+            navbar.classList.remove('icon');
+        }
+        lastScrollTop = scrollTop;
+    })
+   </script>
+</body>
+</html>

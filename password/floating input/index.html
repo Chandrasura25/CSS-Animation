@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="inputBox">
+        <input type="password" name="" required id="password">
+        <span>Password</span>
+        <div id="toggle"></div>
+    </div>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const password = document.getElementById('password');
+        toggle.onclick = function(){
+            if(password.type == 'password'){
+                password.type = 'text';
+                toggle.classList.add('hide');
+            }else{
+                password.type = 'password';
+                toggle.classList.remove('hide');
+            }
+        }
+    </script>
+</body>
+</html>

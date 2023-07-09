@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div id="scene">
+          <div class="layer" data-depth-x="-0.5" data-depth-y="0.25">
+            <img src="images/moon.png" alt="" />
+          </div>
+          <div class="layer" data-depth-x="0.15">
+            <img src="images/mountains01.png" alt="" />
+          </div>
+          <div class="layer" data-depth-x="0.25">
+            <img src="images/mountains02.png" alt="" />
+          </div>
+          <div class="layer" data-depth-x="-0.25">
+            <img src="images/road.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        <h2>Sign In</h2>
+        <div class="inputBox">
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="inputBox">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Login" id="btn" />
+        </div>
+        <div class="group">
+          <a href="#">Forgot Password ?</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      let scene = document.getElementById("scene");
+      let parallax = new Parallax(scene);
+    </script>
+  </body>
+</html>
