@@ -64,6 +64,7 @@ body{
     font-size: 3em;
     background: #fff;
     cursor: pointer;
+    transform: rotateY(180deg);
     transition: 0.25s;
 }
 .item.boxOpen{
@@ -76,6 +77,7 @@ body{
     background: #209d70;
     transition: 0.25s;
     transform: rotateY(0deg);
+    backface-visibility: hidden;
 }
 .boxOpen::after{
     transform: rotateY(180deg);
