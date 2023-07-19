@@ -12,7 +12,7 @@
         <div class="game"></div>
         <button class="reset" onclick="window.location.reload()">Reset Game</button>
     </div>
-    <script>
+    <!-- <script>
         const emojis = ['😍','😍','💗','💗','😭','😭','😎','😎','😀','😀','🤬','🤬','👍','👍','😛','😛']
         var shuf_emojis = emojis.sort(() => (Math.random() > 0.5) ? 2: -1);
         for (let i = 0; i < emojis.length; i++) {
@@ -22,23 +22,80 @@
             box.onclick = function(){
                 this.classList.add('boxOpen');
                 setTimeout(() => {
-                    if (document.querySelectorAll('.boxOpen').length > 1) {
-                        if(document.querySelectorAll('.boxOpen')[0].innerHTML == (document.querySelectorAll('.boxOpen')[1].innerHTML)){
+                    if(document.querySelectorAll('.boxOpen').length > 1){
+                        if(document.querySelectorAll('.boxOpen')[0].innerHTML == document.querySelectorAll('.boxOpen')[1].innerHTML){
                             document.querySelectorAll('.boxOpen')[0].classList.add('boxMatch');
                             document.querySelectorAll('.boxOpen')[1].classList.add('boxMatch');
-                            document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen');
                             document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen');
-                            if (document.querySelectorAll('.boxMatch').length == emojis.length) {
+                            document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen');
+                            if(document.querySelectorAll('.boxMatch').length == emojis.length){
                                 alert('You Win');
                             }
-                       }} 
-                    else {
-                        document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen');
+                        }else{
+                            document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen');
+                            document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen');
+                        }
                     }
                 }, 500);
             }
             document.querySelector('.game').appendChild(box)
         }
-    </script>
+    </script> -->
+   
+        <script>
+            const emojis = ['😍', '😍', '💗', '💗', '😭', '😭', '😎', '😎', '😀', '😀', '🤬', '🤬', '👍', '👍', '😛', '😛'];
+    
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+    
+            function checkForWin() {
+                if (document.querySelectorAll('.boxMatch').length === emojis.length) {
+                    alert('You Win!');
+                }
+            }
+    
+            function handleBoxClick() {
+                if (this.classList.contains('boxMatch') || document.querySelectorAll('.boxOpen').length >= 2) {
+                    return;
+                }
+    
+                this.classList.add('boxOpen');
+    
+                if (document.querySelectorAll('.boxOpen').length === 2) {
+                    const [firstBox, secondBox] = document.querySelectorAll('.boxOpen');
+                    if (firstBox.innerHTML === secondBox.innerHTML) {
+                        firstBox.classList.add('boxMatch');
+                        secondBox.classList.add('boxMatch');
+                        firstBox.classList.remove('boxOpen');
+                        secondBox.classList.remove('boxOpen');
+                        checkForWin();
+                    } else {
+                        setTimeout(() => {
+                            firstBox.classList.remove('boxOpen');
+                            secondBox.classList.remove('boxOpen');
+                        }, 500);
+                    }
+                }
+            }
+    
+            document.addEventListener('DOMContentLoaded', () => {
+                const shuffledEmojis = shuffle(emojis);
+    
+                const gameContainer = document.querySelector('.game');
+                for (const emoji of shuffledEmojis) {
+                    let box = document.createElement('div');
+                    box.className = 'item';
+                    box.innerHTML = emoji;
+                    box.onclick = handleBoxClick;
+                    gameContainer.appendChild(box);
+                }
+            });
+        </script>
+    
 </body>
 </html>
