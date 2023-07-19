@@ -47,8 +47,8 @@ body{
 }
 .container .game{
     display: flex;
-    width: 440px;
-    height: 440px;
+    width: 430px;
+    height: 430px;
     transform-style: preserve-3d;
     flex-wrap: wrap;
     gap: 10px;
@@ -64,6 +64,19 @@ body{
     font-size: 3em;
     background: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
-    transform-style: preserve-3d;
+    transition: 0.25s;
+}
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+.item::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #209d70;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+}
+.boxOpen::after{
+    transform: rotateY(180deg);
 }
