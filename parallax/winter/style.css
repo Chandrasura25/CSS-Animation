@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #58b4e7;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+#header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+#header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#header ul li{
+    list-style: none;
+}
+#header ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 15px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+#header ul li a.active,
+#header ul li a:hover{
+    background: #112434;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+section img#house{
+    z-index: 2;
+}
+section img#crs{
+    top: 0;
+    bottom: initial;
+}
+#txt{
+    position: absolute;
+    left: -150px;
+    color: #fff;
+    font-size: 8em;
+    z-index: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-text-stroke: 4px #112434;
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #bedbe5;
+    box-shadow: 0 0 0 2px #bedbe5;
+}
+.sec h2{
+    color: #112434;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.sec p{
+    color: #112434;
+    font-size: 1em;
+    font-weight: 500;
+}
