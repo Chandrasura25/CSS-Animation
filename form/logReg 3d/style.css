@@ -54,6 +54,13 @@ body{
     color: #fff;
     background: transparent;
     border-bottom: 2px solid #fff;
+    transition: 0.5s;
+    font-weight: 500;
+    padding-right: 23px;
+}
+.form-box .input-box input:focus,
+.form-box .input-box input:valid{
+    border-color: #0ef;
 }
 .form-box .input-box label{
     position: absolute;
@@ -65,6 +72,11 @@ body{
     pointer-events: none;
     transition: 0.5s;
 }
+.form-box .input-box input:focus ~ label,
+.form-box .input-box input:valid ~ label{
+    top: -5px;
+    color: #0ef;
+}
 .form-box i{
     position: absolute;
     top: 50%;
@@ -73,6 +85,10 @@ body{
     font-size: 18px;
     color: #fff;
     transition: 0.5s;
+}
+.form-box .input-box input:focus ~ i,
+.form-box .input-box input:valid ~ i{
+    color: #0ef;
 }
 .btn{
     width: 100%;
@@ -87,6 +103,21 @@ body{
     font-weight: 600;
     cursor: pointer;
     transition: 0.5s;
+    overflow: hidden;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient(#081b29,#0ef,#081b29,#0ef);
+    transition: 0.5s;
+    z-index: -1;
+}
+.btn:hover::before{
+    top: 0%;
 }
 .form-box .logreg-link{
     text-align: center;
