@@ -18,6 +18,8 @@ body{
     height: 450px;
     background: transparent;
     border: 2px solid #0ef;
+    box-shadow: 0 0 25px #0ef;
+    overflow: hidden;
 }
 .wrapper .form-box{
     position: absolute;
@@ -31,7 +33,8 @@ body{
 }
 .wrapper .form-box.login{
     left: 0;
-    padding: 0 40px;
+    padding: 0 60px 0 40px;
+    display: none;
 }
 .form-box h2{
     font-size: 32px;
@@ -132,4 +135,40 @@ body{
 }
 .form-box .logreg-link a:hover{
     text-decoration: underline;
+}
+.wrapper .info-text{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper .info-text.login{
+    right: 0;
+    text-align: right;
+    padding: 0 40px 60px 150px;
+    display: none;
+}
+.wrapper .info-text h2{
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+.wrapper .info-text p{
+    font-size: 16px;
+    color: #fff;
+}
+.bg-animate{
+    position: absolute;
+    top: -4px;
+    left:0;
+    width: 850px;
+    height: 600px;
+    background: linear-gradient(45deg, #081b29,#0ef);
+    border-bottom: 3px solid #0ef;
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
 }
