@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+        <div id="indicator"></div>
+    </nav>
+    <script>
+        let marker = document.querySelector('#indicator');
+        let nav = document.querySelector('nav');
+        let item = document.querySelectorAll('nav a');
+        nav.onclick = ()=>{
+            marker.classList.toggle('change');
+        }
+        function indicator(e){
+            marker.style.left = e.offsetLeft+"px";
+            marker.style.width = e.offsetWidth+"px";
+            marker.style.display = "block";
+            marker.style.filter = "hue-rotate("+Math.random()*360+"deg)";
+        }
+        item.forEach(link => {
+            link.addEventListener('mousemove', (e)=>{
+                indicator(e.target);
+            })
+        });
+        function addActiveClass(){
+            item.forEach(link => {
+                link.classList.remove('active');
+            })
+            this.classList.add('active');
+        }
+        item.forEach(link => {
+            link.addEventListener('click', addActiveClass);
+        });
+    </script>
+</body>
+</html>
