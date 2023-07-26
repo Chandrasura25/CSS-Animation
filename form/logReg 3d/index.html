@@ -12,21 +12,21 @@
         <span class="bg-animate"></span>
         <span class="bg-animate2"></span>
         <div class="form-box login">
-            <h2>Login</h2>
+            <h2 class="animation" style="--i:0">Login</h2>
             <form action="#">
-                <div class="input-box">
+                <div class="input-box animation" style="--i:1">
                     <input type="text" name="" id="" required>
                     <label for="">Username</label>
                     <i class="bx bxs-user"></i>
                 </div>
-                <div class="input-box">
+                <div class="input-box animation" style="--i:2">
                     <input type="password" name="" id="" required>
                     <label for="">Password</label>
                     <i class="bx bxs-lock-alt"></i>
                 </div>
-                <button class="btn">Login</button>
+                <button class="btn animation" style="--i:3">Login</button>
             </form>
-            <div class="logreg-link">
+            <div class="logreg-link animation" style="--i:4">
                 <p>Don't have an account ? <a href="#" class="register-link">Sign Up</a></p>
             </div>
         </div>
@@ -55,10 +55,22 @@
                 <button class="btn">Register</button>
             </form>
             <div class="logreg-link">
-                <p>Already have an account ? <a href="#" class="login-link">Sign In</a></p>
+                <p>Already have an account ? <a href="#" class="login-link">Login</a></p>
             </div>
+        </div>
+        <div class="info-text register">
+            <h2>Welcome Back</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
         </div>
     </div>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const registerLink = document.querySelector('.register-link');
+        const loginLink = document.querySelector('.login-link');
+        registerLink.onclick = ()=>{
+            wrapper.classList.add('active');
+        }
+    </script>
 </body>
 </html>
