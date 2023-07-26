@@ -36,6 +36,10 @@ body{
     padding: 0 60px 0 40px;
     display: none; 
 }
+.wrapper .form-box.register{
+    right: 0;
+    padding: 0 40px 0 60px;
+}
 .form-box h2{
     font-size: 32px;
     color: #fff;
@@ -107,6 +111,7 @@ body{
     cursor: pointer;
     transition: 0.5s;
     overflow: hidden;
+    z-index: 1;
 }
 .btn::before{
     content: '';
@@ -172,4 +177,15 @@ body{
     /* transform: rotate(10deg) skewY(40deg); */
     transform: rotate(0deg) skewY(0deg);
     transform-origin: bottom right;
+}
+.bg-animate2{
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 700px;
+    background: #081b29;
+    border-top: 3px solid #0ef;
+    transform: rotate(-11deg) skewY(-41deg);
+    transform-origin: bottom left;
 }
