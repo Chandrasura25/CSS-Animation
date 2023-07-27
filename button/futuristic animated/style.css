@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --x: 45deg;
+}
 body{
     display: flex;
     justify-content: center;
@@ -26,7 +29,7 @@ a i{
     border-radius: 5px;
 }
 a i, a i:nth-child(2){
-    background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538,#d400d4);
+    background: linear-gradient(var(--x), #00ccff, #0e1538, #0e1538,#d400d4);
 }
 a i:nth-child(2){
     filter: blur(10px);
