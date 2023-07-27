@@ -118,5 +118,27 @@ body {
     z-index: 9;
 }
 .niddles.niddle2 i{
+    width: 3px;
+}
+.niddles.niddle3{
+    width: 140px;
+    height: 140px;
+    z-index: 8;
+}
+.niddles.niddle3 i{
     width: 4px;
+}
+#time span{
+    position: absolute;
+    text-align: center;
+    color: #999;
+    font-family: consolas;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 55px;
+}
+#time span b{
+    font-size: 0.75em;
+    transform: rotate(calc(-30deg * var(--i)));
+    font-weight: 500;
+    display: inline-block;
 }
