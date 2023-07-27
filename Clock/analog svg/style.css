@@ -22,6 +22,16 @@ body {
   box-shadow: inset 5px 5px 25px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
 }
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #2f363e;
+    border-radius: 50%;
+    z-index: 100;
+    border: 1px solid #fff;
+}
 #time {
   position: relative;
   width: 250px;
