@@ -51,8 +51,36 @@ a i::before{
     position: absolute;
     top: -3.5px;
     left:80%;
+    transform: translateX(-50%);
     width: 10px;
     height: 6px;
     background: #27282c;
     border: 2px solid var(--clr);
+    transition: 0.5s, box-shadow 0.5s;
+    transition-delay: 0.5s,0s;
+}
+a:hover i::before{
+    width: 6px;
+    left: calc(50% - 3px);
+    box-shadow: 70px 0 #fff, -70px 0 var(--clr), -70px 0 0 4px #27282c, 10px -10px var(--clr), -10px -10px #fff;
+    transition-delay: 0s,0.5s;
+}
+a i::after{
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 6px;
+    background: #27282c;
+    border: 2px solid var(--clr);
+    transition: 0.5s, box-shadow 0.5s;
+    transition-delay: 0.5s,0s;
+}
+a:hover i::after{
+    width: 6px;
+    left: calc(50% - 3px);
+    box-shadow: -70px 0 #fff, 70px 0 var(--clr), 70px 0 0 4px #27282c, -10px 10px var(--clr), 10px 10px #fff;
+    transition-delay: 0s,0.5s;
 }
