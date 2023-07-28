@@ -94,15 +94,36 @@ body{
     background: #0f0;
     border: 10px solid var(--clr);
 }
-.card .circle .imgBx{
+.card .circle .imgBx,.card .box .imgBx{
     position: absolute;
     inset: 0;
     overflow: hidden;
     border-radius: 50%;
 }
-.card .circle .imgBx img{
+.card .box .imgBx{
+    border-radius: 15px;
+}
+.card .circle .imgBx img,.card .box .imgBx video{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;  
+}
+.card .box .content{
+    position: relative;
+    inset:0;
+    padding: 30px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card .box .content h2{
+    width: 100%;
+    padding-left: 120px;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    line-height: 1.1em;
+    color: #333;
 }
