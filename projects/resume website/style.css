@@ -151,3 +151,9 @@ h4{
     color: #231fbf;
     font-weight: 600;
 }
+.edu_groupBx b span{
+    color: #666;
+    position: relative;
+    top: -2px;
+    font-size: 0.8em;
+}
