@@ -58,3 +58,36 @@ h2 span{
     color: #fff;
     font-size: 1.05em;
 }
+.bottom{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 50px 50px 0;
+    gap: 40px;
+}
+.bottom .left_side{
+    margin-top: 50px;
+}
+h4{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    background: #231fbf;
+    color: #fff;
+    font-weight: 60;
+    padding:0 15px;
+    margin-top: 40px;
+    display: inline-flex;
+}
+.contactInfo{
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactInfo li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
