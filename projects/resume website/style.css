@@ -39,3 +39,22 @@ h2 span{
     font-size: 0.4em;
     font-weight: 300;
 }
+.group{
+    position: relative;
+    display: grid;
+    grid-template-columns:2fr 3fr;
+    gap: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+.group .imgBx{
+    position: relative;
+    width: 100%;
+}
+.group .imgBx img{
+    width: 100%;
+}
+.group p{
+    color: #fff;
+    font-size: 1.05em;
+}
