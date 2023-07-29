@@ -1,43 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none ;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #000;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
 }
-ul{
-    position: relative;
-    display: flex;
-    flex-direction: column;
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
 }
-ul li a{
-    position: relative;
-    display: inline-block;
-    font-size: 2em;
-    padding: 10px 0;
-    letter-spacing: 0.1em;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
+ul li a {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  padding: 10px 0;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
 }
-.cursor{
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.1s ease;
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.1s ease;
+  mix-blend-mode: difference;
+}
+ul li:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(4);
+  background: #000;
+  box-shadow: 0 0 0 100vh #fff;
 }
