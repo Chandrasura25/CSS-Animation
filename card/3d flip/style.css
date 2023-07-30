@@ -49,6 +49,8 @@ body{
     content: '';
     position: absolute;
     bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 144px;
     height: 74px;
     background: #fff;
@@ -64,7 +66,18 @@ body{
     background: var(--clr);
     border-top: 8px solid #333;
     transform-origin: top;
+    transition-delay: 0.5s;
 }
 .container .card:hover .textBx{
     transform: translateY(100%) rotateX(90deg);
+}
+.container .card .textBx::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 160px;
+    height:80px;
+    background: #333;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
 }
