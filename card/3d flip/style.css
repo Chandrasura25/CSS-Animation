@@ -44,6 +44,15 @@ body{
     height: 120px;
     z-index: 1;
     transform-origin:bottom ;
+    position: relative;
+}
+.container .card .imgBx img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    top: 50px;
+    z-index: 10;
 }
 .container .card .imgBx::before{
     content: '';
@@ -67,6 +76,18 @@ body{
     border-top: 8px solid #333;
     transform-origin: top;
     transition-delay: 0.5s;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.container .card .textBx h2{
+    color: #222;
+    font-size: 1.25em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 5px 25px;
+    box-shadow: 0 0 0 8px #333;
 }
 .container .card:hover .textBx{
     transform: translateY(100%) rotateX(90deg);
