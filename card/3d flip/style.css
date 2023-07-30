@@ -58,6 +58,13 @@ body{
 }
 .container .card .content a{
     text-decoration: none;
+    color: #fff;
+    background: var(--clr);
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 .container .card .imgBx,
 .container .card .textBx{
