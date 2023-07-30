@@ -36,22 +36,64 @@ body{
 }
 .login-box .input-box input{
     width: 100%;
-    padding: 0 5px;
-    height: 40px;
+    height: 50px;
     font-size: 16px;
     background: transparent;
     border: none;
     outline: none;
     color: #fff;
+    padding: 0 35px 0 5px;
 }
 .login-box .input-box label{
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    padding: 0 5px;
     font-size: 16px;
     color: #fff;
     pointer-events: none;
+    transition: .5s;
+}
+.login-box .input-box input:focus ~ label,
+.login-box .input-box input:valid ~ label{
+    top: -5px;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.login-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    line-height: 57px;
+}
+.remember-forgot{
+    margin: -15px 0 15px;
+    color: #fff;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    margin-right: 3px;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: #03a9f4;
+    transition: 0.5s;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.login-box button{
+    background: #03a9f4;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 5px;
+    cursor: pointer;
     transition: .5s;
 }
