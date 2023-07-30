@@ -30,6 +30,16 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.container .content{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    gap: 10px;
+}
 .container .card .imgBx,
 .container .card .textBx{
     position: relative;
