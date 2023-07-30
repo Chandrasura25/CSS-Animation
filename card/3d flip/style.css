@@ -43,4 +43,28 @@ body{
     background: #fff;
     height: 120px;
     z-index: 1;
+    transform-origin:bottom ;
+}
+.container .card .imgBx::before{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 144px;
+    height: 74px;
+    background: #fff;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    z-index: 1;
+}
+.container .card:hover .imgBx{
+    transform: translateY(-100%) rotateX(90deg);
+}
+.container .card .textBx{
+    height: 280px;
+    background: var(--clr);
+    border-top: 8px solid #333;
+    transform-origin: top;
+}
+.container .card:hover .textBx{
+    transform: translateY(100%) rotateX(90deg);
 }
