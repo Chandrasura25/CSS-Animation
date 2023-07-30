@@ -21,6 +21,12 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 .login-box{
     position: relative;
@@ -133,5 +139,9 @@ section{
         width: 100%;
         height: 100vh;
         border: none;
+        border-radius: 0;
+    }
+    .input-box{
+        width: 290px;
     }
 }
