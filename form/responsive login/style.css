@@ -12,3 +12,46 @@ body{
     min-height: 100vh;
     background: #000;
 }
+.login-box{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    background: #191919;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.login-box .input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+.login-box .input-box input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.login-box .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    padding: 0 5px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
