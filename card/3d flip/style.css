@@ -30,7 +30,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.container .content{
+.container .card .content{
     position: absolute;
     inset: 0;
     display: flex;
@@ -39,6 +39,25 @@ body{
     flex-direction: column;
     padding: 25px;
     gap: 10px;
+    transition-delay: 0s;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container .card:hover .content{
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+.container .card .content h2{
+    font-weight: 600;
+    color: var(--clr);
+    letter-spacing: 0.1em;
+}
+.container .card .content p{
+    text-align: center;
+    color: #fff;
+}
+.container .card .content a{
+    text-decoration: none;
 }
 .container .card .imgBx,
 .container .card .textBx{
