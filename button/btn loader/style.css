@@ -1,30 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:40px;
-    min-height: 100vh;
-    background: #191919;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 100vh;
+  background: #191919;
 }
-.loader1{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: repeating-conic-gradient(from 15deg, var(--clr) 0%, var(--clr) 5%, transparent 5%, transparent 40%, var(--clr) 100%);
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
 }
-.loader1::before{
-    content: '';
-    position: absolute;
-    inset: 2px;
-    background: #191919;
-    border-radius: 50%;
+.loader1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    var(--clr) 0%,
+    var(--clr) 5%,
+    transparent 5%,
+    transparent 40%,
+    var(--clr) 100%
+  );
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+.loader1::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #191919;
+  border-radius: 50%;
+}
+.loader1 span {
+  position: absolute;
+  inset: 0;
+}
+.loader1 span::before {
+  content: "";
+  position: absolute;
+  background: var(--clr);
+  width: 10px;
+  height: 10px;
+  left: 94px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--clr), 0 0 20px var(--clr), 0 0 40px var(--clr);
 }
