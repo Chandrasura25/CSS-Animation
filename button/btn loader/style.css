@@ -129,17 +129,33 @@ body {
   color: var(--clr2);
 }
 .loader2 {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: repeating-conic-gradient(
-      from var(--a),
-      var(--clr1) 0%,
-      var(--clr1) 5%,
-      transparent 5%,
-      transparent 40%,
-      var(--clr1) 100%
-    );
-    animation: animate 4s linear infinite;
-  }
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    var(--clr1) 0%,
+    var(--clr1) 5%,
+    transparent 5%,
+    transparent 60%,
+    var(--clr1) 100%
+  );
+  animation: animate 4s linear infinite;
+}
+.loader2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from var(--a),
+    var(--clr2) 0%,
+    var(--clr2) 5%,
+    transparent 5%,
+    transparent 60%,
+    var(--clr2) 100%
+  );
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+  border-radius: 50%;
+}
