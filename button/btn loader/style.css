@@ -55,13 +55,13 @@ body {
   animation: rotate 2s linear infinite;
 }
 @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .loader1 span::before {
   content: "";
   position: absolute;
@@ -71,4 +71,18 @@ body {
   left: 94px;
   border-radius: 50%;
   box-shadow: 0 0 5px var(--clr), 0 0 20px var(--clr), 0 0 40px var(--clr);
+}
+.btn {
+  position: relative;
+  text-decoration: none;
+  padding: 15px 30px;
+  background: repeating-conic-gradient(
+    from var(--a),
+    var(--clr1) 0%,
+    var(--clr1) 5%,
+    transparent 5%,
+    transparent 40%,
+    var(--clr1) 100%
+  );
+  animation: animate 2s linear infinite;
 }
