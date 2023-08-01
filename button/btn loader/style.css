@@ -124,6 +124,22 @@ body {
   color: #fff;
   transition: 0.5s;
 }
-.btn:hover span{
-    letter-spacing: 0.25em;
+.btn:hover span {
+  letter-spacing: 0.35em;
+  color: var(--clr2);
 }
+.loader2 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+      from var(--a),
+      var(--clr1) 0%,
+      var(--clr1) 5%,
+      transparent 5%,
+      transparent 40%,
+      var(--clr1) 100%
+    );
+    animation: animate 4s linear infinite;
+  }
