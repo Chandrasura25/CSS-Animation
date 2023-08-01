@@ -18,4 +18,13 @@ body{
     position: relative;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    background: repeating-conic-gradient(from 15deg, var(--clr) 0%, var(--clr) 5%, transparent 5%, transparent 40%, var(--clr) 100%);
+}
+.loader1::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #191919;
+    border-radius: 50%;
 }
