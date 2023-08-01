@@ -52,7 +52,16 @@ body {
 .loader1 span {
   position: absolute;
   inset: 0;
+  animation: rotate 2s linear infinite;
 }
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 .loader1 span::before {
   content: "";
   position: absolute;
