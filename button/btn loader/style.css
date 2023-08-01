@@ -86,3 +86,26 @@ body {
   );
   animation: animate 2s linear infinite;
 }
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from var(--a),
+    var(--clr2) 0%,
+    var(--clr2) 5%,
+    transparent 5%,
+    transparent 40%,
+    var(--clr2) 100%
+  );
+  animation: animate 2s linear infinite;
+  animation-delay: 0.5s;
+  transition: 0.5s;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #191919;
+  
+}
