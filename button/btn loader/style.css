@@ -164,7 +164,19 @@ body {
   position: absolute;
   inset: 0;
   z-index: 100;
+  animation: rotate 2s linear infinite;
 }
+.loader2 span::before {
+    content: "";
+    position: absolute;
+    background: var(--clr1);
+    width: 10px;
+    height: 10px;
+    left: 92px;
+    top: 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--clr1), 0 0 20px var(--clr1), 0 0 40px var(--clr1);
+  }
 .loader2::after {
   content: "";
   position: absolute;
