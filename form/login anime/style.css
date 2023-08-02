@@ -19,6 +19,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .box form{
     width: 100%;
@@ -52,12 +53,25 @@ body{
     color: rgba(255,255,255,0.5);
 }
 .box form input[type="submit"]{
-    color: #fff;
+    background: #fff;
     cursor: pointer;
-    background: #25252b;
+    color: #25252b;
     font-weight: 500;
     transition: 0.5s;
 }
 .box form input[type="submit"]:hover{
     background: #ff2770;
+}
+.box .group{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.box .group a{
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+}
+.box form .group a:last-child{
+    font-weight: 500;
+    color: #45f3ff;
 }
