@@ -50,7 +50,7 @@ body{
     content: '';
     position: absolute;
     inset: 8px;
-    background:#25252b;
+    background:#2d2d39;
     border-radius: 15px;
     border: 9px solid #25252b;
 }
