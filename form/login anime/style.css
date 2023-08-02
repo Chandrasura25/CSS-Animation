@@ -36,3 +36,28 @@ body{
     color: #fff;
     text-align: center;
 }
+.box form input{
+    position: relative;
+    width: 85%;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+}
+.box form input::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.box form input[type="submit"]{
+    color: #fff;
+    cursor: pointer;
+    background: #25252b;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.box form input[type="submit"]:hover{
+    background: #ff2770;
+}
