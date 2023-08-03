@@ -37,6 +37,16 @@ body{
     justify-content: center;
     box-shadow: 7px 7px 22px #152b4a66, inset 7px 7px 7px rgba(255,255,255,0.55), -9px -9px 15px rgba(255,255,255,1);
 }
+.numbers::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #e91e63;
+    box-shadow:0 0 0 1px #e91e63, 0 0 0 3px #fff, 0 0 5px 5px rgba(0,0,0,0.15);
+    z-index: 100;
+}
 .numbers span{
     position: absolute;
     inset: 15px;
@@ -75,4 +85,12 @@ body{
 }
 .numbers .circle#min i{
     width: 4px;
+}
+.numbers .circle#min{
+    width: 230px;
+    height: 230px;
+}
+.numbers .circle#hrs{
+    width: 180px;
+    height: 180px;
 }
