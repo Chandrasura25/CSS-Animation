@@ -20,8 +20,8 @@ body{
     align-items: center;
     justify-content: center;
     background: #c9d5e0;
+    border-radius: 50px;
     border-top-left-radius: 250px;
     border-top-right-radius: 250px;
-    border-radius: 50px;
-    box-shadow: 45px 45px 45px -15px rgba(0,0,0,0.5);
+    box-shadow: 45px 45px 45px -15px rgba(0,0,0,0.15), inset 15px 15px 18px rgba(255,255,255,0.55), -15px -15px 35px rgba(255,255,255,0.55), inset -2px -2px 15px rgba(0,0,0,0.2);
 }
