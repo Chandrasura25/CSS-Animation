@@ -1,132 +1,157 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    min-height: 100vh;
-    background: #acbaca;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  min-height: 100vh;
+  background: #acbaca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.clock{
-    position: relative;
-    width: 450px;
-    height: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #c9d5e0;
-    border-radius: 50px;
-    border-top-left-radius: 250px;
-    border-top-right-radius: 250px;
-    box-shadow: 45px 45px 45px -15px rgba(0,0,0,0.15), inset 15px 15px 18px rgba(255,255,255,0.55), -15px -15px 35px rgba(255,255,255,0.55), inset -2px -2px 15px rgba(0,0,0,0.2);
+.clock {
+  position: relative;
+  width: 450px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c9d5e0;
+  border-radius: 50px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  box-shadow: 45px 45px 45px -15px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 18px rgba(255, 255, 255, 0.55),
+    -15px -15px 35px rgba(255, 255, 255, 0.55),
+    inset -2px -2px 15px rgba(0, 0, 0, 0.2);
 }
-.numbers{
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: 30px;
-    background: #152b4e;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 7px 7px 22px #152b4a66, inset 7px 7px 7px rgba(255,255,255,0.55), -9px -9px 15px rgba(255,255,255,1);
+.numbers {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 30px;
+  background: #152b4e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 7px 7px 22px #152b4a66,
+    inset 7px 7px 7px rgba(255, 255, 255, 0.55),
+    -9px -9px 15px rgba(255, 255, 255, 1);
 }
-.numbers::before{
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #e91e63;
-    box-shadow:0 0 0 1px #e91e63, 0 0 0 3px #fff, 0 0 5px 5px rgba(0,0,0,0.15);
-    z-index: 100;
+.numbers::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #e91e63;
+  box-shadow: 0 0 0 1px #e91e63, 0 0 0 3px #fff, 0 0 5px 5px rgba(0, 0, 0, 0.15);
+  z-index: 100;
 }
-.numbers span{
-    position: absolute;
-    inset: 13px;
-    color: #fff;
-    text-align: center;
-    font-size: 1.25em;
-    transform: rotate(calc(30deg * var(--i)));
+.numbers span {
+  position: absolute;
+  inset: 13px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25em;
+  transform: rotate(calc(30deg * var(--i)));
 }
-.numbers span b{
-    font-weight: 400;
-    display: inline-block;
-    transform: rotate(calc(-30deg * var(--i)));
+.numbers span b {
+  font-weight: 400;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
 }
-.numbers .circle{
-    position: absolute;
-    width: 270px;
-    height: 270px;
-    border: 1px solid rgba(0,0,0,0.75);
-    border-radius: 50%;
-    display: flex;
-    align-items: flex-start;
-    z-index: 10;
-    justify-content: center;
+.numbers .circle {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  z-index: 10;
+  justify-content: center;
 }
-.numbers .circle i{
-    position: absolute;
-    width: 6px;
-    height: 50%;
-    background: var(--clr);
-    opacity: 0.75;
-    transform-origin: bottom;
-    transform: scaleY(0.5);
+.numbers .circle i {
+  position: absolute;
+  width: 6px;
+  height: 50%;
+  background: var(--clr);
+  opacity: 0.75;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
 }
-.numbers .circle#sec i{
-    width: 2px;
+.numbers .circle#sec i {
+  width: 2px;
 }
-.numbers .circle#min i{
-    width: 4px;
+.numbers .circle#min i {
+  width: 4px;
 }
-.numbers .circle#min{
-    width: 230px;
-    height: 230px;
+.numbers .circle#min {
+  width: 230px;
+  height: 230px;
 }
-.numbers .circle#hrs{
-    width: 190px;
-    height: 190px;
+.numbers .circle#hrs {
+  width: 190px;
+  height: 190px;
 }
-.numbers .circle::before{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--clr);
-    top: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+.numbers .circle::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--clr);
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
 }
-#time{
-    position: absolute;
-    bottom: 35px;
-    display: flex;
-    padding: 10px 20px;
-    font-size: 2em;
-    font-weight: 600;
-    border-radius: 40px;
-    background: #152b4e;
-    box-shadow: 7px 7px 22px #152b4a66, inset 7px 7px 7px rgba(255,255,255,0.55), -9px -9px 15px rgba(255,255,255,1);
+#time {
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  padding: 10px 20px;
+  font-size: 2em;
+  font-weight: 600;
+  border-radius: 40px;
+  background: #152b4e;
+  box-shadow: 7px 7px 22px #152b4a66,
+    inset 7px 7px 7px rgba(255, 255, 255, 0.55),
+    -9px -9px 15px rgba(255, 255, 255, 1);
 }
-#time div{
-    position: relative;
-    color: var(--clr);
-    text-align: center;
-    width: 60px;
-    opacity: 0.75;
+#time div {
+  position: relative;
+  color: var(--clr);
+  text-align: center;
+  width: 60px;
+  opacity: 0.75;
 }
-#time div:last-child{
-    font-size: 0.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#time div:last-child {
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after {
+  content: ":";
+  position: absolute;
+  right: -4px;
+}
+#time div:nth-child(2)::after {
+    animation: animate 1s steps(1) infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
