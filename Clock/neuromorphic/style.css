@@ -37,3 +37,16 @@ body{
     justify-content: center;
     box-shadow: 7px 7px 22px #152b4a66, inset 7px 7px 7px rgba(255,255,255,0.55), -9px -9px 15px rgba(255,255,255,1);
 }
+.numbers span{
+    position: absolute;
+    inset: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.25em;
+    transform: rotate(calc(30deg * var(--i)));
+}
+.numbers span b{
+    font-weight: 400;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+}
