@@ -117,3 +117,16 @@ body{
     background: #152b4e;
     box-shadow: 7px 7px 22px #152b4a66, inset 7px 7px 7px rgba(255,255,255,0.55), -9px -9px 15px rgba(255,255,255,1);
 }
+#time div{
+    position: relative;
+    color: var(--clr);
+    text-align: center;
+    width: 60px;
+    opacity: 0.75;
+}
+#time div:last-child{
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
