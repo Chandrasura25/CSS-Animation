@@ -50,3 +50,29 @@ body{
     display: inline-block;
     transform: rotate(calc(-30deg * var(--i)));
 }
+.numbers .circle{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border: 1px solid rgba(0,0,0,0.75);
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    z-index: 10;
+    justify-content: center;
+}
+.numbers .circle i{
+    position: absolute;
+    width: 6px;
+    height: 50%;
+    background: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+.numbers .circle#sec i{
+    width: 2px;
+}
+.numbers .circle#min i{
+    width: 4px;
+}
