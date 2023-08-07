@@ -16,3 +16,23 @@ body{
     position: relative;
     width: 350px;
 }
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #999;
+    color: #fff;
+    font-size: 1.25em;
+    transition: 0.5s;
+}
+.inputBox label{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #666;
+    user-select: none;
+}
