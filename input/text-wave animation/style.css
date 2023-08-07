@@ -43,7 +43,7 @@ body{
     flex-direction: row;
     font-size: 1.25em;
     letter-spacing: 0.05em;
-    transition: 0.25s;
+    transition: 0.25s cubic-bezier(0.5,1,0.5,1.5);
 }
 .inputBox input:focus ~ label span,
 .inputBox input:valid ~ label span{

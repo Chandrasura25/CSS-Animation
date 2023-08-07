@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wavy Input Text Animation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="inputBox">
-        <input type="text" required>
-        <label>Wavy&nbsp;Input&nbsp;Text&nbsp;Animation</label>
+      <input type="text" required />
+      <label>Wavy&nbsp;Input&nbsp;Text&nbsp;Animation</label>
     </div>
     <script>
-        let label = document.querySelector('label');
-        label.innerHTML = label.innerText.split('').map((letters,i)=>`<span style="transition-delay: ${i* 30}ms">${letters}</span>`).join('')
+      let label = document.querySelector("label");
+      label.innerHTML = label.innerText
+        .split("")
+        .map(
+          (letters, i) =>
+            `<span style="transition-delay: ${i * 30}ms; filter: hue-rotate(${
+              i * 30
+            }deg)">${letters}</span>`
+        )
+        .join("");
     </script>
-</body>
+  </body>
 </html>
