@@ -6,12 +6,13 @@
     font-family: sans-serif, 'poppins';
 }
 body{
-    background-color: #222;
-    font-family: 'Poppins';
-    font-size: 1.5em;
+    background-color: #29313a;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+.inputBox{
+    position: relative;
+    width: 350px;
 }
