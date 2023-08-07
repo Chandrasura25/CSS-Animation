@@ -36,3 +36,7 @@ body{
     color: #666;
     user-select: none;
 }
+.inputBox label span{
+    position: relative;
+    display: inline-flex;
+}
