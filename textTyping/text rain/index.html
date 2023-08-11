@@ -17,11 +17,12 @@
         e.classList.add("text");
         cloud.appendChild(e);
         e.innerText = "z";
+
         setTimeout(() => {
           cloud.removeChild(e);
         }, 2000);
       }
-      setTimeout(() => {
+      setInterval(() => {
         rain();
       }, 20);
     </script>
