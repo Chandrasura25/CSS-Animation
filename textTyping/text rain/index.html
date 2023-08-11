@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="cloud"></div>
+      <div class="cloud"></div>
     </div>
-</body>
+    <script>
+      function rain() {
+        let cloud = document.querySelector(".cloud");
+        let e = document.createElement("div");
+        e.classList.add("text");
+        cloud.appendChild(e);
+        e.innerText = "z";
+        setTimeout(() => {
+          cloud.removeChild(e);
+        }, 2000);
+      }
+      setTimeout(() => {
+        rain();
+      }, 20);
+    </script>
+  </body>
 </html>
