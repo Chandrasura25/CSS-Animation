@@ -50,4 +50,12 @@ body{
     color: #000;
     text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff;
     transform-origin: bottom;
+    animation: animate 2s linear infinite;
 }
+@keyframes animate{
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    70%{
+        transform: translateY(250px) scale(1);
+    }
