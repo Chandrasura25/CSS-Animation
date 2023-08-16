@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body onload="slider()">
-    <img src="" alt="" id="slideshow">
+    <img src="img0.jpg" alt="" id="slideshow">
     <script>
         var i = 0;
         function change_image(){
             document.getElementById('slideshow').src = "img" + (i++ % 6)+ ".jpg"
         }
         function slider(){
-            setInterval(change_image, 1000)
+            setInterval(change_image, 4000)
         }
     </script>
 </body>
