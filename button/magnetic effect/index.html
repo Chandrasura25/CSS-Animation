@@ -20,6 +20,9 @@
                 let transY = (y - btnHeight / 2);
                 btn.style.transform = `translateX(${transX}px) translateY(${transY}px)`;
             });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+            });
         });
     </script>
 </body>
