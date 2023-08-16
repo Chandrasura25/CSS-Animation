@@ -30,6 +30,7 @@ body {
     cursor: pointer;
     transition: transform 0.1s;
     border-radius: 40px;
+    overflow: hidden;
 }
 .btn span{
     position: relative;
@@ -43,10 +44,12 @@ body {
 .btn::before{
     content: "";
     position: absolute;
+    top: var(--y);
+    left: var(--x);
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
     background: var(--clr);
     border-radius: 50%;
-    transition: 1s;
+    transition: 1s, left 0s, top 0s;
 }
