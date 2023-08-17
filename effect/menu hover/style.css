@@ -11,6 +11,20 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #222;
+  cursor: none;
+}
+ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ul li{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
 }
 #cursor {
   position: fixed;
