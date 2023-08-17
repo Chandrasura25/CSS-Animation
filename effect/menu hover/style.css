@@ -26,6 +26,11 @@ ul li{
     text-align: center;
     padding: 10px 0;
 }
+ul li a{
+    text-decoration: none;
+    color: #555;
+    cursor: none;
+}
 #cursor {
   position: fixed;
   width: 20px;
