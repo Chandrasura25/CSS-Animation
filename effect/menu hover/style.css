@@ -31,6 +31,17 @@ ul li a{
     color: #555;
     cursor: none;
 }
+ul li a span{
+    position: relative;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    transition: 0.25s;
+    text-transform: uppercase;
+}
+ul li:hover a span{
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff, 0 0 60px #fff, 0 0 100px #fff;
+}
 #cursor {
   position: fixed;
   width: 20px;
