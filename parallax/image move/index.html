@@ -8,8 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="card" style="--img:url(img1.jpg)"></div>
-        <div class="card" style="--img:url(img2.jpg)"></div>
+        <div class="card" style="--img:url(img1.jpg)">
+        <h2>Image 01</h2>
+        </div>
+        <div class="card" style="--img:url(img3.jpg)">
+        <h2>Image 02</h2>
+        </div>
+        <div class="card" style="--img:url(img2.jpg)">
+        <h2>Image 03</h2>
+        </div>
     </div>
     <script>
         let cards = document.querySelectorAll('.card').forEach(card => {
@@ -21,8 +28,8 @@
                 let transX = (x - CardWidth / 2);
                 let transY = (y - CardHeight / 2);
                 card.style.transform = `translateX(${transX}px) translateY(${transY}px)`
-                card.style.backgroundPositionX = x + 'px';
-                card.style.backgroundPositionY = y + 'px';
+                card.style.backgroundPositionX = -x/2 + 'px';
+                card.style.backgroundPositionY = -y/2 + 'px';
             });
             card.addEventListener('mouseout', (e) => {
                 card.style.transform = ``;
