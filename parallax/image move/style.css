@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: consolas;
 }
 body{
     display: flex;
@@ -27,4 +28,16 @@ body{
     background-position: center;
     cursor: pointer;
     transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card h2{
+    background: #fff;
+    color: #0f222f;
+    padding: 5px 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.25);
 }
