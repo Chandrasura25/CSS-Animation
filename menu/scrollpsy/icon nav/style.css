@@ -85,3 +85,25 @@ header nav a.active .text{
     background: var(--clr);
     opacity: 1;
 }
+.indicator{
+    position: absolute;
+    top: -35px;
+    width: 70px;
+    height: 70px;
+    background:#fff;
+    border-radius:50%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 18px #fff;
+    transition: 0.5s;
+}
