@@ -49,5 +49,23 @@
     <section id="settings">Settings</section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let sec = document.querySelectorAll("section");
+        let links = document.querySelectorAll("header nav a");
+        window.onscroll = () => {
+          sec.forEach((section) => {
+            let top = window.scrollY;
+            let offset = section.offsetTop;
+            let height = section.offsetHeight;
+            let id = section.getAttribute("id");
+            if(top >= offset && top < offset + height){
+              links.forEach((link) => {
+                link.classList.remove("active");
+                document.querySelector("header nav a[href*="+id+"]").classList.add("active");
+              });
+            };
+          });
+        };
+    </script>
   </body>
 </html>
