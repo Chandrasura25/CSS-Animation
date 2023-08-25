@@ -57,3 +57,10 @@ body{
     font-size: 0.5em;
     font-weight: 300;
 }
+.container .box h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+}
