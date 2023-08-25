@@ -12,3 +12,20 @@ body{
     min-height: 100vh;
     background: #161616;
 }
+.container{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+.container .box{
+    position: relative;
+    width: 240px;
+    padding: 40px 0;
+    background: #222;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
