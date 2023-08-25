@@ -29,3 +29,13 @@ body{
     flex-direction: column;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+.container .box .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(from 0deg, var(--clr) 0%, var(--clr) 0% var(--i), #333 var(--i), #333 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
