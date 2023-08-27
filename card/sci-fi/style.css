@@ -31,3 +31,10 @@ body{
     align-items: center;
     box-shadow: 0 0 0 15px #0009, 0 25px 55px var(--clr);
 }
+.container .box h2{
+    position: relative;
+    font-size: 4em;
+    line-height: 2.5em;
+    color: #020d1e;
+    text-align: center;
+}
