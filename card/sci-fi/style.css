@@ -53,3 +53,16 @@ body{
     transition-delay: 0.5s;
     filter: blur(0px);
 }
+.container .box ion-icon{
+    position: absolute;
+    font-size: 4em;
+    transition: 0.5s;
+    transition-delay: 0s;
+    opacity: 0;
+    transform: translateY(100px);
+}
+.container .box:hover ion-icon{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 1s;
+}
