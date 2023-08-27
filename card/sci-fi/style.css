@@ -37,4 +37,12 @@ body{
     line-height: 2.5em;
     color: #020d1e;
     text-align: center;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container .box h2 small{
+    font-size: 0.35em;
+    font-weight: 500;
+    text-transform: uppercase;
 }
