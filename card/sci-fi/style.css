@@ -30,6 +30,7 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 0 15px #0009, 0 25px 55px var(--clr);
+    cursor: pointer;
 }
 .container .box h2{
     position: relative;
@@ -40,9 +41,15 @@ body{
     transform: scale(0);
     transition: 0.5s;
     transition-delay: 0s;
+    filter: blur(10px);
 }
 .container .box h2 small{
     font-size: 0.35em;
     font-weight: 500;
     text-transform: uppercase;
+}
+.container .box:hover h2{
+    transform: scale(1);
+    transition-delay: 0.5s;
+    filter: blur(0px);
 }
