@@ -66,3 +66,8 @@ body{
     transform: translateY(0px);
     transition-delay: 1s;
 }
+.container .box .clip{
+    position: absolute;
+    inset: 20px;
+    box-shadow: 0 0 0 18px #020d1e;
+}
