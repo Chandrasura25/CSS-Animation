@@ -75,3 +75,16 @@ body {
 .container .box:nth-child(odd){
     transform: translateY(-30px);
 }
+.container .box::after{
+    content: attr(data-text);
+    position: absolute;
+    bottom: -100px;
+    white-space: nowrap;
+    background: #fff;
+    color: #000;
+    height: calc(100% - 2px);
+    background: linear-gradient(
+        transparent,
+        transparent,
+        transparent,
+     
