@@ -5,3 +5,17 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: #fff;
+    position: relative;
+    display: grid;
+    width: 800px;
+    height: 500px;
+}
