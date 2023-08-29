@@ -13,9 +13,22 @@ body{
     min-height: 100vh;
 }
 .container{
-    background: #fff;
+    background: #000;
     position: relative;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
     width: 800px;
     height: 500px;
+    transition: 0.25s;
+}
+.container .box{
+    position: relative;
+    background: var(--img);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
 }
