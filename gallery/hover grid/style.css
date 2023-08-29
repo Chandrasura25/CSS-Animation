@@ -78,7 +78,7 @@ body {
 .container .box::after{
     content: attr(data-text);
     position: absolute;
-    bottom: -80px;
+    bottom: -100px;
     white-space: nowrap;
     background: #fff;
     color: #000;
@@ -89,7 +89,9 @@ body {
     transition: 0.5s;
     letter-spacing: 0.5em;
     opacity: 0;
+    transition-delay: 0s;
 }
 .container .box:hover::after{
     opacity: 1;
+    bottom: -60px;
 }
