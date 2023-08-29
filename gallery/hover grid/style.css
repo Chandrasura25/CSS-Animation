@@ -86,4 +86,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     padding: 5px 10px;
+    transition: 0.5s;
+    letter-spacing: 0.5em;
+    opacity: 0;
 }
