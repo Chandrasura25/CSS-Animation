@@ -82,9 +82,8 @@ body {
     white-space: nowrap;
     background: #fff;
     color: #000;
-    height: calc(100% - 2px);
-    background: linear-gradient(
-        transparent,
-        transparent,
-        transparent,
-     
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
