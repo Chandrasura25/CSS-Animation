@@ -68,3 +68,9 @@ body {
     #000
   );
 }
+.container .box:nth-child(even){
+    transform: translateY(30px);
+}
+.container .box:nth-child(odd){
+    transform: translateY(-30px);
+}
