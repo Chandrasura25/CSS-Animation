@@ -90,8 +90,10 @@ body {
     letter-spacing: 0.5em;
     opacity: 0;
     transition-delay: 0s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
 }
 .container .box:hover::after{
     opacity: 1;
     bottom: -60px;
+    transition-delay: 0.25s;
 }
