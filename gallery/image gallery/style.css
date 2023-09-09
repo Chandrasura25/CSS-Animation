@@ -28,6 +28,7 @@ body{
     transform-origin: center;
     transform-style: preserve-3d;
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent,#0004);
 }
 .box span img{
     position: absolute;
@@ -37,4 +38,17 @@ body{
     height: 100%;
     object-fit: cover;
     user-select: none;
+}
+.btns{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 30px;
+}
+.btns .btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
