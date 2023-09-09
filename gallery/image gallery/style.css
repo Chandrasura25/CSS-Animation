@@ -52,3 +52,12 @@ body{
     border: 2px solid #fff;
     border-radius: 50%;
 }
+.btns .btn::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top:3px solid #fff;
+    border-right:3px solid #fff;
+    transform: rotate(45deg) translate(-2.5px,2.5px);
+}
