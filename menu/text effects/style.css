@@ -18,3 +18,16 @@ ul{
     flex-direction: column;
     gap: 30px;
 }
+ul li{
+    list-style: none;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff2;
+    font-size: 3em;
+    position: relative;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    line-height: 1em;
+}
