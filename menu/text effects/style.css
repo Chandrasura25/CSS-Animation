@@ -5,3 +5,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background: #252839;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
