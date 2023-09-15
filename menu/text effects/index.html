@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <ul>
-        <li style="--clr:#00ade1">
-            <a href="#" data-text="&nbsp;Home">&nbsp;Home</a>
-        </li>
-        <li style="--clr:#ff6493">
-            <a href="#" data-text="&nbsp;About">&nbsp;About</a>
-        </li>
-        <li style="--clr:#ffdd1c">
-            <a href="#" data-text="&nbsp;Services">&nbsp;Services</a>
-        </li>
-        <li style="--clr:#00dc82">
-            <a href="#" data-text="&nbsp;Team">&nbsp;Team</a>
-        </li>
-        <li style="--clr:#dc00c4">
-            <a href="#" data-text="&nbsp;Contact">&nbsp;Contact</a>
-        </li>
+      <li style="--clr: #00ade1">
+        <a href="#" data-text="&nbsp;Home">&nbsp;Home</a>
+      </li>
+      <li style="--clr: #ff6493">
+        <a href="#" data-text="&nbsp;About">&nbsp;About</a>
+      </li>
+      <li style="--clr: #ffdd1c">
+        <a href="#" data-text="&nbsp;Services">&nbsp;Services</a>
+      </li>
+      <li style="--clr: #00dc82">
+        <a href="#" data-text="&nbsp;Team">&nbsp;Team</a>
+      </li>
+      <li style="--clr: #dc00c4">
+        <a href="#" data-text="&nbsp;Contact">&nbsp;Contact</a>
+      </li>
     </ul>
     <script>
-        let text = document.querySelectorAll("ul li a").forEach(text => {
-            text.innerHTML = text.innerText.split("").map((letters, i) => `<span style="transition-delay:${i * 50}ms">${letters}</span>`).join("");
-            let spn = text.querySelectorAll("ul li a span").forEach(e =>{
-                let duration = Math.random() * 5;
-            })
+      let text = document.querySelectorAll("ul li a").forEach((text) => {
+        text.innerHTML = text.innerText
+          .split("")
+          .map(
+            (letters, i) =>
+              `<span style="transition-delay:${i * 50}ms">${letters}</span>`
+          )
+          .join("");
+        let spn = text.querySelectorAll("ul li a span").forEach((e) => {
+          let duration = Math.random() * 5;
+          e.style.animationDuration = 0.25 + duration + "s";
+          e.style.animationDelay = 0.25 + duration + "s";
         });
+      });
     </script>
-</body>
+  </body>
 </html>
