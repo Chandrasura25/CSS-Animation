@@ -32,3 +32,7 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.container:hover > :not(:hover){
+    margin: 0 -28px;
+    filter: drop-shadow(0 0 25px #000) drop-shadow(0 0 45px #000);
+}
