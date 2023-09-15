@@ -40,3 +40,7 @@ body{
 .container .box:hover ~ .box{
     transform: perspective(500px) rotateY(-45deg) scale(0.95);
 }
+.container .box:hover{
+    transform: perspective(500px) rotateY(0deg) scale(1.5);
+    z-index: 100;
+}
