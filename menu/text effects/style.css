@@ -31,3 +31,12 @@ ul li a{
     text-transform: uppercase;
     line-height: 1em;
 }
+ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    color: var(--clr);
+    overflow: hidden;
+    border-right: 6px solid var(--clr);
+    transition: 1s;
+}
