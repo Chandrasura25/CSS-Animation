@@ -48,6 +48,10 @@ ul li a span{
     position: relative;
     animation: animateText linear infinite;
 }
+ul:hover li a span{
+    opacity: 0.15;
+    animation-play-state: paused;
+}
 @keyframes animateText{
     0%,20%{
         color: #fff2;
