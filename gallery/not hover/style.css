@@ -17,3 +17,9 @@ body{
     align-items: center;
     transform-style: preserve-3d;
 }
+.container .box{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transition: 0.5s;
+}
