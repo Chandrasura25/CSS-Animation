@@ -101,4 +101,11 @@ body {
   font-size: 1.25rem;
   scale: 0;
   transition: 0.5s;
+  transition-delay: scale calc(0.2s * var(--i));
+}
+.container .box:hover ul a {
+  scale: 1;
+}
+.container .box ul a:hover {
+  color: #fff;
 }
