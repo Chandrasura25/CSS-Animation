@@ -72,7 +72,7 @@ body {
 .container .box:hover .glass {
   scale: 1;
   opacity: 1;
-  transform: rotate(30deg);
+  transform: rotate(20deg);
 }
 .container .box .glass h3 {
   color: #fff;
@@ -83,7 +83,16 @@ body {
   text-align: center;
   line-height: 0.8em;
 }
-.container .box .glass h3 span{
-    font-size: 0.5em;
-    font-weight: 400;
+.container .box .glass h3 span {
+  font-size: 0.5em;
+  font-weight: 400;
+}
+.container .box ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
