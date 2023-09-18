@@ -64,3 +64,10 @@ body {
   scale: 0;
   overflow: hidden;
 }
+.container .box:hover {
+  transform: rotate(-15deg);
+}
+.container .box:hover .glass {
+  scale: 1;
+  transform: rotate(30deg);
+}
