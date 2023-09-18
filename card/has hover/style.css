@@ -13,14 +13,17 @@ body {
   background: #111;
   transition: 0.5s;
 }
-body:has(.box[data-color="clr1"]:hover){
-    background: #162527;
+body:has(.box[data-color="clr1"]:hover) {
+  background: #cf761a;
 }
-body:has(.box[data-color="clr2"]:hover){
-    background: #201011;
+body:has(.box[data-color="clr2"]:hover) {
+  background: #2d384c;
 }
-body:has(.box[data-color="clr3"]:hover){
-    background: #1e1e1e;
+body:has(.box[data-color="clr3"]:hover) {
+  background: #cbc1b8;
+}
+body:has(.box[data-color="clr4"]:hover) {
+  background: #8abdc1;
 }
 .container {
   position: relative;
