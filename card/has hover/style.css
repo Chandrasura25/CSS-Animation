@@ -45,6 +45,7 @@ body {
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+  border-radius: 10px;
 }
 .container .box:hover .imgBx img {
   opacity: 0.5;
@@ -57,17 +58,32 @@ body {
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   backdrop-filter: blur(10px);
-  transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
   scale: 0;
+  opacity: 0;
   overflow: hidden;
+  transition: 0.5s;
 }
 .container .box:hover {
   transform: rotate(-15deg);
 }
 .container .box:hover .glass {
   scale: 1;
+  opacity: 1;
   transform: rotate(30deg);
+}
+.container .box .glass h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 0.8em;
+}
+.container .box .glass h3 span{
+    font-size: 0.5em;
+    font-weight: 400;
 }
