@@ -88,11 +88,17 @@ body {
   font-weight: 400;
 }
 .container .box ul {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.container .box ul a {
+  color: #fff8;
+  font-size: 1.25rem;
+  scale: 0;
+  transition: 0.5s;
 }
