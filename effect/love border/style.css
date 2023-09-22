@@ -26,11 +26,11 @@ body {
     transparent 40%,
     #ff2770 50%
   );
-  border-radius: 20px;
   filter: drop-shadow(0 15px 50px #000);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
   animation: rotating 2s linear infinite;
 }
 .box:nth-child(1) {
@@ -39,12 +39,12 @@ body {
 .box:nth-child(2) {
   filter: drop-shadow(0 15px 50px #000) hue-rotate(310deg);
 }
-.box::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: repeating-conic-gradient(
+.box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
     from 135deg,
     #45f3ff 0%,
     #45f3ff 5%,
@@ -52,4 +52,14 @@ body {
     transparent 40%,
     #45f3ff 50%
   );
+  border-radius: 20px;
+  animation: rotating 2s linear infinite;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background: #25252b;
+  border-radius: 15px;
+  border: 8px solid #25252b;
 }
