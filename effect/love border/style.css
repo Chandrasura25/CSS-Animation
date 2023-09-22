@@ -37,6 +37,7 @@ body {
   align-items: center;
   border-radius: 20px;
   animation: rotating 2s linear infinite;
+  animation-play-state: paused;
 }
 .box:nth-child(1) {
   filter: drop-shadow(0 15px 50px #000) hue-rotate(225deg);
