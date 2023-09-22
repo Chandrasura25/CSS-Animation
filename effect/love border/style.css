@@ -53,6 +53,10 @@ body {
     --a: 360deg;
   }
 }
+.box:hover,
+.box:hover::before {
+  animation-play-state: running;
+}
 .box::before {
   content: "";
   position: absolute;
