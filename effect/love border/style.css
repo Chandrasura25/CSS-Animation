@@ -14,10 +14,10 @@ body {
   gap: 100px;
   flex-wrap: wrap;
 }
-@property --a{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 .box {
   position: relative;
@@ -59,6 +59,16 @@ body {
   );
   border-radius: 20px;
   animation: rotating 2s linear infinite;
+  animation-delay: -0.5s;
+  animation-play-state: paused;
+}
+@keyframes rotating {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
 }
 .box::after {
   content: "";
