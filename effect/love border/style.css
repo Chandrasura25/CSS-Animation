@@ -44,6 +44,14 @@ body {
 .box:nth-child(2) {
   filter: drop-shadow(0 15px 50px #000) hue-rotate(310deg);
 }
+@keyframes rotating {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
 .box::before {
   content: "";
   position: absolute;
@@ -61,14 +69,6 @@ body {
   animation: rotating 2s linear infinite;
   animation-delay: -0.5s;
   animation-play-state: paused;
-}
-@keyframes rotating {
-  0% {
-    --a: 0deg;
-  }
-  100% {
-    --a: 360deg;
-  }
 }
 .box::after {
   content: "";
