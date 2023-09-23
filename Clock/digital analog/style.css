@@ -17,3 +17,17 @@ body {
   display: flex;
   gap: 20px;
 }
+.clock .digital {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #c9d5e0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 10px rgba(255, 255, 255, 0.5),
+    -15px -15px 35px rgba(255, 255, 255, 0.35),
+    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+}
