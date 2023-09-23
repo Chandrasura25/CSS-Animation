@@ -31,3 +31,15 @@ body {
     -15px -15px 35px rgba(255, 255, 255, 0.35),
     inset -1px -1px 10px rgba(0, 0, 0, 0.2);
 }
+.clock .digital .screen {
+  position: absolute;
+  inset: 20px;
+  background: #152b4a;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 0 #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.35),
+    -6px -6px 10px rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
