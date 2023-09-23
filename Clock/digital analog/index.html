@@ -50,6 +50,8 @@
 
         h > 12 ? (h = h - 12) : h;
         h = (h < 10 ? "0" : "") + h;
+        m = (m < 10 ? "0" : "") + m;
+        s = (s < 10 ? "0" : "") + s;
 
         hours.innerHTML = h;
         minutes.innerHTML = m;
