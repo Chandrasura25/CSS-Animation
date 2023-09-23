@@ -46,7 +46,10 @@
         let m = new Date().getMinutes();
         let s = new Date().getSeconds();
 
-         var am = h>=12 ? 'PM' : 'AM';
+        var am = h >= 12 ? "PM" : "AM";
+
+        h > 12 ? (h = h - 12) : h;
+        h = (h < 10 ? "0" : "") + h;
 
         hours.innerHTML = h;
         minutes.innerHTML = m;
