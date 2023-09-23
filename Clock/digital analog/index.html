@@ -30,25 +30,29 @@
         </div>
       </div>
       <div class="digital">
-        <div class="box" id="hr" style="--clr:#ff2972"></div>
-        <div class="box" id="min" style="--clr:#fee800"></div>
-        <div class="box" id="sc" style="--clr:#04fc43"></div>
+        <div class="box" id="hr" style="--clr: #ff2972"></div>
+        <div class="box" id="min" style="--clr: #fee800"></div>
+        <div class="box" id="sc" style="--clr: #04fc43"></div>
         <div id="ampm"></div>
       </div>
     </div>
     <script>
-        let hours = document.getElementById('hour');
-        let minutes = document.getElementById('minutes');
-        let seconds = document.getElementById('seconds');
-        let ampm = document.getElementById('ampm');
-
+      let hours = document.getElementById("hour");
+      let minutes = document.getElementById("minutes");
+      let seconds = document.getElementById("seconds");
+      let ampm = document.getElementById("ampm");
+      setInterval(() => {
         let h = new Date().getHours();
         let m = new Date().getMinutes();
         let s = new Date().getSeconds();
 
+         var am = h>=12 ? 'PM' : 'AM';
+
         hours.innerHTML = h;
         minutes.innerHTML = m;
         seconds.innerHTML = s;
+        ampm.innerHTML = am;
+      });
     </script>
   </body>
 </html>
