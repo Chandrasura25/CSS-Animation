@@ -53,3 +53,10 @@ body {
   color: #333;
   text-transform: uppercase;
 }
+.clock .digital .time {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
