@@ -43,10 +43,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.clock .digital .screen::before{
-  content:attr(data-text);
+.clock .digital .screen::before {
+  content: attr(data-text);
   position: absolute;
   bottom: -21px;
   left: 50%;
-  
+  transform: translateX(-50%) scale(0.75);
+  letter-spacing: 0.1em;
+  color: #333;
+  text-transform: uppercase;
 }
