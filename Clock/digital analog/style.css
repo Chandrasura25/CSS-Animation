@@ -67,3 +67,7 @@ body {
   letter-spacing: 0.1em;
   margin-left: 0.1em;
 }
+.clock .digital:nth-child(2) .time div{
+  color:transparent;
+  -webkit-text-stroke: 2px var(--clr);
+}
