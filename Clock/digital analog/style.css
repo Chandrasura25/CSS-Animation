@@ -67,12 +67,12 @@ body {
   letter-spacing: 0.1em;
   margin-left: 0.1em;
 }
-.clock .digital:nth-child(3) .time div{
-  color:transparent;
+.clock .digital:nth-child(3) .time div {
+  color: transparent;
   -webkit-text-stroke: 2px var(--clr);
 }
-.clock .digital:last-child::before{
-  content: '';
+.clock .digital:last-child::before {
+  content: "";
   position: absolute;
   width: 4px;
   height: 4px;
@@ -81,22 +81,24 @@ body {
   border: 2px solid #fff;
   z-index: 100;
 }
-.clock .digital:last-child::after{
-  content:'';
+.clock .digital:last-child::after {
+  content: "";
   position: absolute;
   inset: 20px;
   background: #152b4a;
   border-radius: 50%;
-  box-shadow: 5px 5px 15px 0 #152b4a66, inset 5px 5px 5px rgba(255, 255, 255, 0.35), -6px -6px 10px rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 15px 0 #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.35),
+    -6px -6px 10px rgba(255, 255, 255, 1);
 }
-.box{
+.box {
   position: absolute;
   inset: 0;
   border-radius: 50%;
   z-index: 100;
 }
-.box::after{
-  content:'';
+.box::after {
+  content: "";
   position: absolute;
   bottom: 50%;
   left: 50%;
@@ -106,7 +108,15 @@ body {
   background: var(--clr);
   border-radius: 4px;
 }
-#ampm{
+.box:nth-child(1)::after {
+  height: 20px;
+  width: 4px;
+}
+.box:nth-child(2)::after {
+  height: 25px;
+  width: 3px;
+}
+#ampm {
   position: absolute;
   bottom: 0;
   left: 50%;
