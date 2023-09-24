@@ -74,7 +74,12 @@ body {
 .clock .digital:last-child::before{
   content: '';
   position: absolute;
-  
+  width: 4px;
+  height: 4px;
+  background: #152b4a;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 100;
 }
 .clock .digital:last-child::after{
   content:'';
@@ -82,4 +87,5 @@ body {
   inset: 20px;
   background: #152b4a;
   border-radius: 50%;
-  box-shadow: 5px 5px 15px 0 #152b4a66, inset 5px 5px 5px rgba(255, 255, 255, 0.35), -6px -6px 10px rgba(255, 255, 255, 1)
+  box-shadow: 5px 5px 15px 0 #152b4a66, inset 5px 5px 5px rgba(255, 255, 255, 0.35), -6px -6px 10px rgba(255, 255, 255, 1);
+}
