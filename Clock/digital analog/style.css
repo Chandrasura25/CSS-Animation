@@ -67,7 +67,18 @@ body {
   letter-spacing: 0.1em;
   margin-left: 0.1em;
 }
-.clock .digital:nth-child(2) .time div{
+.clock .digital:nth-child(3) .time div{
   color:transparent;
   -webkit-text-stroke: 2px var(--clr);
 }
+.clock .digital:last-child::before{
+  content: '';
+  position: absolute;
+}
+.clock .digital:last-child::after{
+  content:'';
+  position: absolute;
+  inset: 20px;
+  background: #152b4a;
+  border-radius: 50%;
+  b
