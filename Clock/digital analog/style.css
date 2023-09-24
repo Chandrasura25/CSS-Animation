@@ -103,6 +103,8 @@ body {
   transform: translateX(-50%);
   width: 2px;
   height: 30px;
+  background: var(--clr);
+  border-radius: 4px;
 }
 #ampm{
   position: absolute;
