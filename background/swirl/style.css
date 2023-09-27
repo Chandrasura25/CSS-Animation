@@ -20,3 +20,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+.bg span{
+    position: absolute;
+    width: 500px;
+    height: 150vh;
+    background: #f00;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%) rotate(calc(30deg * var(--i)));
+    transform-origin: bottom right;
+}
