@@ -12,3 +12,11 @@ body{
     background: #fff;
     overflow: hidden;
 }
+.bg{
+    position: absolute;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
