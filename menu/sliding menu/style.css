@@ -52,6 +52,16 @@ body{
     bottom: 0;
     width: 20%;
     height: 5px;
-    background: #f00;
     transition: 0.5s;
+}
+.underline::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 100%;
+    background: #fff;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff);
 }
