@@ -76,3 +76,18 @@ body{
     border-radius: 4px;
     filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff) blur(5px);
 }
+.tabs input:nth-child(1):checked ~ .buttons .underline{
+    left: 0;
+}
+.tabs input:nth-child(2):checked ~ .buttons .underline{
+    left: 20%;
+}
+.tabs input:nth-child(3):checked ~ .buttons .underline{
+    left: 40%;
+}
+.tabs input:nth-child(4):checked ~ .buttons .underline{
+    left: 60%;
+}
+.tabs input:nth-child(5):checked ~ .buttons .underline{
+    left: 80%;
+}
