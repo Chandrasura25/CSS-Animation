@@ -46,3 +46,12 @@ body{
     opacity: 1;
     filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
 }
+.underline{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 5px;
+    background: #f00;
+    transition: 0.5s;
+}
