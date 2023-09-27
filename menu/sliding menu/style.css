@@ -14,3 +14,10 @@ body{
     visibility: hidden;
     display: none;
 }
+.buttons{
+    position: relative;
+    display: flex;
+    padding: 30px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: #182d3c;
+}
