@@ -20,4 +20,29 @@ body{
     padding: 30px 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background: #182d3c;
+    overflow: hidden;
+    gap: 80px;
+    border-radius: 20px;
+}
+.buttons label{
+    width: 20%;
+    font-size: 1.75em;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buttons label:hover{
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+.tabs input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.tabs input:nth-child(2):checked ~.buttons label:nth-child(2),
+.tabs input:nth-child(3):checked ~.buttons label:nth-child(3),
+.tabs input:nth-child(4):checked ~.buttons label:nth-child(4),
+.tabs input:nth-child(5):checked ~.buttons label:nth-child(5){
+    color: #fff;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
 }
