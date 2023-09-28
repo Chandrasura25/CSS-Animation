@@ -20,8 +20,22 @@ section{
     left: -200px;
     width: 200px;
     height: 2px;
-    background: #fff;
+    background: #f00;
     transform-origin: right;
     transform: rotate(calc(18deg * var(--i)));
     animation: animate 1s linear infinite;
+}
+.loader span::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a;
 }
