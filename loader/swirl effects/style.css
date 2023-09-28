@@ -37,6 +37,7 @@ section{
     0 0 80px #00ff0a,
     0 0 100px #00ff0a;
     animation: animate 5s linear infinite;
+    animation-delay: calc(-0.5s * var(--i));
 }
 @keyframes animate{
     0%{
@@ -47,6 +48,10 @@ section{
         opacity: 1;
     }
     80%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0px) scale(0);
         opacity: 1;
     }
 }
