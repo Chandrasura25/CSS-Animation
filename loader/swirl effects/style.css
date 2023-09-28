@@ -11,3 +11,17 @@ section{
     background: #042104;
     filter: hue-rotate(70deg);
 }
+.loader{
+    position: relative;
+}
+.loader span{
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 2px;
+    background: #fff;
+    transform-origin: right;
+    transform: rotate(calc(18deg * var(--i)));
+    animation: animate 1s linear infinite;
+}
