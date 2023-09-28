@@ -13,6 +13,7 @@ section{
 }
 .loader{
     position: relative;
+    transform: rotate(calc(45deg * var(--r)));
 }
 .loader span{
     position: absolute;
