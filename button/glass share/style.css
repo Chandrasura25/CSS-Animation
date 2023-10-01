@@ -49,3 +49,11 @@ body{
     opacity: 1;
     transform: rotate(360deg);
 }
+.menu li{
+    list-style: none;
+    position: 0;
+    left: 0;
+    transform-origin: 110px;
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transition: 0.5s;
+}
