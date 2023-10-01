@@ -31,6 +31,8 @@ body{
     box-shadow: 0 25px 15px rgba(0,0,0,0.25), 0 25px 20px rgba(0,0,0,0.1);
     color: #fff;
     font-size: 3em;
+    z-index: 10;
+    backdrop-filter: blur(10px);
 }
 .menu .toggle ion-icon{
     position: absolute;
@@ -58,6 +60,11 @@ body{
     transition: 0.5s;
     scale: 0;
     z-index: 1;
+    transition-delay: calc(0.1s * var(--i));
+    overflow: hidden;
+}
+.menu.active li{
+    scale: 1;
 }
 .menu li a{
     position: relative;
