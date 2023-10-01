@@ -39,6 +39,7 @@ body{
 }
 .menu.toggle ion-icon:nth-child(1){
     opacity: 1;
+    transform: rotate(360deg);
 }
 .menu.active .toggle ion-icon:nth-child(1){
     opacity: 0;
