@@ -62,6 +62,7 @@ body{
     z-index: 1;
     transition-delay: calc(0.05s * var(--i));
     overflow: hidden;
+    border-radius: 50%;
 }
 .menu li::before{
     content: '';
@@ -74,6 +75,10 @@ body{
     transform: skewX(325deg) translateX(0);
     transition: 0.5s;
     z-index: 10;
+    box-shadow: -5px 0 0 #fff5;
+}
+.menu li:hover::before{
+    transform: skewX(325deg) translateX(100px);
 }
 .menu.active li{
     scale: 1;
