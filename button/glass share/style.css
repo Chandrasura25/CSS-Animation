@@ -56,6 +56,8 @@ body{
     transform-origin: 110px;
     transform: rotate(calc(360deg / 4 * var(--i)));
     transition: 0.5s;
+    scale: 0;
+    z-index: 1;
 }
 .menu li a{
     position: relative;
@@ -68,4 +70,8 @@ body{
     border-radius: 50%;
     font-size: 2.25em;
     transform: rotate(calc(-360deg / 4 * var(--i)));
+    transition: 0.5s;
+    color: #fff;
+    font-size: 2.25em;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
 }
