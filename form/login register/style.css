@@ -38,6 +38,8 @@ body::before{
   position: absolute;
   height: 100%;
   width: 100%;
+  background: repeating-conic-gradient(from 0deg, #45f3ff 0%, #45f3ff 10%, transparent 10%, transparent 80%, #45f3ff 100%);
+  border-radius: 20px;
 }
 .container span{
   position: absolute;
