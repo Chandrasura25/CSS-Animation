@@ -38,8 +38,22 @@ body::before{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: repeating-conic-gradient(from 0deg, #45f3ff 0%, #45f3ff 10%, transparent 10%, transparent 80%, #45f3ff 100%);
   border-radius: 20px;
+  background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 10%, transparent 10%, transparent 80%, #45f3ff 100%);
+  animation: animate 2.5s linear infinite;
+}
+@property --a{
+  syntax: '<angle';
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes animate {
+  0%{
+    --a: 0deg;
+  }
+  100%{
+    --a: 360deg;
+  }
 }
 .container span{
   position: absolute;
