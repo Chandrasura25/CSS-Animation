@@ -31,4 +31,35 @@ body::before{
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  overflow: hidden;
+}
+.container::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.container span{
+  position: absolute;
+  inset: 5px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.container span::before{
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: url(bg1.jpg);background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+.container span::after{
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: url(bg1.jpg);background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(15px);
 }
