@@ -60,6 +60,9 @@ body.signup .container{
   background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 10%, transparent 10%, transparent 80%, #45f3ff 100%);
   animation: animate 5s linear infinite;
 }
+body.signup .container::before{
+  filter: hue-rotate(220deg);
+}
 @property --a {
   syntax: "<angle>";
   inherits: false;
