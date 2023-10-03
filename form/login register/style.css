@@ -111,3 +111,14 @@ form .inputBox a{
   text-decoration: none;
   font-size: 0.85em;
 }
+form .inputBox a:nth-child(2){
+  text-decoration: underline;
+}
+form .inputBox input{
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(0,0,0,0.15);
+  padding: 6px 15px;
+  border-radius: 4px;
+}
