@@ -19,6 +19,21 @@ body::before{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  transition: 0.5s;
+}
+body::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(bg2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+body.signup::after{
+  opacity: 1;
 }
 .container{
   position: relative;
@@ -33,7 +48,9 @@ body::before{
   transition: 0.5s;
   overflow: hidden;
 }
-
+body.signup .container{
+  height: 440px;
+}
 .container::before{
   content: '';
   position: absolute;
@@ -67,6 +84,13 @@ body::before{
   position: absolute;
   inset: 5px;
   background: url(bg1.jpg);background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+body.signup .container span::before,
+body.signup .container span::after{
+  background: url(bg2.jpg);background-attachment: fixed;
   background-size: cover;
   background-position: center;
   filter: blur(10px);
