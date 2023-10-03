@@ -119,6 +119,16 @@ form .inputBox input{
   outline: none;
   border: 1px solid rgba(255,255,255,0.25);
   background: rgba(0,0,0,0.15);
-  padding: 6px 15px;
+  padding: 8px 15px;
   border-radius: 4px;
+  font-size: 0.85em;
+  color: #fff;
+}
+form .inputBox input::placeholder{
+  color: rgba(255,255,255,0.5);
+}
+form .inputBox input[type="submit"]{
+  background: #2196f3;
+  font-weight: 500;
+  cursor: pointer;
 }
