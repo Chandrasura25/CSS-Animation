@@ -80,3 +80,23 @@ body::before{
   background-position: center;
   filter: blur(15px);
 }
+form{
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  transition: 0.5s;
+}
+form h2{
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
