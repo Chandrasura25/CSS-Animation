@@ -33,6 +33,7 @@ body::before{
   transition: 0.5s;
   overflow: hidden;
 }
+
 .container::before{
   content: '';
   position: absolute;
@@ -40,18 +41,18 @@ body::before{
   width: 100%;
   border-radius: 20px;
   background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 10%, transparent 10%, transparent 80%, #45f3ff 100%);
-  animation: animate 2.5s linear infinite;
+  animation: animate 5s linear infinite;
 }
-@property --a{
-  syntax: '<angle';
+@property --a {
+  syntax: "<angle>";
   inherits: false;
   initial-value: 0deg;
 }
 @keyframes animate {
-  0%{
+  0% {
     --a: 0deg;
   }
-  100%{
+  100% {
     --a: 360deg;
   }
 }
