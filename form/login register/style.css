@@ -175,9 +175,14 @@ form .inputBox input[type="submit"]:hover{
   color: #2196f3;
 }
 form#signupForm .inputBox input[type="submit"]{
-  background: #4f242f;
+  background: #f4242f;
 }
 form#signupForm .inputBox input[type="submit"]:hover{
-  color: #4f242f;
+  color: #f4242f;
   background: #fff;
+}
+form#signupForm b{
+  font-weight: 500;
+  color: #ffeb3b;
+  text-decoration: underline;
 }
