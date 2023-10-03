@@ -174,3 +174,10 @@ form .inputBox input[type="submit"]:hover{
   background: #fff;
   color: #2196f3;
 }
+form#signupForm .inputBox input[type="submit"]{
+  background: #4f242f;
+}
+form#signupForm .inputBox input[type="submit"]:hover{
+  color: #4f242f;
+  background: #fff;
+}
