@@ -130,5 +130,11 @@ form .inputBox input::placeholder{
 form .inputBox input[type="submit"]{
   background: #2196f3;
   font-weight: 500;
+  transition: 0.5s;
   cursor: pointer;
+  font-size: 0.9em;
+}
+form .inputBox input[type="submit"]:hover{
+  background: #fff;
+  color: #2196f3;
 }
