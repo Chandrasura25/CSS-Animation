@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     background: #142329;
     overflow: hidden;
+    cursor: none;
 }
 ul li{
     list-style: none;
@@ -66,4 +67,10 @@ ul li a:hover img{
     top: var(--y);
     left: var(--x);
     transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 4px solid #2efc72;
+    border-radius: 50%;
+    pointer-events: none;
 }
