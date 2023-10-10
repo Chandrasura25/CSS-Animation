@@ -36,6 +36,10 @@ ul li a::before{
     font-size: 18vw;
     z-index: -1;
     color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+ul li a:hover::before{
+    opacity: 1;
 }
 ul:hover li a{
     opacity: 0.1;
