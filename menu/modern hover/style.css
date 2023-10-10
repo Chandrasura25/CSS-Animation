@@ -24,6 +24,19 @@ ul li a{
     text-decoration: none;
     transition: 0.5s;
 }
+ul li a::before{
+    content:attr(data-text);
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.25s;
+    font-size: 18vw;
+    z-index: -1;
+    color: transparent;
+}
 ul:hover li a{
     opacity: 0.1;
 }
@@ -38,6 +51,7 @@ ul li a img{
     opacity: 0;
     transition: 0.2s;
     z-index: -2;
+    pointer-events: none;
 }
 ul li a:hover img{
     transform: translate(-50%, -50%) scale(1);
