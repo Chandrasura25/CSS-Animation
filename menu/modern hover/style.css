@@ -93,4 +93,8 @@ ul li:hover ~ .cursor{
     border: 4px solid #142329;
     border-radius: 50%;
     transition: 0.5s;
+    scale: 0;
+}
+ul li:hover ~ .cursor::before{
+    scale: 1;
 }
