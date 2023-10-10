@@ -15,5 +15,12 @@
         <li><a href="#" data-text="Team"><img src=images/img5.jpg> Team</a></li>
         <li><a href="#" data-text="Contact"><img src=images/img6.jpg> Contact</a></li>
     </ul>
+    <script>
+        let pos = document.documentElement;
+        pos.addEventListener('mousemove', e => {
+            pos.style.setProperty('--x', e.clientX + 'px');
+            pos.style.setProperty('--y', e.clientY + 'px');
+        });
+    </script>
 </body>
 </html>
