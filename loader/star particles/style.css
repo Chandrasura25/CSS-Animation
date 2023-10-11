@@ -17,6 +17,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: animateColor 7.2s linear infinite;
+}
+@keyframes animateColor {
+    
 }
 .loader span {
   position: absolute;
