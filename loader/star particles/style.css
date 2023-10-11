@@ -51,6 +51,12 @@ body {
     }
 }
 .loader span::before{
-    content: '';
+    content: '\f005';
     position: absolute;
+    font-family: fontAwesome;
+    font-size: 0.75em;
+    color: #131a1c;
+    animation: rotate-particle 2.4s linear infinite;
+    animation-delay: calc(var(--i) * 0.2s);
 }
+@keyframes rotate-particle {}
