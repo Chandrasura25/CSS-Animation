@@ -59,4 +59,10 @@ body {
     animation: rotate-particle 2.4s linear infinite;
     animation-delay: calc(var(--i) * 0.2s);
 }
-@keyframes rotate-particle {}
+@keyframes rotate-particle {
+    0%{
+        scale: 1;
+        opacity: 0;
+        rotate: 0deg;
+    }
+}
