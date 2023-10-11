@@ -74,6 +74,6 @@ body {
         scale: 0;
         opacity: 0;
         rotate: 360deg;
-        filter: drop-shadow(0 0 -150px #3cc2ff) drop-shadow(0 0 150px #3cc2ff) drop-shadow(0 150px #3cc2ff);
+        filter: drop-shadow(-150px 0 #3cc2ff) drop-shadow(150px 0 #3cc2ff) drop-shadow(0 150px #3cc2ff) drop-shadow(0 -150px #3cc2ff);
     }
 }
