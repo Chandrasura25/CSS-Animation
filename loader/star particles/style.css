@@ -28,15 +28,16 @@ body {
   position: relative;
   color: #3cc2ff;
   animation: rotate-stars 2.4s linear infinite;
+  animation-delay: calc(var(--i) * 0.2s);
 }
 @keyframes rotate-stars {
     0%{
         transform: rotate(0deg) scale(0);
     }
     50%{
-        transform: rotate(0deg) scale(0);
+        transform: rotate(180deg) scale(3);
     }
     100%{
-        transform: rotate(0deg) scale(0);
+        transform: rotate(360deg) scale(0);
     }
 }
