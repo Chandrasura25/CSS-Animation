@@ -20,7 +20,12 @@ body {
   animation: animateColor 7.2s linear infinite;
 }
 @keyframes animateColor {
-    
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
 }
 .loader span {
   position: absolute;
