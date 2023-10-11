@@ -50,3 +50,7 @@ body {
         transform: rotate(360deg) scale(0);
     }
 }
+.loader span::before{
+    content: '';
+    position: absolute;
+}
