@@ -45,4 +45,7 @@ body{
     content: '';
     position: absolute;
     inset: 0;
+    background: var(--img);
+    clip-path: circle(0px at 0 0);
+    z-index: 2;
 }
