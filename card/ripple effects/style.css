@@ -29,3 +29,14 @@ body{
     align-items: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+.container .card::before{
+    content:"A";
+    position: absolute;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: transparent;
+    transform: rotate(-45deg);
+    -webkit-text-stroke: 1px #fff;
+    text-align: center;
+}
