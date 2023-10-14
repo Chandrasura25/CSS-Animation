@@ -46,6 +46,7 @@ body{
     position: absolute;
     inset: 0;
     background: var(--img);
+    background-size: cover;
     clip-path: circle(0px at 0 0);
     z-index: 2;
 }

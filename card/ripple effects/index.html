@@ -13,5 +13,14 @@
         <div class="card" data-text="Paris" style="--img:url('images/expert3.jpg')"></div>
         <div class="card" data-text="Rome" style="--img:url('images/expert4.jpg')"></div>
     </div>
+    <script>
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card=>{
+            card.onmousemove =(e)=>{
+                const x = e.pageX - card.offsetLeft;
+                const x = e.pageX - card.offsetLeft;
+            }
+        })
+    </script>
 </body>
 </html>
