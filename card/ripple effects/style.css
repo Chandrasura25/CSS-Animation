@@ -17,4 +17,15 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background: #2c2f48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
