@@ -50,3 +50,6 @@ body{
     clip-path: circle(0px at 0 0);
     z-index: 2;
 }
+.container .card:hover::after{
+    clip-path: circle(150px at var(--x) var(--y));
+}
