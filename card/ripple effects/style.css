@@ -39,4 +39,10 @@ body{
     transform: rotate(-45deg);
     -webkit-text-stroke: 1px #fff;
     text-align: center;
+    z-index: 1;
+}
+.container .card::after{
+    content: '';
+    position: absolute;
+    inset: 0;
 }
