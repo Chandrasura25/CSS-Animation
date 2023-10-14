@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="card" data-text="London" style="--img:url('images/expert1.jpg')"></div>
-        <div class="card" data-text="New York" style="--img:url('images/expert2.jpg')"></div>
-        <div class="card" data-text="Paris" style="--img:url('images/expert3.jpg')"></div>
-        <div class="card" data-text="Rome" style="--img:url('images/expert4.jpg')"></div>
+      <div
+        class="card"
+        data-text="London"
+        style="--img: url('images/expert1.jpg')"
+      ></div>
+      <div
+        class="card"
+        data-text="New York"
+        style="--img: url('images/expert2.jpg')"
+      ></div>
+      <div
+        class="card"
+        data-text="Paris"
+        style="--img: url('images/expert3.jpg')"
+      ></div>
+      <div
+        class="card"
+        data-text="Rome"
+        style="--img: url('images/expert4.jpg')"
+      ></div>
     </div>
     <script>
-        const cards = document.querySelectorAll('.card');
-        cards.forEach(card=>{
-            card.onmousemove =(e)=>{
-                const x = e.pageX - card.offsetLeft;
-                const x = e.pageX - card.offsetLeft;
-            }
-        })
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card) => {
+        card.onmousemove = (e) => {
+          const x = e.pageX - card.offsetLeft;
+          const y = e.pageY - card.offsetTop;
+
+          card.style.setProperty("--x", x + "px");
+          card.style.setProperty("--y", y + "px");
+        };
+      });
     </script>
-</body>
+  </body>
 </html>
