@@ -30,7 +30,7 @@ body{
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 .container .card::before{
-    content:"A";
+    content: attr(data-text);
     position: absolute;
     font-weight: 800;
     text-transform: uppercase;
