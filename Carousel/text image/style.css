@@ -22,6 +22,7 @@ body {
 .scroll div{
     white-space: nowrap;
     animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) * -1);
 }
 @keyframes animate{
     0%{
@@ -31,9 +32,23 @@ body {
         transform: translate(-100%);
     }
 }
+.scroll div:nth-child(2){
+    animation: animate2 var(--t) linear infinite;
+    animation-delay: calc(var(--t) / -2);
+}
+@keyframes animate2{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-200%);
+    }
+}
 .scroll div span{
     display: inline-flex;
     margin: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
     background: #333;
     color: #fff;
     padding: 5px 10px;
