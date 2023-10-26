@@ -12,3 +12,10 @@ body {
   min-height: 100vh;
   background: #111;
 }
+.scroll{
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(98deg, transparent, #fff, #fff, transparent);
+}
