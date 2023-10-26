@@ -21,4 +21,26 @@ body {
 }
 .scroll div{
     white-space: nowrap;
+    animation: animate var(--t) linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+.scroll div span{
+    display: inline-flex;
+    margin: 10px;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.scroll div span:hover{
+    background: #4caf50;
+    cursor: pointer;
 }
