@@ -60,3 +60,11 @@ body {
     background: #4caf50;
     cursor: pointer;
 }
+.imgBx img{
+    max-width: 100px;
+    scale: 0.8;
+    filter: grayscale(1);
+}
+.imgBx img:hover{
+    filter: grayscale(0);
+}
