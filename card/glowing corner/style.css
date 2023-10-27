@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background: rgba(45,45,45,1);
+    border-radius: 20px;
+}
