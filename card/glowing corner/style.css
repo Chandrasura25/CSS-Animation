@@ -29,6 +29,8 @@ body{
 .container .card::before{
     content: '';
     position: absolute;
+    top: var(--y);
+    left: var(--x);
     background: radial-gradient(var(--clr), transparent, transparent);
     width: 400px;
     height: 400px;
