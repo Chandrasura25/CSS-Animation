@@ -35,7 +35,7 @@ body{
     width: 400px;
     height: 400px;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.5s, top 0s, left 0s;
 }
 .container .card:hover::before{
     opacity: 1;
