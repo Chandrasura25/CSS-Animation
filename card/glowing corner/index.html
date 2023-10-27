@@ -12,5 +12,14 @@
     <div class="card" style="--clr:#ff0"></div>
     <div class="card" style="--clr:#0ff"></div>
    </div> 
+   <script>
+    let cards = document.querySelectorAll('.card');
+    cards.forEach(card =>{
+        card.onmousemove =(e)=>{
+            let x = e.pageX - card.offsetLeft;
+            let y = e.pageY
+        }
+    })
+   </script>
 </body>
 </html>
