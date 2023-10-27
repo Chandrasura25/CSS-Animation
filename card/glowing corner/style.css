@@ -24,4 +24,12 @@ body{
     height: 400px;
     background: rgba(45,45,45,1);
     border-radius: 20px;
+    overflow: hidden;
+}
+.container .card::before{
+    content: '';
+    position: absolute;
+    background: radial-gradient(var(--clr), transparent, transparent);
+    width: 400px;
+    height: 400px;
 }
