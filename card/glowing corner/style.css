@@ -11,7 +11,6 @@ body{
     background: #222;
 }
 .container{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,4 +34,9 @@ body{
     background: radial-gradient(var(--clr), transparent, transparent);
     width: 400px;
     height: 400px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover::before{
+    opacity: 1;
 }
