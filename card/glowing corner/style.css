@@ -31,6 +31,7 @@ body{
     position: absolute;
     top: var(--y);
     left: var(--x);
+    transform: translate(-50%, -50%);
     background: radial-gradient(var(--clr), transparent, transparent);
     width: 400px;
     height: 400px;
