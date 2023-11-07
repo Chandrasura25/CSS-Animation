@@ -43,7 +43,7 @@ header nav a{
 }
 header nav #indicator{
     position: absolute;
-    width: 85px;
+    width: 88px;
     height: 58px;
     background: var(--clr);
     border-top-left-radius: 20px;
