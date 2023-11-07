@@ -36,7 +36,8 @@ header nav{
 header nav a{
     position: relative;
     text-decoration: none;
-    font-size: 2em;
-    font-weight: 600;
+    padding: 12px 20px;
     color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: 400;
 }
