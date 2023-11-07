@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
     background: #222;
     gap: 40px;
+    transform: rotate(calc(90deg * var(--i)));
 }
 .loader{
     position: relative;
@@ -30,7 +31,7 @@ body{
     content: '';
     position: absolute;
     inset: 2px;
-    background: rgba(45,45,45,1);
+    background: rgba(45,45,45,0.9);
 }
 @keyframes animate{
     0%{
