@@ -29,4 +29,5 @@ body{
     width: 300px;
     height: 300px;
     opacity: 0;
+    transition: 0.5s;
 }
