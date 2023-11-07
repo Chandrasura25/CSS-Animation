@@ -10,5 +10,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #000815;
+  background: #061206;
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 320px;
+    background: var(--clr1);
+    box-shadow: 0 0 0 5px #0009, 0 10px 65px var(--clr1);
+    transition: 0.5s;
 }
