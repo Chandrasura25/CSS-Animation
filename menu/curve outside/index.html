@@ -11,6 +11,7 @@
     <header>
         <a href="#" class="logo">Logo</a>
         <nav>
+          <div id="indicator"></div>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Portfolio</a>
@@ -18,5 +19,18 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+    <script>
+      let indicator = document.querySelector('#indicator');
+      let items = document.querySelectorAll('nav a');
+      function marker(e){
+        indicator.style.left = e.offsetLeft + 'px';
+        indicator.style.width = e.offsetWidth + 'px';
+      }
+      items.forEach(link =>{
+        link.addEventListener('click',(e)=>{
+          marker(e.target)
+        })
+      })
+    </script>
 </body>
 </html>
