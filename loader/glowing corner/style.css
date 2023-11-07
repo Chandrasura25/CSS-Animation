@@ -11,3 +11,9 @@ body{
     background: #222;
     gap: 40px;
 }
+.loader{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: rgba(45,45,45,1);
+}
