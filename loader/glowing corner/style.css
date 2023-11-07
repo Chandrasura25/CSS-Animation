@@ -26,6 +26,12 @@ body{
     background: radial-gradient(var(--clr), transparent, transparent);
     animation: animate 1.5s linear infinite;
 }
+.loader::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: rgba(45,45,45,1);
+}
 @keyframes animate{
     0%{
         transform: translate(-150px, -150px);
