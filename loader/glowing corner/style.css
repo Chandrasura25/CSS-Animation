@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
   background: #222;
   gap: 40px;
-  transform: rotate(calc(90deg * var(--i)));
 }
 .loader {
   position: relative;
@@ -18,6 +17,7 @@ body {
   height: 150px;
   overflow: hidden;
   background: rgba(45, 45, 45, 1);
+  transform: rotate(calc(90deg * var(--i)));
 }
 .loader::before {
   content: "";
