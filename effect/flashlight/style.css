@@ -31,3 +31,6 @@ body{
     opacity: 0;
     transition: 0.5s;
 }
+.container .card:hover::before{
+    opacity: 1;
+}
