@@ -13,7 +13,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(4, 150px);
-    grid-gap: 100px;
+    grid-gap: 30px;
 }
 .container .card{
     position: relative;
