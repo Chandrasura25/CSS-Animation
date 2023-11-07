@@ -11,3 +11,9 @@
 body{
     background: var(--clr);
 }
+header{
+    position: fixed;
+    top:0;
+    background: #2196f3;
+    padding: 10px 50px;
+}
