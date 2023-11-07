@@ -26,3 +26,8 @@ body{
     background: radial-gradient(var(--clr), transparent, transparent);
     animation: animate 1.5s linear infinite;
 }
+@keyframes animate{
+    0%{
+        transform: translate(-150px, -150px);
+    }
+}
