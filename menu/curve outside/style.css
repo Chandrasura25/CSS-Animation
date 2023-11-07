@@ -41,3 +41,23 @@ header nav a{
     letter-spacing: 0.1em;
     font-weight: 400;
 }
+header nav #indicator{
+    position: absolute;
+    width: 85px;
+    height: 58px;
+    background: var(--clr);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.25s;
+}
+header nav #indicator::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0 5px var(--clr);
+}
