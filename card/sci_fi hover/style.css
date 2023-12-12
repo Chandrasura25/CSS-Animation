@@ -61,3 +61,6 @@ body {
 .card .clip span:nth-child(3) {
   clip-path: polygon(100% 95%, 100% 5%, 50% 50%);
 }
+.card .clip span:nth-child(3) {
+  clip-path: polygon(5% 100%, 95% 100%, 50% 50%);
+}
