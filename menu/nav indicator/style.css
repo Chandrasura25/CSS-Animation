@@ -50,6 +50,7 @@ body {
   line-height: 75px;
   opacity: 0.75;
 }
-.navigation ul li:hover a .icon {
+.navigation ul li:hover a .icon,
+.navigation ul li.active a .icon {
   opacity: 1;
 }
