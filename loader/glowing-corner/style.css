@@ -28,8 +28,24 @@ body {
     background: radial-gradient(var(--clr), transparent, transparent);
     animation: animate 1s linear infinite;
 }
+.loader::after{
+    content: '';
+    position: absolute;
+}
 @keyframes animate{
     0%{
+        transform: translate(-150px, -150px);
+    }
+    25%{
+        transform: translate(0px, -150px);
+    }
+    50%{
+        transform: translate(0px, 0px);
+    }
+    75%{
+        transform: translate(-150px, 0px);
+    }
+    100%{
         transform: translate(-150px, -150px);
     }
 }
