@@ -74,5 +74,5 @@ body {
   clip-path: polygon(100% 100%, 100% 0%, 90% 50%);
 }
 .card:hover .clip span:nth-child(4) {
-  clip-path: polygon(5% 100%, 95% 100%, 50% 50%);
+  clip-path: polygon(0% 100%, 100% 100%, 50% 90%);
 }
