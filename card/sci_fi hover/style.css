@@ -52,9 +52,12 @@ body {
   transition: 0.25s;
   z-index: 1;
 }
-.card .clip span:nth-child(1){
+.card .clip span:nth-child(1) {
   clip-path: polygon(0 5%, 0 95%, 50% 50%);
 }
-.card .clip span:nth-child(2){
+.card .clip span:nth-child(2) {
   clip-path: polygon(95% 0, 5% 0, 50% 50%);
+}
+.card .clip span:nth-child(3) {
+  clip-path: polygon(100% 95%, 100% 5%, 50% 50%);
 }
