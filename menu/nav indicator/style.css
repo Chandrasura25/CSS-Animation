@@ -57,6 +57,7 @@ body {
 .navigation ul li.active a .icon {
   opacity: 1;
   color: #209cff;
+  transform: translateY(-8px);
 }
 .indicator {
   position: absolute;
@@ -67,13 +68,14 @@ body {
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
   cursor: pointer;
+  border: 6px solid var(--clr);
   transition: 0.5s;
 }
 .indicator::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -20px;
+  top: 4px;
+  left: -25.75px;
   width: 20px;
   height: 20px;
   background: transparent;
@@ -83,8 +85,8 @@ body {
 .indicator::after {
   content: "";
   position: absolute;
-  top: 10px;
-  right: -20px;
+  top: 4px;
+  right: -25.75px;
   width: 20px;
   height: 20px;
   background: transparent;
@@ -93,10 +95,12 @@ body {
 }
 .indicator span{
     position: absolute;
-    bottom: 3px;
+    bottom: 2px;
     width: 60px;
+    left: -1px;
     height: 60px;
     border-radius: 50%;
     border: 4px solid #209cff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(0.85);
 }
