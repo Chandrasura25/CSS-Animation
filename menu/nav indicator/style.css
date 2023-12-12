@@ -25,13 +25,20 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 100px;
 }
-.navigation ul{
-    display: flex;
-    width: 350px;
+.navigation ul {
+  display: flex;
+  width: 350px;
 }
-.navigation ul li{
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+}
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
