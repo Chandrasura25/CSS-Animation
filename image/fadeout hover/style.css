@@ -41,3 +41,14 @@ body{
 .box:hover::before{
     top: -450px;
 }
+.box.two::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(90deg, transparent, transparent 300px, var(--bg) 450px, var(--bg) 750px);
+}
+.box.two:hover::before{
+    top: 0;
+    left: -450px;
+}
