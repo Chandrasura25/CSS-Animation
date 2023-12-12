@@ -49,7 +49,7 @@ body {
   position: absolute;
   inset: 0;
   background: #020d1e;
-  transition: 0.25s;
+  transition: 0.5s;
   z-index: 1;
 }
 .card .clip span:nth-child(1) {
