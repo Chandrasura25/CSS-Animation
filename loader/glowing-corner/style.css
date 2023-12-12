@@ -19,6 +19,7 @@ body {
   height: 150px;
   background: rgba(45, 45, 45, 1);
   overflow: hidden;
+  transform: rotate(calc(90deg * var(--i)));
 }
 .loader::before {
   content: "";
