@@ -12,43 +12,43 @@ body {
   min-height: 100vh;
   background: #061206;
 }
-.card{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 240px;
-    height: 320px;
-    background: var(--clr1);
-    box-shadow: 0 0 0 5px #0009, 0 10px 65px var(--clr1);
-    transition: 0.25s;
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 320px;
+  background: var(--clr1);
+  box-shadow: 0 0 0 5px #0009, 0 10px 65px var(--clr1);
+  transition: 0.25s;
 }
-.card:hover{
+.card:hover {
   background: var(--clr2);
-    box-shadow: 0 0 0 5px #0009,0 10px 45px var(--clr2), 0 10px 95px var(--clr2);
+  box-shadow: 0 0 0 5px #0009, 0 10px 45px var(--clr2), 0 10px 95px var(--clr2);
 }
-.card h2{
+.card h2 {
   font-size: 1.5em;
   text-align: center;
   line-height: 3em;
   scale: 0;
   transition: 0.5s;
 }
-.card:hover h2{
+.card:hover h2 {
   scale: 1;
 }
-.card h2 b{
+.card h2 b {
   font-size: 4em;
 }
-.card .clip{
+.card .clip {
   position: absolute;
   inset: 5px;
   box-shadow: 0 0 0 2px #061206;
 }
-.card .clip span{
+.card .clip span {
   position: absolute;
   inset: 0;
-  background:#020d1e;
+  background: #020d1e;
   transition: 0.25s;
   z-index: 1;
 }
