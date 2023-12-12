@@ -31,6 +31,8 @@ body {
 .loader::after {
   content: "";
   position: absolute;
+  inset: 2px;
+  background: rgba(45, 45, 45, 0.9);
 }
 @keyframes animate {
   0% {
