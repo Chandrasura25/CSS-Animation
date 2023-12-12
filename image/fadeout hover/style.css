@@ -13,3 +13,16 @@ body{
     min-height: 100vh;
     background: var(--bg);
 }
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.box .one{
+    background: url(img2.jpg);
+    background-size: cover;
+}
+.box .two{
+    background: url(img3.jpg);
+    background-size: cover;
+}
