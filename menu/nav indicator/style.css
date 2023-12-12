@@ -26,6 +26,7 @@ body {
   border-radius: 100px;
 }
 .navigation ul {
+  position: relative;
   display: flex;
   width: 350px;
 }
@@ -34,6 +35,8 @@ body {
   list-style: none;
   width: 70px;
   height: 70px;
+  z-index: 1;
+  transition: 0.55s;
 }
 .navigation ul li a {
   position: relative;
@@ -53,4 +56,16 @@ body {
 .navigation ul li:hover a .icon,
 .navigation ul li.active a .icon {
   opacity: 1;
+  color: #209cff;
+}
+.indicator {
+  position: absolute;
+  top: -10px;
+  width: 70px;
+  height: 70px;
+  background: var(--clr);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  cursor: pointer;
+  transition: 0.5s;
 }
