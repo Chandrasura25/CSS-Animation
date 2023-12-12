@@ -17,6 +17,7 @@ body{
     position: relative;
     width: 300px;
     height: 300px;
+    overflow: hidden;
 }
 .box .one{
     background: url(img2.jpg);
@@ -36,4 +37,7 @@ body{
     background: linear-gradient(transparent, transparent 300px, var(--bg) 450px, var(--bg) 750px);
     z-index: 1;
     transition: 1s;
+}
+.box:hover::before{
+    top: -450px;
 }
