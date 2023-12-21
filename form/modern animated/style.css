@@ -62,3 +62,11 @@ body {
     animation: rotating 4s linear infinite;
    animation-delay: -1s;
   }
+  .box::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #2d2d39;
+    border-radius: 15px;
+    border: 8px solid #25252b;
+  }
