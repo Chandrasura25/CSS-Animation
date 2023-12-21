@@ -102,7 +102,11 @@ body {
   flex-direction: column;
   gap: 20px;
   width: 70%;
+  transform: translateY(126px);
   transition: 0.5s;
+}
+.box:hover .loginBx {
+  transform: translateY(0);
 }
 .loginBx h2 {
   text-transform: uppercase;
