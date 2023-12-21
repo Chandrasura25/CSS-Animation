@@ -95,8 +95,12 @@ body {
   inset: 40px;
 }
 .loginBx {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
+  width: 70%;
+  transition: 0.5s;
 }
