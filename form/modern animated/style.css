@@ -137,8 +137,16 @@ body {
 .loginBx input[type="submit"]:hover {
   box-shadow: 0 0 10px #45f3ff, 0 0 60px #45f3ff;
 }
-.group{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.group a {
+  color: #fff;
+  text-decoration: none;
+}
+.group a:nth-child(2) {
+  color: #ff2770;
+  font-weight: 600;
 }
