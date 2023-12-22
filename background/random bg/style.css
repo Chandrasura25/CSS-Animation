@@ -34,7 +34,7 @@ body{
 .box::after{
     content: '';
     position: absolute;
-    top: 212px;
+    bottom: 212px;
     right: -34px;
     width: 80px;
     height: 40px;
