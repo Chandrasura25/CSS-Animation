@@ -31,3 +31,14 @@ body{
     border-radius: 50%;
     transform: rotate(-45deg);
 }
+.box::after{
+    content: '';
+    position: absolute;
+    top: 212px;
+    right: -34px;
+    width: 80px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
