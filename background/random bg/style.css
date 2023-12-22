@@ -21,6 +21,14 @@ body{
     transform: rotate(45deg);
     animation: animate 2s linear infinite;
 }
+@keyframes animate {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+}
 .box::before{
     content: '';
     position: absolute;
