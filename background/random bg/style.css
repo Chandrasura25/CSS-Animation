@@ -23,9 +23,11 @@ body{
 .box::before{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 212px;
+    left: -34px;
     width: 80px;
     height: 40px;
     background: #fff;
+    border-radius: 50%;
+    transform: rotate(-45deg);
 }
