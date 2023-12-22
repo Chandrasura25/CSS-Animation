@@ -19,6 +19,7 @@ body{
     border-bottom: 80px solid #fff5;
     border-radius: 50%;
     transform: rotate(45deg);
+    animation: animate 2s linear infinite;
 }
 .box::before{
     content: '';
@@ -46,8 +47,8 @@ body{
     position: absolute;
     width: 70px;
     height: 70px;
-    left: -100px;
-    top: 50px;
+    left: -95px;
+    top: 65px;
     background: #fff;
     border-radius: 50%;
     box-shadow: inset 0 5px 20px rgba(0,0,0,0.5);
