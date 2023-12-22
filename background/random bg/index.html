@@ -10,5 +10,14 @@
     <div class="box">
         <div class="circle"></div>
     </div>
+    <script>
+        function changeBg(){
+            let r = Math.floor(Math.random() * 255)
+            let g = Math.floor(Math.random() * 255)
+            let b = Math.floor(Math.random() * 255)
+            document.body.style.backgroundColor = `rgba(${r},${g},${b})`
+        }
+        setInterval(changeBg, 1000);
+    </script>
 </body>
 </html>
