@@ -16,7 +16,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(3,150px);
-    grid-gap: 20px;
+    grid-gap: 4px;
 }
 .container .box{
     position: relative;
