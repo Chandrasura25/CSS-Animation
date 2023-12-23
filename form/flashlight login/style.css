@@ -1,46 +1,45 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #222;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
 }
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,150px);
-    grid-gap: 4px;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 4px;
 }
-.container .box{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background: rgba(45,45,45,1);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container .box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: rgba(45, 45, 45, 1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container .box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: radial-gradient(var(--clr), transparent, transparent);
-    width: 300px;
-    height: 300px;
-    transition: 0.5s, top 0.s, left 0.1s;
+.container .box::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  background: radial-gradient(var(--clr), transparent, transparent);
+  width: 300px;
+  height: 300px;
+  transition: 0.5s, top 0s, left 0.1s;
 }
-.container .box::after{
-    content: '';
-    position: absolute;
-    inset: 2px;
-    background: rgba(45,45,45,0.9);
+.container .box::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: rgba(45, 45, 45, 0.9);
 }
