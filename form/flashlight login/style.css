@@ -41,4 +41,5 @@ body{
 .container .box::after{
     content: '';
     position: absolute;
+    inset: 2px;
 }
