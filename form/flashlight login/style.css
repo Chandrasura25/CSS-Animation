@@ -23,4 +23,8 @@ body{
     width: 150px;
     height: 150px;
     background: rgba(45,45,45,1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
