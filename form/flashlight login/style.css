@@ -105,3 +105,8 @@ body {
   font-size: 1.1em;
   font-weight: 500;
 }
+.login .inputBox input[type="submit"]:hover{
+  background: #0f0;
+  color: #222;
+  border: none;
+}
