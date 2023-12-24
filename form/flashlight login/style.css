@@ -94,4 +94,8 @@ body {
 .login .inputBox input:valid ~ span {
   transform: translate(15px, -10px);
   font-size: 0.75em;
+  background: #fff;
+  color: #222;
+  padding: 2px 5px;
+  border: 1px solid #000;
 }
