@@ -93,4 +93,5 @@ body {
 .login .inputBox input:focus ~ span,
 .login .inputBox input:valid ~ span {
   transform: translate(15px, -10px);
+  font-size: 0.75em;
 }
