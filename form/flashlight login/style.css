@@ -48,4 +48,14 @@ body {
   position: absolute;
   width: 450px;
   height: 600px;
+  padding: 60px 40px;
+  text-align: center;
+}
+.login h2{
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
