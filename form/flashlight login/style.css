@@ -32,7 +32,7 @@ body {
   position: absolute;
   top: var(--y);
   left: var(--x);
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background: radial-gradient(var(--clr), transparent, transparent);
   width: 300px;
   height: 300px;
@@ -44,14 +44,14 @@ body {
   inset: 2px;
   background: rgba(45, 45, 45, 0.9);
 }
-.login{
+.login {
   position: absolute;
   width: 450px;
   height: 600px;
   padding: 60px 40px;
   text-align: center;
 }
-.login h2{
+.login h2 {
   color: #fff;
   font-size: 2em;
   margin-bottom: 60px;
@@ -59,18 +59,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.login .inputBox{
+.login .inputBox {
   position: relative;
   width: 100%;
   margin-top: 30px;
 }
-.login .inputBox input{
+.login .inputBox input {
   width: 100%;
   padding: 20px 25px;
   outline: none;
   border-radius: 10px;
-  background: rgba(255,255,255,0.1);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
   border: 1px solid #000;
   backdrop-filter: blur(10px);
   color: #fff;
@@ -78,7 +78,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.login .inputBox span{
+.login .inputBox span {
   position: absolute;
   left: 0;
   font-size: 1em;
@@ -88,8 +88,9 @@ body {
   letter-spacing: 0.1em;
   border-radius: 4px;
   transition: 0.25s;
+  pointer-events: none;
 }
 .login .inputBox input:focus ~ span,
-.login .inputBox input:valid ~ span{
-
+.login .inputBox input:valid ~ span {
+  transform: translate(15px, -10px);
 }
