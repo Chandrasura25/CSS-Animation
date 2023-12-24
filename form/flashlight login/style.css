@@ -117,3 +117,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.group a{
+  color: #222;
+  background: #fff;
+  text-transform: uppercase;
+  padding: 2px 5px;
+}
