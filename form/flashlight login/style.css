@@ -126,3 +126,8 @@ body {
   letter-spacing: 0.05em;
   border-radius: 4px;
 }
+.group a:nth-child(2){
+  background: #f0f;
+  color: #fff;
+  font-weight: 500;
+}
