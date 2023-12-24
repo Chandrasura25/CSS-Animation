@@ -108,7 +108,7 @@ body {
 .login .inputBox input[type="submit"]:hover{
   background: #0f0;
   color: #222;
-  border: none;
+  border: 1px solid transparent;
 }
 .group{
   position: relative;
