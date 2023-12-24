@@ -50,6 +50,7 @@ body {
   height: 600px;
   padding: 60px 40px;
   text-align: center;
+  pointer-events: none;
 }
 .login h2 {
   color: #fff;
@@ -58,6 +59,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  pointer-events: all;
 }
 .login .inputBox {
   position: relative;
@@ -78,6 +80,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: 0.5s;
+  pointer-events: all;
 }
 .login .inputBox span {
   position: absolute;
@@ -125,6 +128,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.05em;
   border-radius: 4px;
+  pointer-events: all;
 }
 .group a:nth-child(2) {
   background: #f0f;
