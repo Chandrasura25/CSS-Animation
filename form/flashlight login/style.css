@@ -44,3 +44,8 @@ body {
   inset: 2px;
   background: rgba(45, 45, 45, 0.9);
 }
+.login{
+  position: absolute;
+  width: 450px;
+  height: 600px;
+}
