@@ -11,5 +11,16 @@
     <a href="#" style="--clr:#0f0"><span>Button</span></a>
     <a href="#" style="--clr:#ff0"><span>Button</span></a>
     <a href="#" style="--clr:#f0f"><span>Button</span></a>
+    <script>
+        let btns = document.querySelector('a');
+        btns.forEach(btn =>{
+            btn.onmousemove = function(e){
+                let x = e.pageX - btn.offsetLeft;
+                let y = e.pageY - btn.offsetTop;
+                btn.style.setProperty('--x', x + 'px')
+                btn.style.setProperty('--y', y + 'px')
+            }
+        })
+    </script>
 </body>
 </html>
