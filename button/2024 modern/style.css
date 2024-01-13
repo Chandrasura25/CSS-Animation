@@ -23,6 +23,7 @@ a{
     font-size: 1.5em; 
     text-transform: uppercase;
     text-decoration: none;
+    overflow: hidden;
     transition: 0.5s;
 }
 a:hover{
@@ -43,5 +44,15 @@ a::before{
     background: radial-gradient(var(--clr), transparent, transparent);
     width: 200px;
     height: 200px;
-    transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s, top 0s, left 0s;
+}
+a:hover::before{
+    opacity: 1;
+}
+a::after{
+    content: '';
+    position: absolute;
+    background: rgba(45,45,45,0.8);
+    border-radius: 48px;
 }
