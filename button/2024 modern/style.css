@@ -21,4 +21,16 @@ a{
     border-radius: 50px;
     color: #999;
     font-size: 1.5em; 
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    color: var(--clr);
+    text-shadow: 0 0 15px var(--clr), 0 0 40px var(--clr);
+}
+a span{
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.2em;
 }
