@@ -34,3 +34,14 @@ a span{
     z-index: 1;
     letter-spacing: 0.2em;
 }
+a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    background: radial-gradient(var(--clr), transparent, transparent);
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
