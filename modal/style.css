@@ -29,11 +29,7 @@ h2{
     max-width: 100%;
     display: block;    
 }
-.container#blur.active{
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-}
+.container
 a{
     padding: 5px 20px;
     position: relative;
