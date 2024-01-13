@@ -12,7 +12,7 @@
     <a href="#" style="--clr:#ff0"><span>Button</span></a>
     <a href="#" style="--clr:#f0f"><span>Button</span></a>
     <script>
-        let btns = document.querySelector('a');
+        let btns = document.querySelectorAll('a');
         btns.forEach(btn =>{
             btn.onmousemove = function(e){
                 let x = e.pageX - btn.offsetLeft;
