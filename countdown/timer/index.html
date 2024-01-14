@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="time">
+      <div class="circle" style="--clr: #1eb9ff">
+        <svg>
+          <circle cx="70" cy="70" id="dd"></circle>
+        </svg>
+        <div id="days">00<br /><span>Days</span></div>
+      </div>
+      <div class="circle" style="--clr: #ff2972">
+        <svg>
+          <circle cx="70" cy="70" id="hh"></circle>
+        </svg>
+        <div id="hours">00<br /><span>Hours</span></div>
+      </div>
+      <div class="circle" style="--clr: #fee800">
+        <svg>
+          <circle cx="70" cy="70" id="mm"></circle>
+        </svg>
+        <div id="minutes">00<br /><span>Minutes</span></div>
+      </div>
+      <div class="circle" style="--clr: #04fc43">
+        <svg>
+          <circle cx="70" cy="70" id="ss"></circle>
+        </svg>
+        <div id="seconds">00<br /><span>Seconds</span></div>
+      </div>
+    </div>
+    <!-- <script>
+        const countDate = new Date('jan 1, 2023 00:00:00').getTime();
+        const newYear = ()=>{
+            const now = new Date().getTime();
+            gap = countDate - now;
+            const second = 1000;
+            const minute = second *60;
+            const hour = minute * 60;
+            const day = hour * 24;
+            const d = Math.floor(gap / (day));
+            const h = Math.floor((gap % (day)) / (hour));
+            const m = Math.floor((gap % (hour)) / (minute));
+            const s = Math.floor((gap % (minute)) / (second));
+            document.querySelector('#day').innerText = d;
+            document.querySelector('#hour').innerText = h;
+            document.querySelector('#minute').innerText = m;
+            document.querySelector('#second').innerText = s;
+        }
+        setInterval(() => {
+            newYear()
+        },1000);
+    </script> -->
+  </body>
+</html>
