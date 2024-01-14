@@ -38,6 +38,7 @@ body{
     position: absolute;
     width: 100px;
     height: 100px;
-    border: 10px solid #1b1a1c;
+    background: #2f2c33;
+    border: 10px solid #4d4c51;
     border-radius: 50%;
 }
