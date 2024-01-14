@@ -12,3 +12,7 @@
     width: 100%;
     background: #3e393b;
 }
+#time{
+    display: flex;
+    gap: 30px;
+}
