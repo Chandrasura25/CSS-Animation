@@ -59,6 +59,15 @@
           hours.innerHTML = h + "<br /><span>Hours</span>";
           minutes.innerHTML = m + "<br /><span>Minutes</span>";
           seconds.innerHTML = s + "<br /><span>Seconds</span>";
+          dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+          hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+          mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+          ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+          if(distance < 0){
+            clearInterval(x);
+            document.getElementById('time').style.display = "none"
+            document.querySelector('.newYear').style.display = "block"
+          }
         })
     </script>
   </body>
