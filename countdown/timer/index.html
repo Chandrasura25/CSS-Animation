@@ -13,49 +13,53 @@
         <svg>
           <circle cx="70" cy="70" r="70" id="dd"></circle>
         </svg>
-        <div id="days">00<br /><span>Days</span></div>
+        <div id="days">00</div>
       </div>
       <div class="circle" style="--clr: #ff2972">
         <svg>
           <circle cx="70" cy="70" r="70" id="hh"></circle>
         </svg>
-        <div id="hours">00<br /><span>Hours</span></div>
+        <div id="hours">00</div>
       </div>
       <div class="circle" style="--clr: #fee800">
         <svg>
           <circle cx="70" cy="70" r="70" id="mm"></circle>
         </svg>
-        <div id="minutes">00<br /><span>Minutes</span></div>
+        <div id="minutes">00</div>
       </div>
       <div class="circle" style="--clr: #04fc43">
         <svg>
           <circle cx="70" r="70" cy="70" id="ss"></circle>
         </svg>
-        <div id="seconds">00<br /><span>Seconds</span></div>
+        <div id="seconds">00</div>
       </div>
     </div>
-    <h2 class="newYear">2024<br><span>Happy New Year</span></h2>
+    <h2 class="newYear">2025<br><span>Happy New Year</span></h2>
     <script>
-        const countDate = new Date('jan 1, 2023 00:00:00').getTime();
-        const newYear = ()=>{
-            const now = new Date().getTime();
-            gap = countDate - now;
-            const second = 1000;
-            const minute = second *60;
-            const hour = minute * 60;
-            const day = hour * 24;
-            const d = Math.floor(gap / (day));
-            const h = Math.floor((gap % (day)) / (hour));
-            const m = Math.floor((gap % (hour)) / (minute));
-            const s = Math.floor((gap % (minute)) / (second));
-            document.querySelector('#day').innerText = d;
-            document.querySelector('#hour').innerText = h;
-            document.querySelector('#minute').innerText = m;
-            document.querySelector('#second').innerText = s;
-        }
-        setInterval(() => {
-            newYear()
-        },1000);
+        let days = document.getElementById('days')
+        let hours = document.getElementById('hours')
+        let minutes = document.getElementById('minutes')
+        let seconds = document.getElementById('seconds')
+        let dd = document.getElementById('dd')
+        let hh = document.getElementById('hh')
+        let mm = document.getElementById('mm')
+        let ss = document.getElementById('ss')
+
+        let endDate = "01/01/2025 00:00:00";
+        let x = setInterval(()=>{
+          let now = new Date(endDate).getTime();
+          let countDown = new Date().getTime();
+          let distance = now - countDown;
+
+          let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+          let h = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+          let m = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60))
+          let s = Math.floor(distance % (1000 * 60) / (1000))
+          days.innerHTML = d + "<br /><span>Days</span>";
+          hours.innerHTML = h + "<br /><span>Hours</span>";
+          minutes.innerHTML = m + "<br /><span>Minutes</span>";
+          seconds.innerHTML = s + "<br /><span>Seconds</span>";
+        })
     </script>
   </body>
 </html>
