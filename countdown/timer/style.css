@@ -80,3 +80,17 @@ body {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
+.newYear{
+  position: absolute;
+  font-size: 8em;
+  font-family: 500;
+  color: #fff;
+  text-align: center;
+  line-height: 0.6em;
+  z-index: 100;
+  display: none;
+}
+.newYear span{
+  font-size: 0.5em;
+  font-weight: 300;
+}
