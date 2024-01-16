@@ -29,6 +29,25 @@ label input{
 	height: 150px;
     z-index: 10;
 }
+label span{
+	position: absolute;
+	left: 0;
+	width: 175px;
+	height: 150px;
+	background: url(image/Coffee_01.png);
+	background-size: auto 150px;
+	z-index: 10;
+	transition: 1.5s;
+	transform: rotate(180deg);
+	transform-origin: 75px;
+	filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+label input:checked ~ span{
+	left: 150px;
+    background: url(image/Coffee_02.png);
+	background-size: auto 150px;
+    transform: rotate(720deg);
+}
 label b{
     position: absolute;
     inset: 0;
@@ -40,4 +59,21 @@ label b{
 }
 label input:checked ~ b{
     background: #87b328;
+}
+label i{
+	position: absolute;
+	left: 50px;
+	color: #fff;
+	font-size: 4em;
+	transition: 1s;
+	transition-delay: 0s;
+	scale: 0;
+}
+label input:checked ~ i{
+    scale: 1;
+    transition-delay: 0.5s;
+}
+label i:last-child{
+	left: initial;
+	right: 50px;
 }
