@@ -60,4 +60,19 @@ body {
   stroke: var(--clr);
   stroke-linecap: round;
   transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+#time div{
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  z-index: 100;
+  color: var(--clr);
+  font-size: 1.65em;
+  transform: translateY(-5px);
+}
+#time div span{
+  position: absolute;
 }
