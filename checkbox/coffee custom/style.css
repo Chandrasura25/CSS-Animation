@@ -76,4 +76,10 @@ label input:checked ~ i{
 label i:last-child{
 	left: initial;
 	right: 50px;
+	transition-delay: 0s;
+	scale: 1;
+}
+label input:checked ~ i:last-child{
+    scale: 0;
+    transition-delay: 0s;
 }
