@@ -9,3 +9,13 @@ body{
     min-height: 100vh;
     background: #0c192c;
 }
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
