@@ -61,3 +61,10 @@ header .logo{
     font-size: 2em;
     font-weight: 700;
 }
+header .logo span{
+    color: #ff2d75;
+}
+header nav{
+    display: flex;
+    gap: 25pxs;
+}
