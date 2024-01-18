@@ -55,3 +55,9 @@ header{
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+header .logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
