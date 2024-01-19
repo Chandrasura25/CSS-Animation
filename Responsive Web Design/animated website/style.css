@@ -66,5 +66,23 @@ header .logo span{
 }
 header nav{
     display: flex;
-    gap: 25pxs;
+    gap: 25px;
+}
+header nav a{
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header nav a.active, header nav a:hover{
+    color: #4fc3dc;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
