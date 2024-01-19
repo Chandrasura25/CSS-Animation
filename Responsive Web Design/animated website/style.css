@@ -98,3 +98,13 @@ section .content h2{
     font-size: 3.5em;
     color: #fff;
 }
+section .content h2 span{
+    color: #ff2d75;
+}
+section .content p{
+    font-size: 1.1em;
+    color: #fff;
+}
+section .content .buttons{
+    position: relative;
+}
