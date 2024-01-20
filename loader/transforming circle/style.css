@@ -51,4 +51,8 @@ body{
         box-shadow: none;
         rotate: 90deg;
     }
+    90.1%,100%{
+        box-shadow: none;
+        background: transparent;
+    }
 }
