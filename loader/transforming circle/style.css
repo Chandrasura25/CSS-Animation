@@ -16,4 +16,6 @@ body{
 }
 .loading span{
     position: absolute;
+    width: 5px;
+    height: 40px;
 }
