@@ -19,3 +19,7 @@ body{
     width: 5px;
     height: 40px;
 }
+.loading span::before{
+    content: '';
+    position: absolute;
+}
