@@ -41,4 +41,10 @@ body{
         rotate: 90deg;
         filter: hue-rotate(0deg);
     }
+    80%{
+        background: #0f0;
+        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        rotate: 90deg;
+        filter: hue-rotate(360deg);
+    }
 }
