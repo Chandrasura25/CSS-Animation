@@ -26,8 +26,8 @@ body{
     content: '';
     position: absolute;
     inset: 0;
-    background: #0f0;
     animation: animate 8s linear infinite;
+    animation-delay: calc(var(--i) * 0.1s);
 }
 @keyframes animate {
     0%{
