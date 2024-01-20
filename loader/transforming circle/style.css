@@ -10,3 +10,10 @@ body{
 	min-height: 100vh;
 	background: #222;
 }
+.loading{
+    position: relative;
+    display: flex;
+}
+.loading span{
+    position: absolute;
+}
