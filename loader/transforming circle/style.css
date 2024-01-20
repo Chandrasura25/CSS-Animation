@@ -16,6 +16,7 @@ body{
 }
 .loading span{
     position: absolute;
+    top: -150px;
     width: 5px;
     height: 40px;
     transform: rotate(calc(var(--i) * 18deg));
@@ -26,4 +27,5 @@ body{
     position: absolute;
     inset: 0;
     background: #0f0;
+    animation: animate 8s linear infinite;
 }
