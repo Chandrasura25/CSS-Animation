@@ -47,4 +47,8 @@ body{
         rotate: 90deg;
         filter: hue-rotate(360deg);
     }
+    90%{
+        box-shadow: none;
+        rotate: 90deg;
+    }
 }
