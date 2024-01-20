@@ -18,8 +18,12 @@ body{
     position: absolute;
     width: 5px;
     height: 40px;
+    transform: rotate(calc(var(--i) * 18deg));
+    transform-origin: 0 150px;
 }
 .loading span::before{
     content: '';
     position: absolute;
+    inset: 0;
+    background: #0f0;
 }
