@@ -13,4 +13,12 @@ body{
 }
 #container{
 	display: grid;
+	grid-template-columns: repeat(5, 100px);
+}
+#container span{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background: #111;
+	z-index: 10;
 }
