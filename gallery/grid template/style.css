@@ -14,8 +14,10 @@ body{
 	position: relative;
 	display: grid;
 	width: 600px;
+    grid-gap: 15px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: "img1 img2 img3";
 }
 .container .img1{
 	grid-area: img1;
@@ -37,4 +39,5 @@ body{
 }
 .container .item{
     position: relative;
+    background: #fff;
 }
