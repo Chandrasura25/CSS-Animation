@@ -17,7 +17,8 @@ body{
     grid-gap: 15px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 150px 150px 150px 150px;
-    grid-template-areas: "img1 img2 img3";
+    grid-template-areas: "img1 img3 img4"
+    "img1 img3 img6" "img2 img3 img6" "img2 img5 img5";
 }
 .container .img1{
 	grid-area: img1;
