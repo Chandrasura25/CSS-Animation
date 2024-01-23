@@ -20,9 +20,18 @@ body{
 .container .img1{
 	grid-area: img1;
 }
-.container .img1{
-	grid-area: img1;
+.container .img2{
+	grid-area: img2;
 }
-.container .img1{
-	grid-area: img1;
+.container .img3{
+	grid-area: img3;
+}
+.container .img4{
+	grid-area: img4;
+}
+.container .img5{
+	grid-area: img5;
+}
+.container .img6{
+	grid-area: img6;
 }
