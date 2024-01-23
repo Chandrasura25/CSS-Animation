@@ -10,3 +10,19 @@ body{
 	background: #222;
 	min-height: 100vh;
 }
+.container{
+	position: relative;
+	display: grid;
+	width: 600px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 150px 150px 150px 150px;
+}
+.container .img1{
+	grid-area: img1;
+}
+.container .img1{
+	grid-area: img1;
+}
+.container .img1{
+	grid-area: img1;
+}
