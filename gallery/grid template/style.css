@@ -35,3 +35,6 @@ body{
 .container .img6{
 	grid-area: img6;
 }
+.container .item{
+    position: relative;
+}
