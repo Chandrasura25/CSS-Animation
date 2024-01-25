@@ -37,3 +37,12 @@ body{
     display: flex;
     flex-direction: column;
 }
+.tabs .icon label{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.25;
+    transition: 0.5s;
+}
