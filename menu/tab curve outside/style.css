@@ -108,3 +108,18 @@ body {
     border-radius: 20px;
     background: linear-gradient(90deg, var(--clr), #df0d54);
 }
+.content .contentBx{
+    position: absolute;
+    inset: 0;
+    padding: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tabs input:nth-child(1):checked ~ .content .contentBx:nth-child(1),
+.tabs input:nth-child(2):checked ~ .content .contentBx:nth-child(2),
+.tabs input:nth-child(3):checked ~ .content .contentBx:nth-child(3),
+.tabs input:nth-child(4):checked ~ .content .contentBx:nth-child(4) {
+  opacity: 1;
+  visibility: visible;
+}
