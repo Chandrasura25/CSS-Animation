@@ -45,4 +45,5 @@ body{
     color: #fff;
     opacity: 0.25;
     transition: 0.5s;
+    cursor: pointer;
 }
