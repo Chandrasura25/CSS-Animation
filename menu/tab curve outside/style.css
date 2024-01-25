@@ -127,3 +127,11 @@ body {
 .content .contentBx p{
     color: #fff;
 }
+.content .contentBx h2{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.content .contentBx p{
+    margin-top: 10px;
+    font-size: 1.2em;
+}
