@@ -93,3 +93,9 @@ body {
 .tabs input:nth-child(2):checked ~ .icon .indicator{
     top: 25%;
 }
+.tabs input:nth-child(3):checked ~ .icon .indicator{
+    top: 50%;
+}
+.tabs input:nth-child(4):checked ~ .icon .indicator{
+    top: 25%;
+}
