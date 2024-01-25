@@ -65,3 +65,14 @@ body {
   border-bottom-left-radius: 30px;
   transition: 0.5s;
 }
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 8px 8px 0 8px var(--clr);
+}
