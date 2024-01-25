@@ -105,5 +105,6 @@ body {
     left: 80px;
     width: 520px;
     height: 400px;
-    background: var(--clr);
+    border-radius: 20px;
+    background: linear-gradient(90deg, var(--clr), #df0d54);
 }
