@@ -28,9 +28,9 @@ body {
   width: 80px;
   padding: 40px 0;
 }
-.tabs input{
-    appearance: none;
-    display: none;
+.tabs input {
+  appearance: none;
+  display: none;
 }
 .tabs .icon {
   position: relative;
@@ -44,14 +44,21 @@ body {
   font-size: 2em;
   color: #fff;
   opacity: 0.25;
-  line-height: 80px;
+  line-height: 90px;
   transition: 0.5s;
   cursor: pointer;
-  background: #fff5;
+  z-index: 2;
 }
 .tabs input:nth-child(1):checked ~ .icon label:nth-child(1),
 .tabs input:nth-child(2):checked ~ .icon label:nth-child(2),
 .tabs input:nth-child(3):checked ~ .icon label:nth-child(3),
 .tabs input:nth-child(4):checked ~ .icon label:nth-child(4) {
   opacity: 1;
+}
+.indicator {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: var(--clr);
+  z-index: 1;
 }
