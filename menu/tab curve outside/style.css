@@ -23,3 +23,17 @@ body{
     width: 600px;
     height: 400px;
 }
+.tabs{
+    position: relative;
+    width: 80px;
+    padding: 40px 0;
+}
+/*.tabs input{
+    appearance: none;
+    display: none;
+}*/
+.tabs .icon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
