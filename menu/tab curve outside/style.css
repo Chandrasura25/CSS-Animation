@@ -1,49 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-:root{
-    --clr: #a12db5;
+:root {
+  --clr: #a12db5;
 }
-body{
-    background: #222;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 600px;
-    height: 400px;
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 600px;
+  height: 400px;
 }
-.tabs{
-    position: relative;
-    width: 80px;
-    padding: 40px 0;
+.tabs {
+  position: relative;
+  width: 80px;
+  padding: 40px 0;
 }
 /*.tabs input{
     appearance: none;
     display: none;
 }*/
-.tabs .icon{
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.tabs .icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.tabs .icon label{
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    font-size: 2em;
-    color: #fff;
-    opacity: 0.25;
-    transition: 0.5s;
-    cursor: pointer;
+.tabs .icon label {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.25;
+  line-height: 80px;
+  transition: 0.5s;
+  cursor: pointer;
+  background: #fff5;
+}
+.tabs input:nth-child(1):checked ~ .icon label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .icon label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .icon label:nth-child(3),
+.tabs input:nth-child(4):checked ~ .icon label:nth-child(4) {
+  opacity: 1;
 }
