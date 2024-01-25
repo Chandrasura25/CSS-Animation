@@ -123,3 +123,7 @@ body {
   opacity: 1;
   visibility: visible;
 }
+.content .contentBx h2,
+.content .contentBx p{
+    color: #fff;
+}
