@@ -87,34 +87,34 @@ body {
   border-top-right-radius: 20px;
   box-shadow: 8px -8px 0 8px var(--clr);
 }
-.tabs input:nth-child(1):checked ~ .icon .indicator{
-    top: 0;
+.tabs input:nth-child(1):checked ~ .icon .indicator {
+  top: 0;
 }
-.tabs input:nth-child(2):checked ~ .icon .indicator{
-    top: 25%;
+.tabs input:nth-child(2):checked ~ .icon .indicator {
+  top: 25%;
 }
-.tabs input:nth-child(3):checked ~ .icon .indicator{
-    top: 50%;
+.tabs input:nth-child(3):checked ~ .icon .indicator {
+  top: 50%;
 }
-.tabs input:nth-child(4):checked ~ .icon .indicator{
-    top: 75%;
+.tabs input:nth-child(4):checked ~ .icon .indicator {
+  top: 75%;
 }
-.content{
-    position: absolute;
-    top: 0;
-    left: 80px;
-    width: 520px;
-    height: 400px;
-    border-radius: 20px;
-    background: linear-gradient(90deg, var(--clr), #df0d54);
+.content {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 520px;
+  height: 400px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, var(--clr), #df0d54);
 }
-.content .contentBx{
-    position: absolute;
-    inset: 0;
-    padding: 50px;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+.content .contentBx {
+  position: absolute;
+  inset: 0;
+  padding: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 .tabs input:nth-child(1):checked ~ .content .contentBx:nth-child(1),
 .tabs input:nth-child(2):checked ~ .content .contentBx:nth-child(2),
@@ -124,14 +124,14 @@ body {
   visibility: visible;
 }
 .content .contentBx h2,
-.content .contentBx p{
-    color: #fff;
+.content .contentBx p {
+  color: #fff;
 }
-.content .contentBx h2{
-    font-size: 1.5em;
-    font-weight: 600;
+.content .contentBx h2 {
+  font-size: 1.5em;
+  font-weight: 600;
 }
-.content .contentBx p{
-    margin-top: 10px;
-    font-size: 1.2em;
+.content .contentBx p {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
