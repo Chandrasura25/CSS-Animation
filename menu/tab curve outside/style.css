@@ -99,3 +99,11 @@ body {
 .tabs input:nth-child(4):checked ~ .icon .indicator{
     top: 75%;
 }
+.content{
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 520px;
+    height: 400px;
+    background: var(--clr);
+}
