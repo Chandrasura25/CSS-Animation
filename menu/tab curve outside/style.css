@@ -28,10 +28,10 @@ body {
   width: 80px;
   padding: 40px 0;
 }
-/*.tabs input{
+.tabs input{
     appearance: none;
     display: none;
-}*/
+}
 .tabs .icon {
   position: relative;
   display: flex;
