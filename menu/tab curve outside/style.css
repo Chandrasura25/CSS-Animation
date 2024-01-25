@@ -61,4 +61,7 @@ body {
   height: 80px;
   background: var(--clr);
   z-index: 1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: 0.5s;
 }
