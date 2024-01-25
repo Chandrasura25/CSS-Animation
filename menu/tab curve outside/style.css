@@ -97,5 +97,5 @@ body {
     top: 50%;
 }
 .tabs input:nth-child(4):checked ~ .icon .indicator{
-    top: 25%;
+    top: 75%;
 }
