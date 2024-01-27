@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #222;
+}
+.box{
+	position: relative;
+	width: 400px;
+	height: 300px;
+}
+.box::before{
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: repeating-conic-gradient(from 0deg, #0f0, #ff0,#0ff,#f0f,#0ff);
+	border-radius: 20px;
+	animation: rotating 4s linear infinite;
+}
+.box::after{
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: repeating-conic-gradient(from 0deg, #0f0, #ff0,#0ff,#f0f,#0ff);
+	border-radius: 20px;
+	animation: rotating 4s linear infinite;
+	filter: blur(40px);
+	opacity: 0.75;
+}
