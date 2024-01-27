@@ -39,6 +39,7 @@ ul li a{
 ul li a ion-icon{
 	font-size: 2.5em;
 	transition: 0.5s;
+	pointer-events: none;
 }
 ul li:hover a ion-icon{
 	color: #c7f80d;
@@ -58,6 +59,7 @@ ul li.active a ion-icon{
 	border-radius: 20px;
 	border-top: 2px solid #c7f80d;
 	border-left: 2px solid #c7f80d;
+	transition: 0.5s;
 	box-shadow: 0 0 0 10px #161616, 0 2px 0 9px #c7f80d;
 }
 #marker::before{
