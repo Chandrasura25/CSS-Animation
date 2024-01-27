@@ -51,7 +51,7 @@ ul li.active a ion-icon{
 }
 #marker{
 	position: absolute;
-	top: -30px;
+	top: -40px;
 	width: 80px;
 	height: 80px;
 	background: #55650a;
@@ -84,7 +84,7 @@ ul li.active a ion-icon{
 }
 #marker span{
 	position: absolute;
-	top: 115px;
+	top: 122px;
 	width: 120%;
 	left: -10%;
 	height: 30px;
