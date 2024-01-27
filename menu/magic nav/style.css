@@ -49,3 +49,14 @@ ul li.active a ion-icon{
 	filter: drop-shadow(0 0 15px #c7f80d);
 	transform: translateY(-50px);
 }
+#marker{
+	position: absolute;
+	top: -30px;
+	width: 80px;
+	height: 80px;
+	background: #55650a;
+	border-radius: 20px;
+	border-top: 2px solid #c7f80d;
+	border-left: 2px solid #c7f80d;
+	box-shadow: 0 0 0 10px #161616, 0 2px 0 9px #c7f80d;
+}
