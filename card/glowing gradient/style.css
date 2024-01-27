@@ -27,7 +27,7 @@ body{
 	content: '';
 	position: absolute;
 	inset: 0;
-	background: repeating-conic-gradient(from 0deg, #0f0, #ff0,#0ff,#f0f,#0ff);
+	background: repeating-conic-gradient(from var(--a), #0f0, #ff0,#0ff,#f0f,#0ff);
 	border-radius: 20px;
 	animation: rotating 4s linear infinite;
 	filter: blur(40px);
