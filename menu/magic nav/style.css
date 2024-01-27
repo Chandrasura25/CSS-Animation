@@ -89,6 +89,10 @@ ul li.active a ion-icon{
 	left: -10%;
 	height: 30px;
 	background: #55650a;
+	border-right: 1px solid #c7f80d;
+	border-bottom: 1px solid #c7f80d;
+	box-shadow: 0 0 0 10px #161616, 0 -2px 0 9px #c7f80d;
+	border-radius: 20px;
 }
 ul li text{
 	position: absolute;
