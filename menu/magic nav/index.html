@@ -17,5 +17,13 @@
    </ul> 
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+   <script>
+    let marker = document.querySelector('#marker');
+    let list = document.querySelectorAll('ul li');
+    function moveIndicator(e) {
+        marker.style.left = e.offsetLeft + 'px'
+        marker.style.width = e.offsetWidth + 'px'
+    }
+   </script>
 </body>
 </html>
