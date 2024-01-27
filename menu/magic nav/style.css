@@ -82,6 +82,14 @@ ul li.active a ion-icon{
 	border-top-left-radius: 20px;
 	box-shadow: -4px -4px 0 4px #161616;
 }
+#marker span{
+	position: absolute;
+	top: 115px;
+	width: 120%;
+	left: -10%;
+	height: 30px;
+	background: #55650a;
+}
 ul li text{
 	position: absolute;
 	pointer-events: none;
