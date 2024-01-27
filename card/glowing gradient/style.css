@@ -53,3 +53,10 @@ body{
 		--a: 360deg;
 	}
 }
+.box .box{
+	position: absolute;
+	inset: 0 -50px;
+	top: 75px;
+	height: 150px;
+	width: 500px;
+}
