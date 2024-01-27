@@ -71,7 +71,7 @@ ul li.active a ion-icon{
 	border-top-right-radius: 20px;
 	box-shadow: 4px -4px 0 4px #161616;
 }
-#marker::before{
+#marker::after{
 	content: '';
 	position: absolute;
 	top: 29px;
@@ -81,4 +81,13 @@ ul li.active a ion-icon{
 	background: transparent;
 	border-top-left-radius: 20px;
 	box-shadow: -4px -4px 0 4px #161616;
+}
+ul li text{
+	position: absolute;
+	pointer-events: none;
+	transform: translateY(50px);
+	opacity: 0;
+	font-size: 0.8em;
+	transition: 0.5s;
+	text-transform: uppercase;
 }
