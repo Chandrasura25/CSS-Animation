@@ -42,4 +42,10 @@ ul li a ion-icon{
 }
 ul li:hover a ion-icon{
 	color: #c7f80d;
+	filter: drop-shadow(0 0 15px #c7f80d);
+}
+ul li.active a ion-icon{
+	color: #c7f80d;
+	filter: drop-shadow(0 0 15px #c7f80d);
+	transform: translateY(-50px);
 }
