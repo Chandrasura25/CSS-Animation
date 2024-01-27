@@ -33,3 +33,10 @@ body{
 	filter: blur(40px);
 	opacity: 0.75;
 }
+.box span{
+	position: absolute;
+	inset: 4px;
+	background: #222;
+	border-radius: 16px;
+	z-index: 1;
+}
