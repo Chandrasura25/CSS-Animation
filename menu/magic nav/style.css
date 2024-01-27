@@ -25,3 +25,14 @@ ul{
 ul li{
 	list-style: none;
 }
+ul li a{
+	position: relative;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	z-index: 10;
+	color: #4444;
+}
