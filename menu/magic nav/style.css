@@ -91,3 +91,8 @@ ul li text{
 	transition: 0.5s;
 	text-transform: uppercase;
 }
+ul li.active text{
+	opacity: 1;
+	color: #c7f80d;
+	filter: drop-shadow(0 0 10px #c7f80d);
+}
