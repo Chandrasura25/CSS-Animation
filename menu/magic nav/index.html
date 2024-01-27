@@ -24,6 +24,11 @@
         marker.style.left = e.offsetLeft + 'px'
         marker.style.width = e.offsetWidth + 'px'
     }
+    list.forEach(link =>{
+        link.addEventListener('click',(e)=>{
+            moveIndicator(e.target)
+        })
+    })
    </script>
 </body>
 </html>
