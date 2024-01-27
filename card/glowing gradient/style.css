@@ -19,7 +19,7 @@ body{
 	content: '';
 	position: absolute;
 	inset: 0;
-	background: repeating-conic-gradient(from 0deg, #0f0, #ff0,#0ff,#f0f,#0ff);
+	background: repeating-conic-gradient(from var(--a), #0f0, #ff0,#0ff,#f0f,#0ff);
 	border-radius: 20px;
 	animation: rotating 4s linear infinite;
 }
@@ -39,4 +39,14 @@ body{
 	background: #222;
 	border-radius: 16px;
 	z-index: 1;
+}
+@property --a{
+	syntax: '<angle>';
+	inherits: false;
+	initial-value: 0deg;
+}
+@keyframes rotating{
+	0%{
+		--a: 0deg;
+	}
 }
