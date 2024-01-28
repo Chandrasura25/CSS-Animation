@@ -20,5 +20,12 @@
 		<span style="--i:8;--x:0;--y:0"></span>
 		<div class="menuToggle"><b></b></div>
 	</div>
+	<script>
+		let navigation = document.querySelector('.navigation');
+		let menuToggle = document.querySelector('.menuToggle');
+		menuToggle.onclick = ()=>{
+			navigation.classList.toggle('active')
+		}
+	</script>
 </body>
 </html>
