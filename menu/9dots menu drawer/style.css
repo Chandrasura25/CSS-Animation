@@ -34,6 +34,11 @@ body{
 	cursor: pointer;
 	border: 0px solid #333;
 	transform: translate(calc(14px * var(--x)),calc(14px * var(--y)));
+	transition: transform 0.5s, width 0.5s, height 0.5s;
+	transition-delay: calc(0.1s * var(--i));
+}
+.navigation.active span{
+	transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
 }
 .navigation.active{
 	width: 200px;
