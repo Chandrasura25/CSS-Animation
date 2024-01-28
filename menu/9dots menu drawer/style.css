@@ -33,3 +33,14 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+.menuToggle::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -8px;
+	width: 10px;
+	height: 20px;
+	background: transparent;
+	border-top-right-radius: 10px;
+	box-shadow: 2px -5px 0 2px #fff;
+}
