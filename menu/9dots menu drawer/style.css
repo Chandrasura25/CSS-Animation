@@ -55,3 +55,15 @@ body{
 	border-top-left-radius: 10px;
 	box-shadow: -2px -5px 0 2px #fff;
 }
+.menuToggle b{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #0f0;
+	z-index: 1;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
