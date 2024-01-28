@@ -67,3 +67,14 @@ body{
 	align-items: center;
 	border-radius: 50%;
 }
+.menuToggle b::before{
+	content: '';
+	position: absolute;
+	left: 2.75px;
+	width: 17px;
+	height: 2px;
+	background: #333;
+	transform: rotate(45deg);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
