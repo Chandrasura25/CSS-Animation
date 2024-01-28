@@ -21,3 +21,15 @@ body{
 	align-items: center;
 	transition: 0.5s;
 }
+.menuToggle{
+	position: absolute;
+	bottom: -15px;
+	width: 30px;
+	height: 15px;
+	background: #fff;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
