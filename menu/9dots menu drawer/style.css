@@ -21,6 +21,10 @@ body{
 	align-items: center;
 	transition: 0.5s;
 }
+.navigation.active{
+	width: 200px;
+	height: 200px;
+}
 .menuToggle{
 	position: absolute;
 	bottom: -15px;
