@@ -99,3 +99,6 @@ body{
 .navigation.active .menuToggle b::before{
 	left: 6.5px;
 }
+.navigation.active .menuToggle b::after{
+	right: 6.5px;
+}
