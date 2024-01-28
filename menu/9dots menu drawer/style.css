@@ -39,8 +39,19 @@ body{
 	top: 0;
 	left: -8px;
 	width: 10px;
-	height: 20px;
+	height: 10px;
 	background: transparent;
 	border-top-right-radius: 10px;
 	box-shadow: 2px -5px 0 2px #fff;
+}
+.menuToggle::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -8px;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border-top-left-radius: 10px;
+	box-shadow: -2px -5px 0 2px #fff;
 }
