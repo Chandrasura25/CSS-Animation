@@ -22,6 +22,11 @@ body{
 	transition: 0.5s;
 	transition-delay: 0.8s;
 }
+.navigation.active{
+	width: 200px;
+	height: 200px;
+	transition-delay: 0s;
+}
 .navigation span{
 	position: absolute;
 	width: 7px;
@@ -44,11 +49,11 @@ body{
 	width: 45px;
 	height: 45px;
 }
-.navigation.active{
-	width: 200px;
-	height: 200px;
-	transition-delay: 0s;
+ion-icon{
+	transition: 0.5s;
+	font-size: 0em;
 }
+navigation.active ion-icon{}
 .menuToggle{
 	position: absolute;
 	bottom: -15px;
