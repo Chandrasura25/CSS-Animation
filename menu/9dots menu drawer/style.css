@@ -39,6 +39,10 @@ body{
 }
 .navigation.active span{
 	transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+	background: #29fd53;
+	border: 2px solid #333;
+	width: 45px;
+	height: 45px;
 }
 .navigation.active{
 	width: 200px;
