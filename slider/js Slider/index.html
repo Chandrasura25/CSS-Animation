@@ -45,7 +45,7 @@
       let box = document.querySelector('.box');
       prev.addEventListener('click',()=>{
         degree +=90;
-        box.style = ``;
+        box.style = `transform: perspective(1000px) rotateY(${degree}deg)`;
       })
     </script>
   </body>
