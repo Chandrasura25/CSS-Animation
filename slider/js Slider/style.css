@@ -16,6 +16,7 @@ body{
     position: relative;
     width: 240px;
     height: 300px;
+    top: -60px;
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(250deg);
     transition: 1.5s;
@@ -81,4 +82,7 @@ body{
     position: relative;
     width: 60px;
     height: 60px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
 }
