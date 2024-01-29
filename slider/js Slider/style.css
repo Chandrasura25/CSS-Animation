@@ -71,3 +71,14 @@ body{
     font-size: 0.75em;
     color: #f44336;
 }
+.btns{
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    gap: 30px;
+}
+.btns div{
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
