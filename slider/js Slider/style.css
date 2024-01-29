@@ -105,3 +105,7 @@ body{
 .btns div.prev::before{
     transform: rotate(225deg) translate(-2.5px, 2.5px);
 }
+.btns div:active::before{
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
