@@ -17,8 +17,15 @@ body{
     width: 240px;
     height: 300px;
     transform-style: preserve-3d;
-    transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(250deg);
     transition: 1.5s;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: #222;
 }
 .box .card{
     position: absolute;
