@@ -20,3 +20,12 @@ body{
     transform: perspective(1000px) rotateY(0deg);
     transition: 1.5s;
 }
+.box .card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(90deg, #ddd, #eee);
+    transform-origin: center;
+}
