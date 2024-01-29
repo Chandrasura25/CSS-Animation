@@ -28,6 +28,8 @@ body{
     height: 300px;
     background: linear-gradient(90deg, #ddd, #eee);
     transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(120px);
 }
 .box .card .imgBx{
     position: relative;
