@@ -90,3 +90,12 @@ body{
 .btns div:active{
     background: #333;
 }
+.btns div::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #333;
+    border-right: 3px solid #333;
+    transform: rotate(45deg);
+}
