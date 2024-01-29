@@ -54,3 +54,13 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.box .card h2{
+    position: relative;
+    top: 10px;
+    width: 240px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
