@@ -42,7 +42,7 @@ body{
 .container .card .imgBx{
     position: absolute;
     inset: 20px 20px 50px 20px;
-    background: #f0f;
+    background: #65ff50;
     border-radius: 15px;
     transition: 0.5s;
     z-index: 10;
@@ -123,4 +123,5 @@ body{
     color: #fff;
     bottom: -25px;
     border-radius: 15px;
+    box-shadow: 0 0 0 10px var(--clr);
 }
