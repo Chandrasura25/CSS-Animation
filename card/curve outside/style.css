@@ -107,4 +107,5 @@ body{
 .container .card:hover p{
     opacity: 1;
     visibility: visible; 
+    transform: translateY(40px);
 }
