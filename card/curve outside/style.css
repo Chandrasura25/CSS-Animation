@@ -45,6 +45,7 @@ body{
     background: #f0f;
     border-radius: 15px;
     transition: 0.5s;
+    z-index: 10;
 }
 .container .card .imgBx::before{
     content: '';
@@ -108,4 +109,11 @@ body{
     opacity: 1;
     visibility: visible; 
     transform: translateY(40px);
+}
+.container .card h2{
+    position: absolute;
+    bottom: 8px;
+    color: #333;
+    transition: 0.5s;
+    font-weight: 600;
 }
