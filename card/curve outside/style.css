@@ -48,6 +48,7 @@ body{
 }
 .container .card:hover .imgBx{
     inset: -50px 60px 250px 60px;
+    box-shadow: 0 0 0 10px var(--clr);
 }
 .container .card .imgBx img{
     position: absolute;
@@ -56,4 +57,5 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
