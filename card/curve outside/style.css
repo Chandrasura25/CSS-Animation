@@ -36,3 +36,16 @@ body{
     cursor: pointer;
     transition: 0.5s;
 }
+.container .card:hover{
+    height: 350px;
+}
+.container .card .imgBx{
+    position: absolute;
+    inset: 20px 20px 50px 20px;
+    background: #f00;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.container .card:hover .imgBx{
+    inset: -50px 60px 250px 60px;
+}
