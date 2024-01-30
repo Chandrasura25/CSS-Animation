@@ -15,9 +15,11 @@ body{
     min-height: 100vh;
     background: var(--clr);
 }
-.card{
+.container{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
