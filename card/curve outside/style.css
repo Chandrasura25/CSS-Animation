@@ -55,10 +55,13 @@ body{
     left: -30px;
     border-top-right-radius: 20px;
     transform: translateY(-100px);
-    opacity: 1;
+    opacity: 0;
     box-shadow: 5px -5px 0 4px var(--clr);
     pointer-events: none;
     transition: 0.5s;
+}
+.container .card:hover .imgBx::before{
+    opacity: 1;
 }
 .container .card:hover .imgBx{
     inset: -50px 60px 250px 60px;
