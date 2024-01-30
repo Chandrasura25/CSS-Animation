@@ -95,3 +95,16 @@ body{
     object-fit: cover;
     border-radius: 15px;
 }
+.container .card p{
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+.container .card:hover p{
+    opacity: 1;
+    visibility: visible; 
+}
