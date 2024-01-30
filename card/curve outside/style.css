@@ -42,8 +42,22 @@ body{
 .container .card .imgBx{
     position: absolute;
     inset: 20px 20px 50px 20px;
-    background: #f00;
+    background: #f0f;
     border-radius: 15px;
+    transition: 0.5s;
+}
+.container .card .imgBx::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f0f;
+    left: -30px;
+    border-top-right-radius: 20px;
+    transform: translateY(-100px);
+    opacity: 1;
+    box-shadow: 5px -5px 0 4px var(--clr);
+    pointer-events: none;
     transition: 0.5s;
 }
 .container .card:hover .imgBx{
