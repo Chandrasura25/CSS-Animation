@@ -70,11 +70,11 @@ body{
     width: 20px;
     height: 20px;
     background: #f0f;
-    left: -30px;
-    border-top-right-radius: 20px;
+    right: -30px;
+    border-top-left-radius: 20px;
     transform: translateY(-100px);
     opacity: 0;
-    box-shadow: 5px -5px 0 4px var(--clr);
+    box-shadow: -5px -5px 0 4px var(--clr);
     pointer-events: none;
     transition: 0.5s;
 }
