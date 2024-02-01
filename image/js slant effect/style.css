@@ -1,13 +1,18 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: consolas;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: consolas;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300vh;
-    background: #222;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300vh;
+  background: #222;
+}
+h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
 }
