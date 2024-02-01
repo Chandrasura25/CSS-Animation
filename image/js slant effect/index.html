@@ -14,8 +14,10 @@
     <h2>Javascript Scroll Animation</h2>
     <script>
         let slide1 = document.getElementById('slide1');
+        let slide2 = document.getElementById('slide2');
         window.addEventListener('scroll',()=>{
-            slide1.style.left = window.pageXOffset + 'px';
+            slide1.style.left = window.pageYOffset + 'px';
+            slide2.style.left = - window.pageXOffset + 'px';
         })
     </script>
 </body>
