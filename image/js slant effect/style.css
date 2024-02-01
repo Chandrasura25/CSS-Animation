@@ -28,6 +28,12 @@ section .slide{
     background: url(Vivivian.png);
     background-size: cover;
 }
+section .slide#slide1{
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+section .slide#slide2{
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
 h2 {
   position: absolute;
   color: #fff;
