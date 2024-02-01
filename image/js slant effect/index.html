@@ -12,5 +12,11 @@
         <div class="slide" id="slide2"></div>
     </section>
     <h2>Javascript Scroll Animation</h2>
+    <script>
+        let slide1 = document.getElementById('slide1');
+        window.addEventListener('scroll',()=>{
+            slide1.style.left = window.pageXOffset + 'px';
+        })
+    </script>
 </body>
 </html>
