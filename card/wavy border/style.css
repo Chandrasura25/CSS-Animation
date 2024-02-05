@@ -37,9 +37,14 @@ body{
     z-index: 10;
     top: 120px;
     max-width: 120px;
-    filter: invert(1);
+    filter: invert(1) drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
     transition: 0.5s;
 }
 .container .box:hover img{
     top: -150px;
+}
+.container .box .content{
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
 }
