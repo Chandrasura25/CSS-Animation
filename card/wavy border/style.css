@@ -33,6 +33,14 @@ body{
 .container .box:hover{
     top: 100px;
 }
+.container .box::before{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
 .container .box img{
     position: absolute;
     z-index: 10;
