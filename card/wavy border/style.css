@@ -86,4 +86,15 @@ body{
 .container .box span{
     position: absolute;
     inset: 0;
+    rotate: calc(var(--i) * 90deg);
+}
+.container .box span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-repeat: repeat;
+    height: 10px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #333 13px);
+    background-size: 20px 20px;
 }
