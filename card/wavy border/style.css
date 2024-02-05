@@ -95,14 +95,26 @@ body{
     bottom: 0;
     width: 100%;
     background-repeat: repeat;
-    height: 10px;
-    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #333 13px);
-    background-size: 20px 20px;
+    height: 15px;
+    background-image: radial-gradient(circle at 10px 15px, #333 12px, transparent 13px);
+    background-size: 40px 20px;
     animation: animate 0.5s linear infinite;
     animation-play-state: paused;
 }
 .container .box:hover span::before{
      animation-play-state: running;
+}
+.container .box span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-repeat: repeat;
+    height: 10px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #333 13px);
+    background-size: 20px 20px;
+    animation: animate 0.5s linear infinite;
+    animation-play-state: paused;
 }
 @keyframes animate{
     0%{
