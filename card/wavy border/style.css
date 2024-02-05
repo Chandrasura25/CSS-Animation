@@ -27,4 +27,19 @@ body{
     align-items: center;
     flex-direction: column;
     background: var(--clr);
+    transition: 0.5s;
+}
+.container .box:hover{
+    top: 100px;
+}
+.container .box img{
+    position: absolute;
+    z-index: 10;
+    top: 120px;
+    max-width: 120px;
+    filter: invert(1);
+    transition: 0.5s;
+}
+.container .box:hover img{
+    top: -150px;
 }
