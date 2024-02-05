@@ -101,6 +101,14 @@ body{
     animation: animate 0.5s linear infinite;
     animation-play-state: paused;
 }
+.container .box:hover span::before{
+     animation-play-state: running;
+}
 @keyframes animate{
-
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 40px 0;
+    }
 }
