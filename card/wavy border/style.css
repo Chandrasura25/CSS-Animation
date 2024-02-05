@@ -41,6 +41,7 @@ body{
     border-radius: 20px;
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
     transition: 0.5s;
+    pointer-events: none;
 }
 .container .box:hover::before{
     inset: -200px 30px 30px 30px;
