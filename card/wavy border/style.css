@@ -101,7 +101,8 @@ body{
     animation: animate 0.5s linear infinite;
     animation-play-state: paused;
 }
-.container .box:hover span::before{
+.container .box:hover span::before,
+.container .box:hover span::after{
      animation-play-state: running;
 }
 .container .box span::after{
