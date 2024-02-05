@@ -42,6 +42,7 @@ body{
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
     transition: 0.5s;
     pointer-events: none;
+    z-index: 1;
 }
 .container .box:hover::before{
     inset: -200px 30px 30px 30px;
@@ -97,4 +98,9 @@ body{
     height: 10px;
     background-image: radial-gradient(circle at 10px -5px, transparent 12px, #333 13px);
     background-size: 20px 20px;
+    animation: animate 0.5s linear infinite;
+    animation-play-state: paused;
+}
+@keyframes animate{
+
 }
