@@ -25,4 +25,5 @@ body{
 	background: #333;
 	border-radius: 50px;
 	border: 3px solid #ff3a2c;
+    /* inner-radius = outer-radius * padding */
 }
