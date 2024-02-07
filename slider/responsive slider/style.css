@@ -14,3 +14,8 @@
     justify-content: center;
     align-items: center;
 }
+.slider{
+    position: absolute;
+    inset: 80px 200px 80px 80px;
+    background: #000;
+}
