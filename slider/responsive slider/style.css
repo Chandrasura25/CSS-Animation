@@ -17,7 +17,7 @@
 .slider{
     position: absolute;
     inset: 80px 200px 80px 80px;
-    background: #000;
+    background: #ccc;
     border-radius: 20px;
 }
 .slider .slides{
