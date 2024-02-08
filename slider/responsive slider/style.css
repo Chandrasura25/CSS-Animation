@@ -61,3 +61,9 @@
     background-size: cover;
     opacity: 0;
 }
+.buttons{
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    gap: 20px;
+}
