@@ -85,5 +85,5 @@
     height: 15px;
     border-top: 4px solid #fff;
     border-left: 4px solid #fff;
-    transform: rotate(45deg);
+    transform: rotate(315deg) translate(2px, 2px);
 }
