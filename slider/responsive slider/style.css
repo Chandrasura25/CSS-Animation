@@ -44,3 +44,7 @@
     background-size: cover;
     box-shadow: 0 25px 50px rgba(0,0,0,0.5);
 }
+.slider .slides:nth-child(3){
+    left: calc(50% + 240px);
+    background-size: cover;
+}
