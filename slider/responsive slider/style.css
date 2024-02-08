@@ -87,3 +87,6 @@
     border-left: 4px solid #fff;
     transform: rotate(315deg) translate(2px, 2px);
 }
+.buttons span:nth-child(2)::before{
+    transform: rotate(135deg) translate(2px, 2px);
+}
