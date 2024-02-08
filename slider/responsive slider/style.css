@@ -59,4 +59,5 @@
 .slider .slides:nth-child(6){
     left: calc(50% + 1020px);
     background-size: cover;
+    opacity: 0;
 }
