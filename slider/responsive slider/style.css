@@ -1,58 +1,62 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:  'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.container{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slider{
-    position: absolute;
-    inset: 80px 200px 80px 80px;
-    background: #ccc;
-    border-radius: 20px;
+.slider {
+  position: absolute;
+  inset: 80px 200px 80px 80px;
+  background: #ccc;
+  border-radius: 20px;
 }
-.slider .slides{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 240px;
-    height: 320px;
-    background: var(--img);
-    background-size: cover;
-    background-position: center;
-    transition: 0.5s;
-    border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+.slider .slides {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 320px;
+  background: var(--img);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
 }
 .slider .slides:nth-child(1),
-.slider .slides:nth-child(2){
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(0);
-    background-size: cover;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+.slider .slides:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  background-size: cover;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
 }
-.slider .slides:nth-child(3){
-    left: calc(50% + 240px);
-    background-size: cover;
+.slider .slides:nth-child(3) {
+  left: calc(50% + 240px);
+  background-size: cover;
 }
-.slider .slides:nth-child(4){
-    left: calc(50% + 500px);
-    background-size: cover;
+.slider .slides:nth-child(4) {
+  left: calc(50% + 500px);
+  background-size: cover;
 }
-.slider .slides:nth-child(5){
-    left: calc(50% + 760px);
-    background-size: cover;
+.slider .slides:nth-child(5) {
+  left: calc(50% + 760px);
+  background-size: cover;
+}
+.slider .slides:nth-child(6) {
+  left: calc(50% + 1020px);
+  background-size: cover;
 }
