@@ -48,3 +48,11 @@
     left: calc(50% + 240px);
     background-size: cover;
 }
+.slider .slides:nth-child(4){
+    left: calc(50% + 500px);
+    background-size: cover;
+}
+.slider .slides:nth-child(5){
+    left: calc(50% + 760px);
+    background-size: cover;
+}
