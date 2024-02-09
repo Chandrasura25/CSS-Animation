@@ -126,6 +126,7 @@
     height: 100px;
     top: initial;
     bottom: -170px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   }
   .slider .slides:nth-child(1),
   .slider .slides:nth-child(2) {
