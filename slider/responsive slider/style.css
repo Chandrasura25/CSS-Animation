@@ -32,6 +32,9 @@
     transition: 0.5s;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .slider .slides:nth-child(1),
 .slider .slides:nth-child(2){
