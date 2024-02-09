@@ -106,3 +106,8 @@
     z-index: 100;
     opacity: 0;
 }
+.slider .slides:nth-child(1) .content,
+.slider .slides:nth-child(2) .content{
+    opacity: 1;
+    transform: translateY(0px);
+}
