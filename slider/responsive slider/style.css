@@ -93,3 +93,12 @@
 .buttons span:active{
     opacity: 0.5;
 }
+.content{
+    position: relative;
+    padding: 40px;
+    max-width: 600px;
+    transition: 0.25s;
+    transition-delay: 0s;
+    transform: translateY(40px);
+    z-index: 100;
+}
