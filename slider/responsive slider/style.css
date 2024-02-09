@@ -104,4 +104,5 @@
     transition-delay: 0s;
     transform: translateY(40px);
     z-index: 100;
+    opacity: 0;
 }
