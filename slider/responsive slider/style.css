@@ -132,4 +132,20 @@
     top: initial;
     bottom: 0px;
   }
+  .slider .slides:nth-child(3) {
+    left: 0;
+  }
+  .slider .slides:nth-child(4) {
+    left: calc(50% + 500px);
+    background-size: cover;
+  }
+  .slider .slides:nth-child(5) {
+    left: calc(50% + 760px);
+    background-size: cover;
+  }
+  .slider .slides:nth-child(6) {
+    left: calc(50% + 1020px);
+    background-size: cover;
+    opacity: 0;
+  }
 }
