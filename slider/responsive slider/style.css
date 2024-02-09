@@ -136,8 +136,7 @@
     left: 0;
   }
   .slider .slides:nth-child(4) {
-    left: calc(50% + 500px);
-    background-size: cover;
+    left: 120px;
   }
   .slider .slides:nth-child(5) {
     left: calc(50% + 760px);
