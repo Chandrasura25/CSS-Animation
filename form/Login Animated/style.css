@@ -30,3 +30,11 @@ body{
     background: repeating-conic-gradient(from var(--a), var(--clr) 0%, var(--clr) 10%, transparent 10%, transparent 50%);
     animation: animate 6s linear infinite;
 }
+@keyframes animate {
+    0%{
+        --a: 0deg;
+    }
+    100%{
+        --a: 360deg;
+    }
+}
