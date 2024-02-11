@@ -89,3 +89,9 @@ form h2{
 .inputBx:nth-child(2) span::before{
   animation-delay: -1.5s;
 }
+.inputBx span::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #292929;
+}
