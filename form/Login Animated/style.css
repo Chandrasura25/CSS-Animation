@@ -22,5 +22,6 @@ body{
     min-height: 400px;
     justify-content: center;
     align-items: center;
-    background: repeating-conic-gradient(from 0deg, var(--clr) 0%, var(--clr) 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from var(--a), var(--clr) 0%, var(--clr) 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
 }
