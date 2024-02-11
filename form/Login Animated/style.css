@@ -47,3 +47,9 @@ body{
   animation: animate 6s linear infinite;
   animation-delay: -1.5s;
 }
+.box::after{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 20px solid #222;
+}
