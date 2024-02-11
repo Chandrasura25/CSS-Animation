@@ -10,9 +10,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #eff0f4;
+    background: #222;
 }
-.container{
+.box{
     position: relative;
     display: flex;
     left: -80px;
