@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root{
+  --clr: #01dbc2;
+}
 body{
     display: flex;
     justify-content: center;
@@ -19,5 +22,5 @@ body{
     min-height: 400px;
     justify-content: center;
     align-items: center;
-    background: repeating-conic-gradient();
+    background: repeating-conic-gradient(from 0deg, --clr 0%, --clr 10%, transparent 10%, transparent 50%);
 }
