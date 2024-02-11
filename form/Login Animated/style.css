@@ -73,3 +73,9 @@ form h2{
   margin-bottom: 40px;
   width: 240px;
 }
+.inputBx span{
+  position: absolute;
+  inset: -2px;
+  background: #333;
+  z-index: 1;
+}
