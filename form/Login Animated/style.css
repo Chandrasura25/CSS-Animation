@@ -84,4 +84,8 @@ form h2{
   inset: -2px;
   background: repeating-conic-gradient(from var(--a), var(--clr) 0%, var(--clr) 10%, transparent 10%, transparent 50%);
   animation: animate 6s linear infinite;
+  box-shadow: 0 0 0 2px #000;
+}
+.inputBx:nth-child(2) span::before{
+  animation-delay: -1.5s;
 }
