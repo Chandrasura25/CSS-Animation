@@ -68,3 +68,8 @@ form h2{
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.inputBx{
+  position: relative;
+  margin-bottom: 40px;
+  width: 240px;
+}
