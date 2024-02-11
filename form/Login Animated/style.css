@@ -54,3 +54,7 @@ body{
   border: 20px solid #222;
   background: #303030;
 }
+form{
+  position: relative;
+  z-index: 10;
+}
