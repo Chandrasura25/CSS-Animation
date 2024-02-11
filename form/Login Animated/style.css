@@ -76,6 +76,12 @@ form h2{
 .inputBx span{
   position: absolute;
   inset: -2px;
-  background: #333;
   z-index: 1;
+}
+.inputBx span::before{
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: repeating-conic-gradient(from var(--a), var(--clr) 0%, var(--clr) 10%, transparent 10%, transparent 50%);
+  animation: animate 6s linear infinite;
 }
