@@ -155,5 +155,5 @@ form h2 {
 }
 .group a:hover {
   color: var(--clr);
-  filter: drop-shadow(0 0 15px var(--clr));
+  filter: drop-shadow(0 0 5px var(--clr));
 }
