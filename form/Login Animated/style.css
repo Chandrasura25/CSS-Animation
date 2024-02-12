@@ -145,3 +145,10 @@ form h2 {
   display: flex;
   justify-content: space-between;
 }
+.group a{
+  text-decoration: none;
+  color: #fff8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75em;
+}
