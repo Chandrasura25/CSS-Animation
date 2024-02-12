@@ -129,7 +129,7 @@ form h2 {
   color: #fff;
   opacity: 0.5;
 }
-.inputBx input[type="submit"]{
+.inputBx input[type="submit"] {
   background: var(--clr);
   cursor: pointer;
   box-shadow: 0 0 0 4px var(--clr);
@@ -138,18 +138,22 @@ form h2 {
   color: #292929;
   filter: drop-shadow(0 0 15px var(--clr));
 }
-.group{
+.group {
   position: relative;
   top: -10px;
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
-.group a{
+.group a {
   text-decoration: none;
   color: #fff8;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.75em;
   transition: 0.5s;
+}
+.group a:hover {
+  color: var(--clr);
+  filter: drop-shadow(0 0 15px var(--clr));
 }
