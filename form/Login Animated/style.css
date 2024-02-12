@@ -151,4 +151,5 @@ form h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.75em;
+  transition: 0.5s;
 }
