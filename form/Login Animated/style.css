@@ -129,4 +129,11 @@ form h2 {
   color: #fff;
   opacity: 0.5;
 }
-.inputBx input[type="submit"]
+.inputBx input[type="submit"]{
+  background: var(--clr);
+  cursor: pointer;
+  box-shadow: 0 0 0 4px var(--clr);
+  width: 100%;
+  font-weight: 500;
+  color: #292929;
+}
