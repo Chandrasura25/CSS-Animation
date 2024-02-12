@@ -136,4 +136,5 @@ form h2 {
   width: 100%;
   font-weight: 500;
   color: #292929;
+  filter: drop-shadow(0 0 15px var(--clr));
 }
