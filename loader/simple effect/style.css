@@ -35,12 +35,14 @@ body {
 @keyframes animate {
   0% {
     stroke-dashoffset: 32;
+    stroke: #21f357;
   }
   25% {
     stroke-dashoffset: 96;
   }
   50% {
     stroke-dashoffset: 160;
+    stroke: #21f357;
   }
   75% {
     stroke-dashoffset: 224;
