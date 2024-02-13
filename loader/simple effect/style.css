@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+} 
 body{
 	display: flex;
 	justify-content: center;
@@ -14,4 +14,9 @@ body{
 	position: relative;
 	width: 44px;
 	height: 44px;
+}
+.loader svg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
