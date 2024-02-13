@@ -39,6 +39,7 @@ body {
   }
   25% {
     stroke-dashoffset: 96;
+    stroke: #fe0001;
   }
   50% {
     stroke-dashoffset: 160;
@@ -46,6 +47,7 @@ body {
   }
   75% {
     stroke-dashoffset: 224;
+    stroke: #fe0001;
   }
   100% {
     stroke-dashoffset: 288;
