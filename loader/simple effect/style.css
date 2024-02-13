@@ -24,6 +24,14 @@ body{
 	fill: none;
 	width: 64px;
 	height: 64px;
-	stroke-width: 10px;
+	stroke-width: 15px;
 	stroke: #21f357;
+	stroke-dasharray: 64;
+	stroke-dashoffset: 32;
+	animation: animate 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+@keyframes animate{
+	0%{
+	stroke-dashoffset: 32;
+}
 }
