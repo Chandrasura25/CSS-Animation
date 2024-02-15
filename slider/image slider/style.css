@@ -19,4 +19,15 @@
 }
 .container .dots{
     position: absolute;
+    bottom: 70px;
+    z-index: 100;
+    display: flex;
+    gap: 6px;
+}
+.container .dots label{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
 }
