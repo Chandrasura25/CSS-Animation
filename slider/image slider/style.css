@@ -14,3 +14,9 @@
     width: 100vw;
     background: #222;
 }
+.container input{
+    appearance: none;
+}
+.container .dots{
+    position: absolute;
+}
