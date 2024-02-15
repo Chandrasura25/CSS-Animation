@@ -15,7 +15,7 @@
     background: #222;
 }
 .container input{
-    appearance: none;
+   appearance: none;
 }
 .container .dots{
     position: absolute;
@@ -30,4 +30,6 @@
     background: #fff;
     border-radius: 50%;
     cursor: pointer;
+    opacity: 0.5;
+    border: 2px solid #222;
 }
