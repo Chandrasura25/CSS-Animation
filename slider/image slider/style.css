@@ -77,3 +77,9 @@
     transition-delay: 1s;
     background-position: center;
 }
+.content{
+    position: relative;
+    padding: 50px 50px 120px 80px;
+    max-width: 550px;
+    color: #fff;
+}
