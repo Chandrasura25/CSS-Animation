@@ -58,6 +58,10 @@
     background-size: cover;
     clip-path: circle(0% at 0% 50%);
     transition: 1.5s;
+    transition-delay: 0s;
+}
+.container .slider .slide:nth-child(even){
+    clip-path: circle(0% at 100% 50%);
 }
 .container input:nth-child(1):checked ~ .slider .slide:nth-child(1),
 .container input:nth-child(2):checked ~ .slider .slide:nth-child(2),
@@ -65,4 +69,5 @@
 .container input:nth-child(4):checked ~ .slider .slide:nth-child(4),
 .container input:nth-child(5):checked ~ .slider .slide:nth-child(5){
     clip-path: circle(150% at 50% 50%);
+    transition-delay: 1s;
 }
