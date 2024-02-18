@@ -72,4 +72,5 @@
 .container input:nth-child(5):checked ~ .slider .slide:nth-child(5){
     clip-path: circle(150% at 50% 50%);
     transition-delay: 1s;
+    background-position: center;
 }
