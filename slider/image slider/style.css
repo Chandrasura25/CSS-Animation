@@ -59,9 +59,11 @@
     clip-path: circle(0% at 0% 50%);
     transition: 1.5s;
     transition-delay: 0s;
+    background-position: left;
 }
 .container .slider .slide:nth-child(even){
     clip-path: circle(0% at 100% 50%);
+    background-position: right;
 }
 .container input:nth-child(1):checked ~ .slider .slide:nth-child(1),
 .container input:nth-child(2):checked ~ .slider .slide:nth-child(2),
