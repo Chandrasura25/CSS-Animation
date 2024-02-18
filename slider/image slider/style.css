@@ -60,6 +60,9 @@
     transition: 1.5s;
     transition-delay: 0s;
     background-position: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 .container .slider .slide:nth-child(even){
     clip-path: circle(0% at 100% 50%);
