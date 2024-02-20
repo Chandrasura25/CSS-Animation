@@ -55,6 +55,7 @@ body{
 	border-radius: 2px;
 	background: var(--clr);
 	transform: rotate(calc(var(--i) * 90deg)) translate(0,25px);
+	transition: height 0.5s, width 0.5s, transform 0.5s;
 }
 .menu.active li a::before{
 	width: 60px;
@@ -63,6 +64,7 @@ body{
 	box-sizing: border-box;
 	background: #2f363e;
 	transform: rotate(calc(var(--i) * 90deg)) translate(0px,0px);
+	transition: transform 0.5s, height 0.5s, width 0.5s;
 }
 .menuToggle{
 	position: absolute;
