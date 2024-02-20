@@ -39,10 +39,13 @@ body{
 	align-items: center;
 	text-decoration: none;
 	border-radius: 50%;
-	color: #fff;
+	color: transparent;
 	transform: rotate(calc(360deg / -8 * var(--i)));
 	transition: 1s;
 	transition-delay: 0.5s;
+}
+.menu.active li a{
+	color: var(--clr);
 }
 .menuToggle{
 	position: absolute;
