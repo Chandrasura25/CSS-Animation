@@ -10,3 +10,11 @@ body{
 	align-items: center;
 	background: #2f363e;
 }
+.menu{
+	position: relative;
+	width: 260px;
+	height: 260px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
