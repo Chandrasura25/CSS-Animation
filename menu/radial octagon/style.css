@@ -47,6 +47,14 @@ body{
 .menu.active li a{
 	color: var(--clr);
 }
+.menu li a::before{
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 2px;
+	border-radius: 2px;
+	background: var(--clr);
+}
 .menuToggle{
 	position: absolute;
 	width: 60px;
