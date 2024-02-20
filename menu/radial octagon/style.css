@@ -54,6 +54,7 @@ body{
 	height: 2px;
 	border-radius: 2px;
 	background: var(--clr);
+	transform: rotate(calc(var(--i) * 90deg)) translate(0,25px);
 }
 .menuToggle{
 	position: absolute;
