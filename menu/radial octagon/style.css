@@ -68,6 +68,10 @@ body{
 	transition: transform 0.5s, height 0.5s, width 0.5s;
 	transition-delay: 1s, 1.5s, 1.5s;
 }
+.menu.active li:hover a::before{
+	background: var(--clr);
+	color: #2f363e;
+}
 .menuToggle{
 	position: absolute;
 	width: 60px;
