@@ -71,6 +71,12 @@ body{
 .menu.active li:hover a::before{
 	background: var(--clr);
 	color: #2f363e;
+	box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+}
+.menu.active li a ion-icon{
+	position: relative;
+	color: #2f363e;
+	z-index: 100;
 }
 .menuToggle{
 	position: absolute;
