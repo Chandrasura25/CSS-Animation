@@ -86,7 +86,11 @@ body{
 	transition: 0.5s;
 	transition-delay: 0.5s;
 }
-.menu.active li a::after{}
+.menu.active li a::after{
+	left: 10px;
+	width: 40px;
+	transform: rotate(calc(var(--i) * 0deg)) translate(50px, 0px);
+}
 .menu.active li a ion-icon{
 	position: relative;
 	color: #2f363e;
