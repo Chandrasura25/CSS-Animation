@@ -89,7 +89,8 @@ body{
 .menu.active li a::after{
 	left: 10px;
 	width: 40px;
-	transform: rotate(calc(var(--i) * 0deg)) translate(50px, 0px);
+	transition-delay: 0.5s;
+	transform: rotate(calc(var(--i) * 45deg)) translate(50px, 0px);
 }
 .menu.active li a ion-icon{
 	position: relative;
