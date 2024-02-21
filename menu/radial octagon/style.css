@@ -82,7 +82,9 @@ body{
 	height: 2px;
 	background: var(--clr);
 	z-index: -1;
-	transform: rotate(calc(var(--i) * 0deg));
+	transform: rotate(calc(var(--i) * 0deg)) translate(15px, 0px);
+	transition: 0.5s;
+	transition-delay: 0.5s;
 }
 .menu.active li a ion-icon{
 	position: relative;
