@@ -17,7 +17,13 @@
 		let body = document.querySelector('body');
 		let aqua = document.querySelector('.aqua');
 		let number = document.querySelector('.number');
+		let percentBar = document.querySelector('.percentBar');
 
+		let interval = setInterval(()=>{
+			number.innerHTML = i+`<span>%</span>`;
+			i++;
+			
+		})
 	</script>
 </body>
 </html>
