@@ -21,9 +21,12 @@
 
 		let interval = setInterval(()=>{
 			number.innerHTML = i+`<span>%</span>`;
+			percentBar.style.width = i+'%';
 			i++;
-			
-		})
+			if (i == 101) {
+				clearInterval(interval);
+			}
+		},100)
 	</script>
 </body>
 </html>
