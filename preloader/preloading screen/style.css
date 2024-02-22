@@ -31,3 +31,11 @@ body{
 	border-radius: 20px;
 	background: #fff4;
 }
+.percentBar{
+	position: relative;
+	display: block;
+	width: 50%;
+	height: 10px;
+	background: #03a9f4;
+	border-radius: 20px;
+}
