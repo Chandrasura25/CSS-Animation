@@ -25,6 +25,10 @@
 			i++;
 			if (i == 101) {
 				clearInterval(interval);
+				setTimeout(()=>{
+					aqua.style.opacity = '0';
+					aqua.style.visibility = 'hidden';
+				})
 			}
 		},100)
 	</script>
