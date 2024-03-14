@@ -10,5 +10,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #2e3537;
+    background: #0a1b18;
+}
+.container{
+    position: relative;
+    width: 400px;
 }
