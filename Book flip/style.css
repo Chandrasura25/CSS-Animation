@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	gap: 5px;
+    min-height: 100vh;
+    background: #2e3537;
+}
+.bookCase{
+	    transform: scale(0);
+		transition: all 0.3s ease-in-out;
+}
+.bookCase.active{
+    transform: scale(1);
+}
+.book{
+	width: 400px;
+	height: 450px;
+	position: relative;
+	transition-duration: 1s;
+	perspective: 1500;
+}
+.book::before{
+	content:'';
+	position: absolute;
+	height: 100%;
+	width: 20px;
+	border-radius: 15px 0 0 15px;
+	background: #444;
+}
+.page::after{
+	content:'';
+	position: absolute;
+	height: 100%;
+	width: 20px;
+	border-radius: 15px 0 0 15px;
+	background: #444;
+}
+input{
+	display: none;
+}
+.back-cover{
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+	box-shadow: 0 0 5px rgb(41, 41, 41);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	z-index: -1;
+	padding: 1rem;
+}
+.page{
+	position: absolute;
+	width: 400px;
+	height: 450px;
+    border-radius: 15px 0 0 15px;
+	background: #fff;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: 1.5s;
+}
+.front-page{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	padding: 1rem;
+}
+.back-page{
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	padding: 1rem;
+	z-index: 99;
+}
+p{
+	padding-left: 1em;
+}
+.next, .prev{
+	position: absolute;
+	bottom: 16px;
+	cursor: pointer;
+}
+.next{
+	right: 16px;
+}
+.prev{
+	left: 16px;
+}
+#page1{
+	z-index: 3;
+}
+#checkbox-page1:checked ~ .book #page1{
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
