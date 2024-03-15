@@ -59,3 +59,13 @@ body{
     font-weight: 600;
     letter-spacing: 0.1em;
 }
+.number{
+    position: absolute;
+    inset: 0;
+}
+.number b{
+    position: absolute;
+    inset: 10px;
+    transform: rotate(calc(45deg * var(--i)));
+    text-align: center;
+}
