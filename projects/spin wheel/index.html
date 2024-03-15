@@ -51,6 +51,10 @@
 
       let value1 = Math.ceil(Math.random() * -3600);
       let value2 = Math.ceil(Math.random() * 3600);
+
+      spinBtn.onclick = () => {
+        wheel.style.transform = 'rotate('+ value1 +'deg)'
+      }
     </script>
   </body>
 </html>
