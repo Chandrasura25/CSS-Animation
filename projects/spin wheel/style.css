@@ -6,7 +6,7 @@
     font-family: sans-serif, 'poppins';
 }
 :root{
-    --clr:'#39ffe2';
+    --clr: #39ffe2;
 }
 body{
     display: flex;
