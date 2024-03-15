@@ -74,3 +74,10 @@ body{
     font-weight: 500;
     filter: drop-shadow(0 0 5px var(--clr));
 }
+.inner{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: #0a1b18;
+    border: 3px solid var(--clr);
+}
