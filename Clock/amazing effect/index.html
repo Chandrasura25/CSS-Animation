@@ -25,10 +25,18 @@
 
 			var minutes = date.getMinutes();
 			var seconds = date.getSeconds();
-			secDots.innerHTML = '<h2>'+ seconds + '</h2>'
-			minDots.innerHTML = '<h2>'+ minutes + '</h2>'
-			hrDots.innerHTML = '<h2>'+ hours + '</h2>'
+			secDots.innerHTML = '<h2>'+ zero(seconds) + '</h2>'
+			minDots.innerHTML = '<h2>'+ zero(minutes) + '</h2>'
+			hrDots.innerHTML = '<h2>'+ zero(hours) + '</h2>'
 		}
+
+		function zero(number){
+			if (number < 10) {
+				return '0' + number;
+			}
+			return number;
+		}
+
 		setInterval(clock,1000);
 	</script>
 </body>
