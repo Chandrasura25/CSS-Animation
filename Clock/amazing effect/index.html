@@ -26,7 +26,10 @@
 			var minutes = date.getMinutes();
 			var seconds = date.getSeconds();
 			secDots.innerHTML = '<h2>'+ seconds + '</h2>'
+			minDots.innerHTML = '<h2>'+ minutes + '</h2>'
+			hrDots.innerHTML = '<h2>'+ hours + '</h2>'
 		}
+		setInterval(clock,1000);
 	</script>
 </body>
 </html>
