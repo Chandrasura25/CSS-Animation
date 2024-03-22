@@ -60,3 +60,9 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+#secDots b{
+    position: absolute;
+    color: #fff;
+    display: inline-flex;
+    transform: translate(150px, 90px);
+}
