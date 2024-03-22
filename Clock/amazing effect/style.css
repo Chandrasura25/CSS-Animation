@@ -50,4 +50,13 @@ body{
     font-weight: 500;
     color: var(--clr);
 }
-#secDots h2,#minDots h2,#hrDots h2
+#secDots h2 span,
+#minDots h2 span,
+#hrDots h2 span{
+    position: absolute;
+    font-size: 0.25em;
+    font-weight: 500;
+    bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
