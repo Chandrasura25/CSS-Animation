@@ -13,18 +13,20 @@
 		<div id="secDots" style="--clr:#04fc43"></div>
 	</div>
 	<script>
-		let minDots = document.getElementById('minDots')
-		let secDots = document.getElementById('secDots')
-		let hrDots = document.getElementById('hrDots')
+		function clock() {
+			let minDots = document.getElementById('minDots')
+			let secDots = document.getElementById('secDots')
+			let hrDots = document.getElementById('hrDots')
 
-		var date = new Date();
-		var hours = date.getHours() % 12;
-		var amPm = date.getHours() >= 12 'PM' : 'AM';
-		hours = hours === 0 ? 12 : hours;
+			var date = new Date();
+			var hours = date.getHours() % 12;
+			var amPm = date.getHours() >= 12 'PM' : 'AM';
+			hours = hours === 0 ? 12 : hours;
 
-		var minutes = date.getMinutes();
-		var seconds = date.getSeconds();
-		secDots.innerHTML = '<h2>'+ seconds + '</h2>'
+			var minutes = date.getMinutes();
+			var seconds = date.getSeconds();
+			secDots.innerHTML = '<h2>'+ seconds + '</h2>'
+		}
 	</script>
 </body>
 </html>
