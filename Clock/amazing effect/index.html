@@ -25,7 +25,7 @@
 
 			var minutes = date.getMinutes();
 			var seconds = date.getSeconds();
-			secDots.innerHTML = '<h2>'+ zero(seconds) + '</h2>'
+			secDots.innerHTML = '<b>'+ amPm+'</b>' + '<h2>'+ zero(seconds) + '</h2>'
 			minDots.innerHTML = '<h2>'+ zero(minutes) + '</h2>'
 			hrDots.innerHTML = '<h2>'+ zero(hours) + '</h2>'
 		}
