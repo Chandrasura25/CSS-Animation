@@ -20,7 +20,7 @@
 
 			var date = new Date();
 			var hours = date.getHours() % 12;
-			var amPm = date.getHours() >= 12 'PM' : 'AM';
+			var amPm = date.getHours() >= 12 ? 'PM' : 'AM';
 			hours = hours === 0 ? 12 : hours;
 
 			var minutes = date.getMinutes();
