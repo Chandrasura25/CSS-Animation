@@ -17,9 +17,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 80px;
 }
 #secDots,#minDots,#hrDots{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+#secDots::before,
+#minDots::before,
+#hrDots::before{
+    content: '';
+    position: absolute;
+    inset: -20px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.25);
 }
