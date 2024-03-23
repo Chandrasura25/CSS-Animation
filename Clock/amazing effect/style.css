@@ -107,3 +107,7 @@ body{
     background: var(--clr);
     box-shadow: 1.5px 9px var(--clr), 4px 18px var(--clr), 7px 27px var(--clr);
 }
+#hrDots .active.dot ~ .dot::before{
+    background: #555;
+    box-shadow: 1.5px 9px var(--clr), 4px 18px var(--clr), 7px 27px var(--clr);
+}
