@@ -86,9 +86,11 @@ body{
     0 0 20px var(--clr), 0 0 30px var(--clr);
 }
 #minDots .active.dot ~ .dot,
+#hrDots .active.dot ~ .dot,
 #secDots .active.dot ~ .dot{
     background: #555;
 }
+#minDots .dot:nth-child(5n + 5),
 #minDots .dot:nth-child(5n + 5),
 #secDots .dot:nth-child(5n + 5){
     width: 20px;
