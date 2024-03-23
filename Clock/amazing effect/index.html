@@ -25,6 +25,16 @@
 
 			var minutes = date.getMinutes();
 			var seconds = date.getSeconds();
+				var secondsDots = '';
+				for (var i = 1; i < 61; i++) {
+					var rotation = i * 6;
+
+					if(i === seconds){
+						secondsDots += `<div class="dot active" style="transform: rotate(${rotation}deg)"></div>`
+					}
+				}
+
+
 			secDots.innerHTML = '<b>'+ amPm+'</b>' + '<h2>'+ zero(seconds) + '<br><span>Seconds</span></h2>'
 			minDots.innerHTML = '<h2>'+ zero(minutes) + '<br><span>Minutes</span></h2>'
 			hrDots.innerHTML = '<h2>'+ zero(hours) + '<br><span>Hours</span></h2>'
