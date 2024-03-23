@@ -24,6 +24,7 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    rotate: 90deg;
 }
 #secDots::before,
 #minDots::before,
@@ -43,6 +44,7 @@ body{
     text-align: center;
     inset: 0;
     display: flex;
+    transform: rotate(-90deg);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -78,4 +80,7 @@ body{
     background: var(--clr);
     box-shadow: 0 0 10px var(--clr),
     0 0 20px var(--clr), 0 0 30px var(--clr);
+}
+#secDots .active.dot ~ .dot{
+    background: #555;
 }
