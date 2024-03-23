@@ -91,7 +91,9 @@ body{
     background: #555;
 }
 #minDots .dot:nth-child(5n + 5),
-#minDots .dot:nth-child(5n + 5),
 #secDots .dot:nth-child(5n + 5){
+    width: 20px;
+}
+#hrDots .dot{
     width: 20px;
 }
