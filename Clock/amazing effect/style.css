@@ -84,3 +84,6 @@ body{
 #secDots .active.dot ~ .dot{
     background: #555;
 }
+#secDots .dot:nth-child(5n + 5){
+    width: 20px;
+}
