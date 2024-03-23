@@ -74,3 +74,8 @@ body{
     background: var(--clr);
     transform-origin: 100px;
 }
+#secDots .active.dot{
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 20px var(--clr), 0 0 30px var(--clr);
+}
