@@ -97,3 +97,13 @@ body{
 #hrDots .dot{
     width: 20px;
 }
+#hrDots .dot::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    background: var(--clr);
+    box-shadow: ;
+}
