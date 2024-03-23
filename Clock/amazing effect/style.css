@@ -69,6 +69,7 @@ body{
     transform: rotate(-90deg) translate(-30px, 90px);
 }
 #secDots .dot,
+#hrDots .dot,
 #minDots .dot{
     position: absolute;
     top: 50%;
@@ -78,6 +79,7 @@ body{
     transform-origin: 100px;
 }
 #minDots .active.dot,
+#hrDots .active.dot,
 #secDots .active.dot{
     background: var(--clr);
     box-shadow: 0 0 10px var(--clr),
