@@ -105,5 +105,5 @@ body{
     width: 4px;
     height: 4px;
     background: var(--clr);
-    box-shadow: ;
+    box-shadow: 1.5px 9px var(--clr), 4px 18px var(--clr), 7px 27px var(--clr);
 }
