@@ -66,3 +66,11 @@ body{
     display: inline-flex;
     transform: translate(150px, 90px);
 }
+#secDots .dot{
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 3px;
+    background: var(--clr);
+    transform-origin: 100px;
+}
